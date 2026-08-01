@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-size: 16px;
+  --radius: 1rem;
+  
+  /* Brand palette */
+  --primary: #22C55E;
+  --primary-hover: #16A34A;
+  --primary-active: #15803D;
+  --secondary: #14B8A6;
+  --secondary-hover: #0D9488;
+  
+  /* Light Theme (Health-focused default) */
+  --background: #F8FAFC;
+  --foreground: #1E293B;
+  --card: #ffffff;
+  --card-foreground: #1E293B;
+  --popover: #ffffff;
+  --popover-foreground: #1E293B;
+  --primary-foreground: #ffffff;
+  --secondary-foreground: #ffffff;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+  --accent: #DCFCE7;
+  --accent-foreground: #166534;
+  --destructive: #EF4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(30, 41, 59, 0.08);
+  --input: transparent;
+  --input-background: #F1F5F9;
+  --switch-background: #CBD5E1;
+  --ring: #22C55E;
+  
+  /* Chart Series */
+  --chart-1: #22C55E;
+  --chart-2: #14B8A6;
+  --chart-3: #F59E0B;
+  --chart-4: #6366F1;
+  --chart-5: #EC4899;
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+}
+
+.dark {
+  --background: #0F172A;
+  --foreground: #F8FAFC;
+  --card: #1E293B;
+  --card-foreground: #F1F5F9;
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
+  --border: rgba(255, 255, 255, 0.08);
+  --input-background: #334155;
+  --muted: #334155;
+  --muted-foreground: #94A3B8;
+  --switch-background: #475569;
+  --accent: #166534;
+  --accent-foreground: #DCFCE7;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] font-sans antialiased;
+  }
+}
+
+/* Custom micro-animations & transitions */
+.transition-standard {
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-hover-lift {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Progress bar transitions */
+.progress-bar-fill {
+  transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Pulsing skeleton animations */
+@keyframes pulse-light {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+.animate-skeleton {
+  animation: pulse-light 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Hide scrollbars utilities for responsive horizontal swiping */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
