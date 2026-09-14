@@ -4,6 +4,18 @@ frontend/node_modules/
 /node_modules
 /frontend/node_modules
 
+# Python virtual environment & cache
+.venv/
+backend/.venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
 # Next.js build output
 .next/
 frontend/.next/
@@ -26,6 +38,7 @@ yarn-error.log*
 .env.production.local
 frontend/.env*.local
 frontend/.env
+backend/.env
 
 # Vercel
 .vercel

@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
@@ -14,7 +15,11 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "placeholder.co",
-      }
+      },
+      {
+        protocol: "https",
+        hostname: "**",
+      },
     ],
   },
   eslint: {
