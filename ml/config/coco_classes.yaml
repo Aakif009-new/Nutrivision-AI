@@ -1,0 +1,16 @@
+# NutriVision AI YOLOv8 Food Classes Dataset Config
+path: ../dataset
+train: images/train
+val: images/val
+
+names:
+  0: apple
+  1: banana
+  2: orange
+  3: bread
+  4: egg
+  5: avocado
+  6: chicken
+  7: rice
+  8: salad
+  9: tomato

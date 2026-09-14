@@ -1,0 +1,56 @@
+# dependencies
+node_modules/
+frontend/node_modules/
+/node_modules
+/frontend/node_modules
+
+# Python virtual environment & cache
+.venv/
+backend/.venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Next.js build output
+.next/
+frontend/.next/
+/frontend/.next
+
+# production
+/build
+/frontend/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env*.local
+frontend/.env
+backend/.env
+
+# Vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
