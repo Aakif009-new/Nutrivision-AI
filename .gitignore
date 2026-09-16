@@ -15,6 +15,7 @@ backend/.venv/
 .coverage
 htmlcov/
 *.log
+ml/dataset/
 
 # Next.js build output
 .next/

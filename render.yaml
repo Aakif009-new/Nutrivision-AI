@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nutrivision-ai-backend
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt scikit-learn skl2onnx
+    startCommand: python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: PYTHONPATH
+        value: backend
+      - key: SUPABASE_STORAGE_BUCKET
+        value: food-scan-images

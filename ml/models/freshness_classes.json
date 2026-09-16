@@ -1,0 +1,129 @@
+{
+  "classes": [
+    "apple_fresh",
+    "apple_rotten",
+    "banana_fresh",
+    "banana_rotten",
+    "bitter_gourd_fresh",
+    "bitter_gourd_rotten",
+    "capsicum_fresh",
+    "capsicum_rotten",
+    "cucumber_fresh",
+    "cucumber_rotten",
+    "okra_fresh",
+    "okra_rotten",
+    "orange_fresh",
+    "orange_rotten",
+    "potato_fresh",
+    "potato_rotten",
+    "strawberry_fresh",
+    "strawberry_rotten",
+    "tomato_fresh",
+    "tomato_rotten"
+  ],
+  "num_classes": 20,
+  "feature_dim": 201,
+  "test_accuracy": 80.67,
+  "mapping": {
+    "0": {
+      "class_name": "apple_fresh",
+      "food_item": "apple",
+      "freshness": "fresh"
+    },
+    "1": {
+      "class_name": "apple_rotten",
+      "food_item": "apple",
+      "freshness": "rotten"
+    },
+    "2": {
+      "class_name": "banana_fresh",
+      "food_item": "banana",
+      "freshness": "fresh"
+    },
+    "3": {
+      "class_name": "banana_rotten",
+      "food_item": "banana",
+      "freshness": "rotten"
+    },
+    "4": {
+      "class_name": "bitter_gourd_fresh",
+      "food_item": "bitter_gourd",
+      "freshness": "fresh"
+    },
+    "5": {
+      "class_name": "bitter_gourd_rotten",
+      "food_item": "bitter_gourd",
+      "freshness": "rotten"
+    },
+    "6": {
+      "class_name": "capsicum_fresh",
+      "food_item": "capsicum",
+      "freshness": "fresh"
+    },
+    "7": {
+      "class_name": "capsicum_rotten",
+      "food_item": "capsicum",
+      "freshness": "rotten"
+    },
+    "8": {
+      "class_name": "cucumber_fresh",
+      "food_item": "cucumber",
+      "freshness": "fresh"
+    },
+    "9": {
+      "class_name": "cucumber_rotten",
+      "food_item": "cucumber",
+      "freshness": "rotten"
+    },
+    "10": {
+      "class_name": "okra_fresh",
+      "food_item": "okra",
+      "freshness": "fresh"
+    },
+    "11": {
+      "class_name": "okra_rotten",
+      "food_item": "okra",
+      "freshness": "rotten"
+    },
+    "12": {
+      "class_name": "orange_fresh",
+      "food_item": "orange",
+      "freshness": "fresh"
+    },
+    "13": {
+      "class_name": "orange_rotten",
+      "food_item": "orange",
+      "freshness": "rotten"
+    },
+    "14": {
+      "class_name": "potato_fresh",
+      "food_item": "potato",
+      "freshness": "fresh"
+    },
+    "15": {
+      "class_name": "potato_rotten",
+      "food_item": "potato",
+      "freshness": "rotten"
+    },
+    "16": {
+      "class_name": "strawberry_fresh",
+      "food_item": "strawberry",
+      "freshness": "fresh"
+    },
+    "17": {
+      "class_name": "strawberry_rotten",
+      "food_item": "strawberry",
+      "freshness": "rotten"
+    },
+    "18": {
+      "class_name": "tomato_fresh",
+      "food_item": "tomato",
+      "freshness": "fresh"
+    },
+    "19": {
+      "class_name": "tomato_rotten",
+      "food_item": "tomato",
+      "freshness": "rotten"
+    }
+  }
+}

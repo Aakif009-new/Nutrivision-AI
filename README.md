@@ -1,6 +1,5 @@
 # NutriVision AI: Advanced Food Analysis & Freshness Tracking Platform
 
-
 NutriVision AI is a production-grade, AI-powered food analysis website. The platform leverages state-of-the-art Computer Vision and Generative AI to automate diet tracking, estimate portion weights, evaluate food freshness, and provide personalized dietary suggestions.
 
 ---
