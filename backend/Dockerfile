@@ -12,14 +12,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Copy backend requirements and install Python dependencies
 COPY backend/requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt scikit-learn skl2onnx
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy ML models and backend application code
-COPY ml /app/ml
-COPY backend /app
+# Copy backend application code and trained models
+COPY backend /app/backend
+COPY backend/app /app/app
+COPY backend/ml /app/ml
+COPY backend/models /app/models
 
 # Set Python path
-ENV PYTHONPATH=/app
+ENV PYTHONPATH=/app/backend:/app
 
 # Expose port
 EXPOSE 8000

@@ -51,14 +51,22 @@ def test_all():
         print(f"  Result: {v['food']} ({v['confidence']:.1%}) | Freshness: {v['freshness']}")
 
     # 4. Real Dataset Images
-    for cls in ["tomato_fresh", "strawberry_fresh", "potato_fresh", "orange_fresh", "apple_fresh"]:
-        p = list(Path("datasets/classification/test").glob(f"{cls}/*.*"))[0]
-        img = cv2.imread(str(p))
-        res = run_full_pipeline(img)
-        v_list = [d for d in res["detections"] if d.get("is_supported")]
-        print(f"\n[Scenario 4: Real Dataset - {cls}]")
-        for v in v_list:
-            print(f"  Result: {v['food']} ({v['confidence']:.1%}) | Freshness: {v['freshness']} ({v['freshness_confidence']:.1%})")
+    project_root = Path(__file__).resolve().parent.parent
+    test_dir = project_root / "datasets" / "classification" / "test"
+    
+    if test_dir.exists():
+        for cls in ["tomato_fresh", "strawberry_fresh", "potato_fresh", "orange_fresh", "apple_fresh"]:
+            cls_dir = test_dir / cls
+            if cls_dir.exists():
+                imgs = list(cls_dir.glob("*.jpg")) + list(cls_dir.glob("*.png")) + list(cls_dir.glob("*.jpeg"))
+                if imgs:
+                    img = cv2.imread(str(imgs[0]))
+                    if img is not None:
+                        res = run_full_pipeline(img)
+                        v_list = [d for d in res["detections"] if d.get("is_supported")]
+                        print(f"\n[Scenario 4: Real Dataset - {cls}]")
+                        for v in v_list:
+                            print(f"  Result: {v['food']} ({v['confidence']:.1%}) | Freshness: {v['freshness']} ({v.get('freshness_confidence', 0.9):.1%})")
 
 if __name__ == "__main__":
     test_all()

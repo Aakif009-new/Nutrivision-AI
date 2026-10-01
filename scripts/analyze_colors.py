@@ -4,7 +4,8 @@ import cv2
 import numpy as np
 
 def analyze_dataset_colors():
-    dataset_dir = Path("datasets/classification/train")
+    project_root = Path(__file__).resolve().parent.parent
+    dataset_dir = project_root / "datasets" / "classification" / "train"
     print("=" * 60)
     print("ANALYZING DATASET GROUND TRUTH CHROMATIC DISTRIBUTIONS")
     print("=" * 60)
