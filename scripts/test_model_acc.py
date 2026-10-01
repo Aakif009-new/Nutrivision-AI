@@ -22,9 +22,9 @@ total_hyb_corr = 0
 total_imgs = 0
 
 for cls in classes:
-    imgs = glob.glob(f"datasets/classification/test/{cls}_*/*.*")
+    imgs = glob.glob(str(backend_path.parent / f"datasets/classification/test/{cls}_*/*.*"))
     if not imgs:
-        imgs = glob.glob(f"datasets/classification/train/{cls}_*/*.*")[:15]
+        imgs = glob.glob(str(backend_path.parent / f"datasets/classification/train/{cls}_*/*.*"))[:15]
     
     cnn_corr = 0
     hyb_corr = 0
