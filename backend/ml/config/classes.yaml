@@ -1,0 +1,25 @@
+food_classes:
+- apple
+- banana
+- orange
+- strawberry
+- bitter_gourd
+- capsicum
+- cucumber
+- okra
+- potato
+- tomato
+freshness_classes:
+- fresh
+- rotten
+class_to_id:
+  apple: 0
+  banana: 1
+  orange: 2
+  strawberry: 3
+  bitter_gourd: 4
+  capsicum: 5
+  cucumber: 6
+  okra: 7
+  potato: 8
+  tomato: 9

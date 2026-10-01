@@ -1,0 +1,16 @@
+path: C:/Users/Mohamed Hannan/Documents/PROJECTS/Nutrivision-AI/datasets/detection
+train: images/train
+val: images/val
+test: images/test
+nc: 10
+names:
+- apple
+- banana
+- orange
+- strawberry
+- bitter_gourd
+- capsicum
+- cucumber
+- okra
+- potato
+- tomato

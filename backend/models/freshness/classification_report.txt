@@ -1,0 +1,16 @@
+NUTRIVISION AI FRESHNESS CNN TEST REPORT
+==================================================
+
+              precision    recall  f1-score   support
+
+       Fresh     0.7882    0.8816    0.8323        76
+      Rotten     0.8615    0.7568    0.8058        74
+
+    accuracy                         0.8200       150
+   macro avg     0.8249    0.8192    0.8190       150
+weighted avg     0.8244    0.8200    0.8192       150
+
+
+Confusion Matrix:
+[[67  9]
+ [18 56]]
