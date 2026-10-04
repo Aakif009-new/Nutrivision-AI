@@ -147,39 +147,38 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
     
     # 0. Strict Human Detection & Non-Food Scene Filter
     skin_ratio = detect_human_skin_fraction(img_bgr)
-    if skin_ratio > 0.18:
+    if skin_ratio > 0.22:
         ip_result = image_processing_pipeline.process(img_bgr)
         cv_overlay = img_bgr.copy()
         cv2.putText(cv_overlay, "Undefined (0%) - Human Detected", (30, 50),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
+        overall_summary = {
+            "total_objects_detected": 1,
+            "supported_foods_count": 0,
+            "undefined_objects_count": 1,
+            "total_calories_kcal": 0.0,
+            "overall_health_score": 0,
+            "primary_food": "None"
+        }
         return {
-            "success": True,
+            "status": "success",
+            "scan_id": "human_rejected",
+            "image_info": ip_result["dimensions"],
+            "processing": {
+                "techniques_applied": ip_result["techniques_applied"],
+                "contour_stats": ip_result["contour_analysis"]
+            },
+            "visual_steps": ip_result["visual_steps"],
+            "cv_analysis_overlay": encode_img_to_base64(cv_overlay),
             "detections": [{
                 "id": 1,
                 "food": "Undefined",
                 "is_supported": False,
                 "confidence": 0.0,
-                "reason": "Non-food object: Human face / person detected in camera view. Please place a fruit or vegetable in front of the camera.",
+                "reason": "Non-food visual profile: Human face / skin detected in camera view. Please place a fruit or vegetable in front of the camera.",
                 "bbox": [0, 0, w_orig, h_orig]
             }],
-            "total_items": 0,
-            "total_calories": 0.0,
-            "fresh_count": 0,
-            "image_processing": {
-                "dimensions": ip_result["dimensions"],
-                "techniques_applied": ip_result["techniques_applied"],
-                "contour_analysis": ip_result["contour_analysis"],
-                "visual_steps": ip_result["visual_steps"]
-            },
-            "computer_vision": {
-                "annotated_image_base64": encode_img_to_base64(cv_overlay),
-                "model_summary": {
-                    "detector": "YOLO11 (Scratch)",
-                    "classifier": "Super Ensemble (84 CV Descriptors)",
-                    "freshness": "4-Block CNN (Scratch)",
-                    "weight_estimator": "Gradient Boosting (R2=98.6%)"
-                }
-            },
+            "overall_summary": overall_summary,
             "warnings": ["Human / non-food visual profile detected."]
         }
 
