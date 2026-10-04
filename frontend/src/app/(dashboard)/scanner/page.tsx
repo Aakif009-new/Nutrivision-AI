@@ -71,6 +71,10 @@ export default function ScannerPage() {
       setErrorMessage('Please select a valid image file (JPG, PNG, WebP).');
       return;
     }
+    if (file.size > 10 * 1024 * 1024) {
+      setErrorMessage('File size exceeds 10MB limit. Please select a smaller food image under 10MB.');
+      return;
+    }
     setErrorMessage(null);
     setSelectedFile(file);
     const url = URL.createObjectURL(file);
@@ -259,7 +263,7 @@ export default function ScannerPage() {
               </div>
               <h3 className="text-sm font-bold text-slate-800">Click or drag & drop food image here</h3>
               <p className="text-xs text-slate-400 mt-1 max-w-xs">
-                Supports single or multi-fruit images (Apple, Banana, Orange, Tomato, Potato, etc.)
+                Supports JPG, PNG, WebP up to 10MB (Apple, Banana, Orange, Tomato, Potato, etc.)
               </p>
               <button
                 type="button"
