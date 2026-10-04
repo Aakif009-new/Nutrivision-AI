@@ -168,6 +168,16 @@ class HybridFoodClassifier:
         self.scaler = None
         self.cnn_model = None
 
+        self.transform = T.Compose([
+            T.Resize((224, 224)),
+            T.ToTensor(),
+            T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+
+    def _ensure_loaded(self):
+        if self.feature_model is not None or self.cnn_model is not None:
+            return
+
         # Path resolution
         ml_dir = Path(__file__).resolve().parent.parent
         backend_dir = ml_dir.parent
@@ -200,22 +210,18 @@ class HybridFoodClassifier:
         for p in cnn_paths:
             if p.exists():
                 try:
-                    checkpoint = torch.load(p, map_location=self.device)
-                    self.cnn_model = FoodClassifierCNN(num_classes=10).to(self.device)
-                    self.cnn_model.load_state_dict(checkpoint["model_state_dict"])
-                    self.cnn_model.eval()
+                    with torch.no_grad():
+                        checkpoint = torch.load(p, map_location=self.device)
+                        self.cnn_model = FoodClassifierCNN(num_classes=10).to(self.device)
+                        self.cnn_model.load_state_dict(checkpoint["model_state_dict"])
+                        self.cnn_model.eval()
                     print(f"[HybridFoodClassifier] Loaded custom Residual CNN from: {p}")
                     break
                 except Exception as e:
                     print(f"[HybridFoodClassifier] Error loading CNN: {e}")
 
-        self.transform = T.Compose([
-            T.Resize((224, 224)),
-            T.ToTensor(),
-            T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-        ])
-
     def classify_crop(self, crop_bgr: np.ndarray) -> Dict[str, Any]:
+        self._ensure_loaded()
         if crop_bgr is None or crop_bgr.size == 0:
             return {"food": "Undefined", "confidence": 0.0, "is_supported": False, "reason": "Empty image crop."}
 

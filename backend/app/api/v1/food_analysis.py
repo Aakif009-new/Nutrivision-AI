@@ -322,6 +322,9 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
     }
     scan_id = db_manager.save_analysis(analysis_record)
 
+    import gc
+    gc.collect()
+
     return {
         "status": "success",
         "scan_id": scan_id,

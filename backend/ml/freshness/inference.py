@@ -18,6 +18,17 @@ class FreshnessInferenceEngine:
         self.confidence_threshold = confidence_threshold
         self.classes = ["Fresh", "Rotten"]
         self.model = None
+        self.model_path = model_path
+
+        self.transform = T.Compose([
+            T.Resize((224, 224)),
+            T.ToTensor(),
+            T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+
+    def _ensure_loaded(self):
+        if self.model is not None:
+            return
 
         # Resolve paths relative to this file
         ml_dir = Path(__file__).resolve().parent.parent # backend/ml
@@ -25,7 +36,7 @@ class FreshnessInferenceEngine:
         project_root = backend_dir.parent # project root
 
         candidate_paths = [
-            Path(model_path) if model_path else None,
+            Path(self.model_path) if self.model_path else None,
             backend_dir / "models" / "freshness" / "best_model.pth",
             project_root / "backend" / "models" / "freshness" / "best_model.pth",
             Path("backend/models/freshness/best_model.pth"),
@@ -38,24 +49,20 @@ class FreshnessInferenceEngine:
                 print(f"[FreshnessCNN] Successfully loaded custom CNN weights from: {p}")
                 break
 
-        self.transform = T.Compose([
-            T.Resize((224, 224)),
-            T.ToTensor(),
-            T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-        ])
-
     def load_model(self, model_path: str):
         from ml.freshness.model import FreshnessCNN
-        checkpoint = torch.load(model_path, map_location=self.device)
-        self.model = FreshnessCNN(num_classes=2).to(self.device)
-        self.model.load_state_dict(checkpoint["model_state_dict"])
-        self.model.eval()
+        with torch.no_grad():
+            checkpoint = torch.load(model_path, map_location=self.device)
+            self.model = FreshnessCNN(num_classes=2).to(self.device)
+            self.model.load_state_dict(checkpoint["model_state_dict"])
+            self.model.eval()
 
     def predict(self, image_input) -> Dict[str, Any]:
         """
         Accepts PIL Image or OpenCV BGR numpy array.
         Returns freshness label, confidence, and rejection status.
         """
+        self._ensure_loaded()
         if self.model is None:
             return {
                 "freshness": "Uncalibrated",

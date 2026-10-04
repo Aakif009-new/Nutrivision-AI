@@ -5,7 +5,8 @@ WORKDIR /app
 
 # Set memory-saving & configuration environment variables
 ENV PYTHONUNBUFFERED=1
-ENV YOLO_CONFIG_DIR=/tmp/Ultralytics
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV YOLO_CONFIG_DIR=/tmp
 ENV OMP_NUM_THREADS=1
 ENV OPENBLAS_NUM_THREADS=1
 ENV MKL_NUM_THREADS=1
@@ -20,18 +21,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy backend requirements and install Python dependencies
+# Copy backend requirements and install CPU-optimized PyTorch and Python dependencies
 COPY backend/requirements.txt requirements.txt
+RUN pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu torch torchvision
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy backend application code and trained models
-COPY backend /app/backend
 COPY backend/app /app/app
 COPY backend/ml /app/ml
 COPY backend/models /app/models
 
 # Set Python path
-ENV PYTHONPATH=/app/backend:/app
+ENV PYTHONPATH=/app
 
 # Expose default port
 EXPOSE 8000
