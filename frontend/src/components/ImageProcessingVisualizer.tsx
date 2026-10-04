@@ -70,6 +70,20 @@ export default function ImageProcessingVisualizer({ visualSteps, techniques }: I
   const [isOpen, setIsOpen] = useState(true);
   const [selectedModalImage, setSelectedModalImage] = useState<{ title: string; url: string; concept: string; desc: string } | null>(null);
 
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSelectedModalImage(null);
+      }
+    };
+    if (selectedModalImage) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedModalImage]);
+
   const stepKeys = Object.keys(visualSteps).filter(k => visualSteps[k]);
 
   if (stepKeys.length === 0) return null;
@@ -169,6 +183,9 @@ export default function ImageProcessingVisualizer({ visualSteps, techniques }: I
         <div
           className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setSelectedModalImage(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
         >
           <div
             className="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl space-y-4"
@@ -176,12 +193,13 @@ export default function ImageProcessingVisualizer({ visualSteps, techniques }: I
           >
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
-                <h3 className="text-base font-bold text-slate-800">{selectedModalImage.title}</h3>
+                <h3 id="modal-title" className="text-base font-bold text-slate-800">{selectedModalImage.title}</h3>
                 <p className="text-xs font-semibold text-emerald-600">{selectedModalImage.concept}</p>
               </div>
               <button
                 onClick={() => setSelectedModalImage(null)}
-                className="text-slate-400 hover:text-slate-600 text-sm font-bold px-2 py-1"
+                aria-label="Close modal"
+                className="text-slate-400 hover:text-slate-600 text-sm font-bold px-2 py-1 focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-lg"
               >
                 ✕ Close
               </button>

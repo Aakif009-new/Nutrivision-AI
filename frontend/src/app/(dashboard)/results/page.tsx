@@ -2,18 +2,20 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, RefreshCw, Flame, Apple, HeartPulse, AlertTriangle, Layers, Eye, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, RefreshCw, Flame, Apple, HeartPulse, AlertTriangle, Layers, Eye, CheckCircle2, Download } from 'lucide-react';
 import ImageProcessingVisualizer from '../../../components/ImageProcessingVisualizer';
 import ComputerVisionVisualizer from '../../../components/ComputerVisionVisualizer';
 import FoodCard from '../../../components/FoodCard';
 import UndefinedObjectCard from '../../../components/UndefinedObjectCard';
-import { AnalysisResponse } from '../../../services/backendClient';
+import { AnalysisResponse, downloadPdfReport } from '../../../services/backendClient';
 import { getLatestAnalysis } from '../../../services/storage';
 
 export default function ResultsPage() {
   const router = useRouter();
   const [analysisData, setAnalysisData] = useState<AnalysisResponse | null>(null);
   const [selectedDetectionId, setSelectedDetectionId] = useState<number | null>(null);
+  const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
+  const [pdfError, setPdfError] = useState<string | null>(null);
 
   useEffect(() => {
     getLatestAnalysis().then((data) => {
@@ -25,6 +27,20 @@ export default function ResultsPage() {
       }
     });
   }, []);
+
+  const handleDownloadPdf = async () => {
+    if (!analysisData) return;
+    setIsDownloadingPdf(true);
+    setPdfError(null);
+    try {
+      const scanId = analysisData.scan_id || 'latest';
+      await downloadPdfReport(scanId);
+    } catch (err: any) {
+      setPdfError(err.message || 'Could not download PDF report.');
+    } finally {
+      setIsDownloadingPdf(false);
+    }
+  };
 
   if (!analysisData) {
     return (
@@ -65,14 +81,33 @@ export default function ResultsPage() {
           <h1 className="text-2xl font-bold text-slate-900">Food Analysis & Quality Report</h1>
         </div>
 
-        <button
-          onClick={() => router.push('/scanner')}
-          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition-all shadow-sm"
-        >
-          <RefreshCw className="w-3.5 h-3.5" />
-          Scan Another Dish
-        </button>
+        <div className="flex items-center gap-2.5">
+          <button
+            onClick={handleDownloadPdf}
+            disabled={isDownloadingPdf}
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white text-xs font-bold transition-all shadow-sm shadow-emerald-600/20"
+            title="Download PDF report summary"
+          >
+            <Download className={`w-3.5 h-3.5 ${isDownloadingPdf ? 'animate-bounce' : ''}`} />
+            {isDownloadingPdf ? 'Generating PDF...' : 'Export PDF Report'}
+          </button>
+
+          <button
+            onClick={() => router.push('/scanner')}
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition-all shadow-sm"
+          >
+            <RefreshCw className="w-3.5 h-3.5" />
+            Scan Another Dish
+          </button>
+        </div>
       </div>
+
+      {pdfError && (
+        <div className="p-3 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-800 flex items-center justify-between">
+          <span>{pdfError}</span>
+          <button onClick={() => setPdfError(null)} className="font-bold underline text-rose-900">Dismiss</button>
+        </div>
+      )}
 
       {/* Warnings Bar if non-food detected */}
       {warnings && warnings.length > 0 && (

@@ -157,3 +157,25 @@ export async function fetchScanHistory(): Promise<any[]> {
     return [];
   }
 }
+
+export async function downloadPdfReport(scanId: string): Promise<void> {
+  const endpoint = `${BACKEND_API_URL}/api/v1/reports/pdf/${scanId}`;
+  try {
+    const res = await fetch(endpoint);
+    if (!res.ok) {
+      throw new Error(`Failed to generate PDF report (Server status ${res.status})`);
+    }
+    const blob = await res.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `nutrivision_scan_${scanId}.pdf`;
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(a);
+  } catch (err: any) {
+    throw new Error(err.message || 'Could not download PDF report.');
+  }
+}
+
