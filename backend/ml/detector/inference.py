@@ -46,9 +46,20 @@ class FoodDetectorEngine:
                 "capsicum", "cucumber", "okra", "potato", "tomato"
             ]
 
-        # Resolve weights path
+        self.weights_path = weights_path
+        self._classes_config_path = classes_config_path
+
+    def _ensure_loaded(self):
+        if self.model is not None:
+            return
+
+        # Resolve paths relative to this file
+        ml_dir = Path(__file__).resolve().parent.parent # backend/ml
+        backend_dir = ml_dir.parent # backend
+        project_root = backend_dir.parent # project root
+
         candidate_paths = [
-            Path(weights_path) if weights_path else None,
+            Path(self.weights_path) if self.weights_path else None,
             backend_dir / "models" / "detector" / "scratch_run" / "weights" / "best.pt",
             project_root / "backend" / "models" / "detector" / "scratch_run" / "weights" / "best.pt",
             backend_dir / "models" / "detector" / "best.pt",
@@ -71,6 +82,7 @@ class FoodDetectorEngine:
         Runs multi-object food detection.
         Rejects low-confidence or non-food objects.
         """
+        self._ensure_loaded()
         h, w = image_bgr.shape[:2]
 
         if self.model is None:

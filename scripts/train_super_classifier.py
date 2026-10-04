@@ -232,15 +232,14 @@ def train_super_classifier():
     X_train_scaled = scaler.fit_transform(X_full_train)
     X_test_scaled = scaler.transform(X_test)
 
-    et = ExtraTreesClassifier(n_estimators=60, max_depth=14, random_state=42)
-    rf = RandomForestClassifier(n_estimators=60, max_depth=14, random_state=42)
-    hgb = HistGradientBoostingClassifier(max_iter=100, random_state=42)
-    mlp = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=350, random_state=42)
-    svc = SVC(probability=True, kernel='rbf', C=3.0, random_state=42)
+    hgb = HistGradientBoostingClassifier(max_iter=100, max_leaf_nodes=31, random_state=42)
+    rf = RandomForestClassifier(n_estimators=30, max_depth=10, random_state=42, n_jobs=1)
+    mlp = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=300, random_state=42)
 
     ensemble = VotingClassifier(
-        estimators=[('et', et), ('rf', rf), ('hgb', hgb), ('mlp', mlp), ('svc', svc)],
-        voting='soft'
+        estimators=[('hgb', hgb), ('rf', rf), ('mlp', mlp)],
+        voting='soft',
+        weights=[2, 1, 1]
     )
     ensemble.fit(X_train_scaled, y_full_train)
 
@@ -261,7 +260,7 @@ def train_super_classifier():
         "scaler": scaler,
         "classes": FOOD_CLASSES,
         "class_map": CLASS_MAP
-    }, save_path, compress=4)
+    }, save_path, compress=6)
 
     print(f"Saved calibrated super ensemble classifier to: {save_path}")
 
