@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Upload, Camera, Sparkles, AlertCircle, RefreshCw, Layers, CheckCircle2, ChevronRight, VideoOff } from 'lucide-react';
 import { analyzeFoodImage, analyzeWebcamFrame } from '../../../services/backendClient';
+import { saveLatestAnalysis } from '../../../services/storage';
 
 type ActiveTab = 'upload' | 'webcam';
 type ScanStatus = 'idle' | 'processing' | 'error';
@@ -128,7 +129,7 @@ export default function ScannerPage() {
 
     try {
       const response = await analyzeFoodImage(selectedFile);
-      sessionStorage.setItem('nutrivision_latest_analysis', JSON.stringify(response));
+      await saveLatestAnalysis(response);
       router.push('/results');
     } catch (err: any) {
       setStatus('error');
@@ -154,7 +155,7 @@ export default function ScannerPage() {
 
     try {
       const response = await analyzeWebcamFrame(base64Image);
-      sessionStorage.setItem('nutrivision_latest_analysis', JSON.stringify(response));
+      await saveLatestAnalysis(response);
       router.push('/results');
     } catch (err: any) {
       setStatus('error');
