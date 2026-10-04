@@ -232,11 +232,11 @@ def train_super_classifier():
     X_train_scaled = scaler.fit_transform(X_full_train)
     X_test_scaled = scaler.transform(X_test)
 
-    et = ExtraTreesClassifier(n_estimators=400, max_depth=22, random_state=42)
-    rf = RandomForestClassifier(n_estimators=400, max_depth=22, random_state=42)
-    hgb = HistGradientBoostingClassifier(max_iter=300, random_state=42)
-    mlp = MLPClassifier(hidden_layer_sizes=(128, 64), max_iter=450, random_state=42)
-    svc = SVC(probability=True, kernel='rbf', C=4.0, random_state=42)
+    et = ExtraTreesClassifier(n_estimators=60, max_depth=14, random_state=42)
+    rf = RandomForestClassifier(n_estimators=60, max_depth=14, random_state=42)
+    hgb = HistGradientBoostingClassifier(max_iter=100, random_state=42)
+    mlp = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=350, random_state=42)
+    svc = SVC(probability=True, kernel='rbf', C=3.0, random_state=42)
 
     ensemble = VotingClassifier(
         estimators=[('et', et), ('rf', rf), ('hgb', hgb), ('mlp', mlp), ('svc', svc)],
