@@ -39,7 +39,9 @@ class DatabaseManager:
             print(f"[Database] MongoDB not reachable at {self.mongo_uri}. Utilizing local persistent storage.")
 
     def save_analysis(self, record: Dict[str, Any]) -> str:
+        timestamp_id = f"scan_{int(datetime.utcnow().timestamp())}"
         record_with_meta = {
+            "scan_id": timestamp_id,
             **record,
             "created_at": datetime.utcnow().isoformat()
         }
@@ -47,7 +49,9 @@ class DatabaseManager:
         if self.is_connected and self.db is not None:
             try:
                 res = self.db.analysis_history.insert_one(record_with_meta)
-                return str(res.inserted_id)
+                mongo_id = str(res.inserted_id)
+                self.db.analysis_history.update_one({"_id": res.inserted_id}, {"$set": {"scan_id": mongo_id}})
+                return mongo_id
             except Exception as e:
                 print(f"[Database] MongoDB insert error: {e}")
 
@@ -65,7 +69,7 @@ class DatabaseManager:
         with open(hist_file, "w") as f:
             json.dump(history, f, indent=2)
 
-        return f"local_{len(history)}"
+        return timestamp_id
 
     def get_recent_scans(self, limit: int = 10) -> List[Dict[str, Any]]:
         if self.is_connected and self.db is not None:
