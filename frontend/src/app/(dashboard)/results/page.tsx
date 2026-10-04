@@ -8,6 +8,7 @@ import ComputerVisionVisualizer from '../../../components/ComputerVisionVisualiz
 import FoodCard from '../../../components/FoodCard';
 import UndefinedObjectCard from '../../../components/UndefinedObjectCard';
 import { AnalysisResponse } from '../../../services/backendClient';
+import { getLatestAnalysis } from '../../../services/storage';
 
 export default function ResultsPage() {
   const router = useRouter();
@@ -15,18 +16,14 @@ export default function ResultsPage() {
   const [selectedDetectionId, setSelectedDetectionId] = useState<number | null>(null);
 
   useEffect(() => {
-    const raw = sessionStorage.getItem('nutrivision_latest_analysis');
-    if (raw) {
-      try {
-        const parsed = JSON.parse(raw);
-        setAnalysisData(parsed);
-        if (parsed.detections && parsed.detections.length > 0) {
-          setSelectedDetectionId(parsed.detections[0].id);
+    getLatestAnalysis().then((data) => {
+      if (data) {
+        setAnalysisData(data);
+        if (data.detections && data.detections.length > 0) {
+          setSelectedDetectionId(data.detections[0].id);
         }
-      } catch (e) {
-        console.error('Failed to parse analysis data from session storage', e);
       }
-    }
+    });
   }, []);
 
   if (!analysisData) {
