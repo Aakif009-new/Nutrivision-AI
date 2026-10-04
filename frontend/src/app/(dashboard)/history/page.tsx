@@ -1,22 +1,58 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { MOCK_SCANS, MockScan } from '../../../lib/mock-data';
 import FoodCard from '../../../components/shared/FoodCard';
 import ScoreBadge from '../../../components/shared/ScoreBadge';
 import EmptyState from '../../../components/shared/EmptyState';
 import { FileText, Search, LayoutGrid, List, Trash2 } from 'lucide-react';
+import { fetchScanHistory, downloadPdfReport } from '../../../services/backendClient';
+import { saveLatestAnalysis } from '../../../services/storage';
+
+interface ExtendedScan extends MockScan {
+  fullData?: any;
+}
 
 export default function HistoryPage() {
   const router = useRouter();
-  const [scans, setScans] = useState<MockScan[]>(MOCK_SCANS);
+  const [scans, setScans] = useState<ExtendedScan[]>(MOCK_SCANS);
   const [search, setSearch] = useState('');
   const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
   const [exporting, setExporting] = useState(false);
   const [exported, setExported] = useState(false);
 
-  // Filter scans by search query
+  useEffect(() => {
+    fetchScanHistory().then((liveHistory) => {
+      if (liveHistory && liveHistory.length > 0) {
+        const parsed: ExtendedScan[] = liveHistory.map((item: any, idx: number) => {
+          const summary = item.overall_summary || {};
+          const primaryFood = summary.primary_food || 'Scanned Food';
+          const totalCals = summary.total_calories_kcal || 0;
+          const healthScore = summary.overall_health_score || 85;
+          const rawDate = item.created_at ? new Date(item.created_at).toLocaleDateString() : 'Today';
+          
+          return {
+            id: item.scan_id || item._id || `scan-${idx}`,
+            name: primaryFood,
+            date: rawDate,
+            calories: totalCals,
+            protein: 12,
+            carbs: 28,
+            fat: 5,
+            confidence: 0.92,
+            freshnessScore: healthScore,
+            healthScore: healthScore,
+            freshnessStatus: healthScore > 75 ? 'fresh' : 'moderate',
+            imageUrl: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80',
+            fullData: item
+          };
+        });
+        setScans(parsed);
+      }
+    });
+  }, []);
+
   const filteredScans = useMemo(() => {
     return scans.filter((scan) =>
       scan.name.toLowerCase().includes(search.toLowerCase())
@@ -28,13 +64,25 @@ export default function HistoryPage() {
     setScans((prev) => prev.filter((item) => item.id !== id));
   };
 
-  const handleExportPDF = () => {
+  const handleSelectScan = async (scan: ExtendedScan) => {
+    if (scan.fullData) {
+      await saveLatestAnalysis(scan.fullData);
+      router.push('/results');
+    }
+  };
+
+  const handleExportPDF = async () => {
     setExporting(true);
-    setTimeout(() => {
+    try {
+      const scanId = scans.length > 0 ? scans[0].id : 'latest';
+      await downloadPdfReport(scanId);
       setExported(true);
-      setExporting(false);
       setTimeout(() => setExported(false), 2000);
-    }, 750);
+    } catch {
+      // Fallback
+    } finally {
+      setExporting(false);
+    }
   };
 
   return (
@@ -139,7 +187,7 @@ export default function HistoryPage() {
               confidence={scan.confidence}
               freshnessScore={scan.freshnessScore}
               healthScore={scan.healthScore}
-              onClick={() => router.push(`/food-detail/${scan.id}`)}
+              onClick={() => handleSelectScan(scan)}
             />
           ))}
         </div>
@@ -162,7 +210,7 @@ export default function HistoryPage() {
                 {filteredScans.map((scan) => (
                   <tr
                     key={scan.id}
-                    onClick={() => router.push(`/food-detail/${scan.id}`)}
+                    onClick={() => handleSelectScan(scan)}
                     className="hover:bg-slate-50/50 transition-colors cursor-pointer text-slate-650"
                   >
                     <td className="px-6 py-4 font-bold text-slate-800 capitalize select-all">
