@@ -96,41 +96,64 @@ export async function analyzeFoodImage(imageFile: File): Promise<AnalysisRespons
   const formData = new FormData();
   formData.append('file', imageFile);
 
-  const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze`, {
-    method: 'POST',
-    body: formData,
-  });
+  const endpoint = `${BACKEND_API_URL}/api/v1/analyze`;
+  console.log('[NutriVision Backend] Requesting endpoint:', endpoint);
 
-  if (!res.ok) {
-    const errorData = await res.json().catch(() => ({ detail: 'Analysis failed' }));
-    throw new Error(errorData.detail || 'Failed to analyze food image');
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!res.ok) {
+      const errorData = await res.json().catch(() => ({ detail: `Server error ${res.status}` }));
+      throw new Error(errorData.detail || `Server returned ${res.status}`);
+    }
+
+    return await res.json();
+  } catch (err: any) {
+    if (err.name === 'TypeError' && err.message.includes('fetch')) {
+      throw new Error(`Cannot reach backend at ${BACKEND_API_URL}. If on Render Free Tier, it may be waking up from sleep mode (takes ~30s). Please retry.`);
+    }
+    throw err;
   }
-
-  return res.json();
 }
 
 export async function analyzeWebcamFrame(base64Image: string): Promise<AnalysisResponse> {
-  const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze/frame`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      image_base64: base64Image,
-    }),
-  });
+  const endpoint = `${BACKEND_API_URL}/api/v1/analyze/frame`;
 
-  if (!res.ok) {
-    const errorData = await res.json().catch(() => ({ detail: 'Frame analysis failed' }));
-    throw new Error(errorData.detail || 'Failed to analyze webcam frame');
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        image_base64: base64Image,
+      }),
+    });
+
+    if (!res.ok) {
+      const errorData = await res.json().catch(() => ({ detail: `Server error ${res.status}` }));
+      throw new Error(errorData.detail || 'Failed to analyze webcam frame');
+    }
+
+    return await res.json();
+  } catch (err: any) {
+    if (err.name === 'TypeError' && err.message.includes('fetch')) {
+      throw new Error(`Cannot reach backend at ${BACKEND_API_URL}. Server may be waking up from sleep mode. Please retry.`);
+    }
+    throw err;
   }
-
-  return res.json();
 }
 
 export async function fetchScanHistory(): Promise<any[]> {
-  const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze/history`);
-  if (!res.ok) return [];
-  const data = await res.json();
-  return data.history || [];
+  try {
+    const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze/history`);
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data.history || [];
+  } catch {
+    return [];
+  }
 }
