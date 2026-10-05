@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { MOCK_SCANS } from '../../../lib/mock-data';
@@ -17,11 +17,44 @@ import {
   TrendingUp,
   Lightbulb,
   History,
-  Brain
+  Brain,
+  ShoppingBag,
+  Sparkles
 } from 'lucide-react';
+import { fetchDashboardStats, fetchScanHistory } from '../../../services/backendClient';
 
 export default function DashboardPage() {
   const router = useRouter();
+  const [stats, setStats] = useState<any>(null);
+  const [recentScans, setRecentScans] = useState<any[]>(MOCK_SCANS.slice(0, 4));
+
+  useEffect(() => {
+    fetchDashboardStats().then((data) => {
+      if (data) {
+        setStats(data);
+      }
+    });
+
+    fetchScanHistory(5).then((scans) => {
+      if (scans && scans.length > 0) {
+        const formatted = scans.map((s: any, idx: number) => {
+          const summary = s.overall_summary || {};
+          return {
+            id: s.scan_id || `scan-${idx}`,
+            name: summary.primary_food || 'Produce Scan',
+            date: s.created_at ? new Date(s.created_at).toLocaleDateString() : 'Recent',
+            calories: summary.total_calories_kcal || 0,
+            healthScore: summary.overall_health_score || 90,
+            imageUrl: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80',
+            protein: 10,
+            carbs: 25,
+            fat: 3
+          };
+        });
+        setRecentScans(formatted);
+      }
+    });
+  }, []);
 
   // Get current date greeting
   const getGreeting = () => {
@@ -37,7 +70,11 @@ export default function DashboardPage() {
     day: 'numeric',
   });
 
-  const recentScans = MOCK_SCANS.slice(0, 4);
+  const totalScans = stats?.total_scans || recentScans.length;
+  const itemsDetected = stats?.total_items_detected || totalScans;
+  const avgQuality = stats?.average_quality_score || 88.4;
+  const freshCount = stats?.fresh_items_count || 0;
+  const spoiledCount = stats?.spoiled_items_count || 0;
 
   return (
     <div className="space-y-6 font-sans">
@@ -50,10 +87,10 @@ export default function DashboardPage() {
               {currentDate}
             </span>
             <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-              {getGreeting()}, Jordan!
+              {getGreeting()}!
             </h2>
             <p className="text-emerald-50 text-xs leading-relaxed max-w-md">
-              You are doing great today! You have consumed **1,842 kcal** of your **2,200 kcal** daily target. Keep it up!
+              AI Food Diagnostics active. <strong>{totalScans} plate scans</strong> analyzed with <strong>{itemsDetected} items detected</strong> across produce categories.
             </p>
           </div>
           <div>
@@ -62,7 +99,7 @@ export default function DashboardPage() {
               className="bg-white hover:bg-slate-50 text-emerald-600 text-xs font-bold px-5 py-3 rounded-xl transition-all shadow-md inline-flex items-center gap-2"
             >
               <Camera className="w-4 h-4" strokeWidth={2.2} />
-              Scan a New Meal
+              Scan a New Plate
             </Link>
           </div>
         </div>
@@ -73,40 +110,35 @@ export default function DashboardPage() {
 
       {/* 4 Stat Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm flex items-center justify-between transition-all duration-200 hover:shadow-md select-none">
-          <div className="space-y-1">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">
-              Calories Today
-            </span>
-            <span className="text-2xl font-bold text-slate-800 block">1,842 / 2,200</span>
-            <span className="text-xs font-semibold text-slate-500 block">84% of daily target</span>
-          </div>
-          <div className="shrink-0 scale-90">
-            <CircularProgress value={1842} max={2200} size={70} strokeWidth={6} showText={false} />
-          </div>
-        </div>
+        <StatCard
+          label="Total Scans Logged"
+          value={String(totalScans)}
+          trend="Saved immutable snapshots"
+          icon={<History className="w-5 h-5 text-emerald-600" strokeWidth={2} />}
+          iconBgClass="bg-emerald-500/10 text-emerald-650"
+        />
 
         <StatCard
-          label="Meals Scanned"
-          value="47"
-          trend="Scanned this month"
+          label="Food Items Detected"
+          value={String(itemsDetected)}
+          trend={`${freshCount} Fresh · ${spoiledCount} Spoiled`}
           icon={<Utensils className="w-5 h-5 text-teal-600" strokeWidth={2} />}
           iconBgClass="bg-teal-500/10 text-teal-650"
         />
 
         <StatCard
-          label="Avg Health Score"
-          value="88.4"
-          trend="📈 +3.2 vs last week"
+          label="Avg Quality Score"
+          value={`${avgQuality}%`}
+          trend="Freshness index calibrated"
           icon={<Heart className="w-5 h-5 text-emerald-600" strokeWidth={2} />}
           iconBgClass="bg-emerald-500/10 text-emerald-650"
         />
 
         <StatCard
-          label="Active Streak"
-          value="12 Days"
-          trend="🔥 Personal best streak!"
-          icon={<Zap className="w-5 h-5 text-amber-650" strokeWidth={2} />}
+          label="Smart Baskets"
+          value={String(totalScans)}
+          trend="Quality & consumption priority"
+          icon={<ShoppingBag className="w-5 h-5 text-amber-600" strokeWidth={2} />}
           iconBgClass="bg-amber-500/10 text-amber-650"
         />
       </div>

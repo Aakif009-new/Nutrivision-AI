@@ -132,16 +132,85 @@ def extract_candidate_regions(processed_bgr: np.ndarray, foreground_mask: np.nda
         
     return boxes
 
+def compute_smart_food_basket(valid_items: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Academic Smart Food Basket:
+    Aggregates multi-object scan into an actionable nutritional and quality summary.
+    """
+    if not valid_items:
+        return {
+            "total_items_count": 0,
+            "fresh_count": 0,
+            "semi_fresh_count": 0,
+            "spoiled_count": 0,
+            "total_estimated_weight_g": 0.0,
+            "overall_basket_quality_score": 0,
+            "recommended_consumption_priority": [],
+            "action_recommendations": ["Place supported fruits or vegetables in front of the camera to generate a basket summary."],
+            "total_estimated_calories_kcal": 0.0,
+            "disclaimer": "All measurements, shelf life, weight, and nutritional recommendations are computational estimates."
+        }
+
+    fresh_count = sum(1 for d in valid_items if d.get("freshness") == "Fresh")
+    semi_fresh_count = sum(1 for d in valid_items if d.get("freshness") == "Semi-Fresh")
+    spoiled_count = sum(1 for d in valid_items if d.get("freshness") == "Spoiled")
+    
+    total_weight = sum(d.get("weight", {}).get("estimated_weight_grams", 0.0) for d in valid_items)
+    total_cals = sum(d.get("nutrition", {}).get("calories", 0.0) for d in valid_items)
+
+    quality_score = int(sum(
+        100 if d.get("freshness") == "Fresh" else (50 if d.get("freshness") == "Semi-Fresh" else 0)
+        for d in valid_items
+    ) / len(valid_items))
+
+    priority_list = []
+    for d in valid_items:
+        food_name = d.get("food", "Item")
+        freshness = d.get("freshness", "Fresh")
+        shelf = d.get("shelf_life", {})
+        days_str = str(shelf.get("estimated_days", "3-5"))
+        try:
+            days_val = float(days_str.split("-")[0].replace("days", "").strip())
+        except Exception:
+            days_val = 0.0 if freshness == "Spoiled" else (2.0 if freshness == "Semi-Fresh" else 7.0)
+        
+        priority_list.append({
+            "food": food_name,
+            "freshness": freshness,
+            "estimated_shelf_life": shelf.get("text", f"{days_str} days"),
+            "sort_days": days_val
+        })
+
+    priority_list.sort(key=lambda x: x["sort_days"])
+
+    actions = []
+    if spoiled_count > 0:
+        spoiled_names = [d["food"] for d in valid_items if d.get("freshness") == "Spoiled"]
+        actions.append(f"Remove or isolate spoiled {', '.join(set(spoiled_names))} to prevent spoilage spread.")
+    
+    non_spoiled = [p for p in priority_list if p["freshness"] != "Spoiled"]
+    if non_spoiled:
+        actions.append(f"Recommended priority: Consume {non_spoiled[0]['food']} first ({non_spoiled[0]['estimated_shelf_life']}).")
+
+    if fresh_count == len(valid_items):
+        actions.append("All scanned produce is fresh and in prime condition!")
+
+    return {
+        "total_items_count": len(valid_items),
+        "fresh_count": fresh_count,
+        "semi_fresh_count": semi_fresh_count,
+        "spoiled_count": spoiled_count,
+        "total_estimated_weight_g": round(total_weight, 1),
+        "overall_basket_quality_score": quality_score,
+        "recommended_consumption_priority": priority_list,
+        "action_recommendations": actions,
+        "total_estimated_calories_kcal": round(total_cals, 1),
+        "disclaimer": "All measurements, shelf life, weight, and nutritional recommendations are computational estimates."
+    }
+
 def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
     """
-    Executes the comprehensive Academic Computer Vision & Image Processing Pipeline:
-    1. Human / Non-Food Rejection Filter
-    2. Image Processing Core (OpenCV filters, conversions, contours, visual steps)
-    3. Multi-Stage Food Recognition (Proposals + NMS + Super Ensemble + Residual CNN)
-    4. Freshness Classification
-    5. Spoilage Localization
-    6. Physical Size & Weight Estimation
-    7. Nutrition & Shelf-life Analysis
+    Executes the comprehensive Academic Computer Vision & Image Processing Pipeline.
     """
     h_orig, w_orig = img_bgr.shape[:2]
     
@@ -158,11 +227,24 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
             "undefined_objects_count": 1,
             "total_calories_kcal": 0.0,
             "overall_health_score": 0,
-            "primary_food": "None"
+            "primary_food": "None",
+            "smart_food_basket": compute_smart_food_basket([])
         }
+        scan_id = db_manager.save_analysis({
+            "overall_summary": overall_summary,
+            "detections": [{
+                "id": 1,
+                "food": "Undefined",
+                "is_supported": False,
+                "confidence": 0.0,
+                "reason": "Non-food visual profile: Human face / skin detected in camera view. Please place a fruit or vegetable in front of the camera.",
+                "bbox": [0, 0, w_orig, h_orig]
+            }],
+            "image_dimensions": ip_result["dimensions"]
+        })
         return {
             "status": "success",
-            "scan_id": "human_rejected",
+            "scan_id": scan_id,
             "image_info": ip_result["dimensions"],
             "processing": {
                 "techniques_applied": ip_result["techniques_applied"],
@@ -221,7 +303,6 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
         det_conf = food_res.get("confidence", 0.0)
 
         if not is_supported or food_label == "Undefined" or det_conf < 0.25:
-            # Rejection rule
             cv2.rectangle(cv_overlay, (x1, y1), (x2, y2), (0, 165, 255), 2)
             cv2.putText(cv_overlay, f"Undefined ({det_conf:.0%})", (x1, max(20, y1 - 8)),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 165, 255), 2)
@@ -249,8 +330,8 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
         
         # 6. Size Estimation (cm)
         size_res = physical_size_estimator.estimate_size([x1, y1, x2, y2], processed_bgr)
-        width_cm = size_res.get("width_cm", 7.5)
-        height_cm = size_res.get("height_cm", 8.0)
+        width_cm = size_res.get("width_cm")
+        height_cm = size_res.get("height_cm")
         
         # 7. Weight Regression Model
         weight_res = weight_estimation_engine.estimate(food_label, width_cm, height_cm)
@@ -287,7 +368,6 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
             "shelf_life": shelf_life_info
         })
 
-    # If no detections passed, provide explicit rejected item
     if not analyzed_detections:
         analyzed_detections.append({
             "id": 1,
@@ -299,7 +379,8 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
         })
 
     valid_items = [d for d in analyzed_detections if d.get("is_supported", False)]
-    health_score = int((fresh_count / max(1, len(valid_items))) * 100) if valid_items else 0
+    smart_basket = compute_smart_food_basket(valid_items)
+    health_score = smart_basket["overall_basket_quality_score"]
     
     overall_summary = {
         "total_objects_detected": len(analyzed_detections),
@@ -307,7 +388,8 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
         "undefined_objects_count": len(analyzed_detections) - len(valid_items),
         "total_calories_kcal": round(total_calories, 1),
         "overall_health_score": health_score,
-        "primary_food": valid_items[0]["food"] if valid_items else "None"
+        "primary_food": valid_items[0]["food"] if valid_items else "None",
+        "smart_food_basket": smart_basket
     }
 
     if not valid_items:
@@ -359,7 +441,21 @@ async def analyze_webcam_frame(payload: FrameAnalysisRequest):
     return result
 
 @router.get("/history")
-async def get_scan_history(limit: int = 10):
+async def get_scan_history(limit: int = 20):
     """Retrieve recent scan history."""
     scans = db_manager.get_recent_scans(limit=limit)
     return {"status": "success", "history": scans}
+
+@router.get("/history/{scan_id}")
+async def get_scan_by_id(scan_id: str):
+    """Retrieve an immutable historical scan snapshot by scan_id without re-running model."""
+    scan = db_manager.get_scan_by_id(scan_id)
+    if not scan:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Scan record {scan_id} not found.")
+    return {"status": "success", "scan": scan}
+
+@router.get("/dashboard/stats")
+async def get_dashboard_stats():
+    """Retrieve aggregated dynamic statistics from actual scan history."""
+    stats = db_manager.get_dashboard_statistics()
+    return {"status": "success", "stats": stats}

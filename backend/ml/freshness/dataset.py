@@ -29,11 +29,10 @@ class FreshnessDataset(Dataset):
             if not folder.is_dir():
                 continue
             
-            # folder name is e.g. apple_fresh or tomato_rotten
             fname = folder.name.lower()
-            if "rotten" in fname:
+            if "rotten" in fname or "spoiled" in fname or "bad" in fname:
                 label = 1
-            elif "fresh" in fname:
+            elif "fresh" in fname or "good" in fname:
                 label = 0
             else:
                 continue

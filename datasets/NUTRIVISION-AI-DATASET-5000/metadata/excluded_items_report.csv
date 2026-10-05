@@ -1,0 +1,5 @@
+Category_or_Reason,Source_Dataset,Count,Notes
+Exact SHA-256 Duplicates in Archives,"archive, archive (2)",7331,Identical duplicate files identified and excluded during pool curation
+Corrupted/Unreadable Images,All archives,0,Images that could not be opened/verified with PIL
+Excess Valid Classification Images,archive (2),20212,"Surplus valid images beyond balanced 5,000 sampling quota"
+Semi-Fresh Class Unlabeled,N/A,0,No intermediate Semi-Fresh ground truth annotations present in source datasets

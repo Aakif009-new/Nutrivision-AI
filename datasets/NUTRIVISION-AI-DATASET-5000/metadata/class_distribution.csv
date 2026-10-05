@@ -1,0 +1,36 @@
+Task,Category_or_Class,Count,Percentage
+Task Level,Food Detection & Quality,1968,39.36%
+Task Level,Freshness Classification,3032,60.64%
+Freshness Class,Fresh,1518,50.07%
+Freshness Class,Spoiled,1514,49.93%
+Freshness Food Type,Apple,314,10.36%
+Freshness Food Type,Banana,314,10.36%
+Freshness Food Type,Bittergourd,315,10.39%
+Freshness Food Type,Capsicum,315,10.39%
+Freshness Food Type,Cucumber,315,10.39%
+Freshness Food Type,Okra,315,10.39%
+Freshness Food Type,Orange,316,10.42%
+Freshness Food Type,Potato,316,10.42%
+Freshness Food Type,Strawberry,196,6.46%
+Freshness Food Type,Tomato,316,10.42%
+Freshness Food x Class,Apple (Fresh),151,4.98%
+Freshness Food x Class,Apple (Spoiled),163,5.38%
+Freshness Food x Class,Banana (Fresh),151,4.98%
+Freshness Food x Class,Banana (Spoiled),163,5.38%
+Freshness Food x Class,Bittergourd (Fresh),152,5.01%
+Freshness Food x Class,Bittergourd (Spoiled),163,5.38%
+Freshness Food x Class,Capsicum (Fresh),152,5.01%
+Freshness Food x Class,Capsicum (Spoiled),163,5.38%
+Freshness Food x Class,Cucumber (Fresh),152,5.01%
+Freshness Food x Class,Cucumber (Spoiled),163,5.38%
+Freshness Food x Class,Okra (Fresh),152,5.01%
+Freshness Food x Class,Okra (Spoiled),163,5.38%
+Freshness Food x Class,Orange (Fresh),152,5.01%
+Freshness Food x Class,Orange (Spoiled),164,5.41%
+Freshness Food x Class,Potato (Fresh),152,5.01%
+Freshness Food x Class,Potato (Spoiled),164,5.41%
+Freshness Food x Class,Strawberry (Fresh),152,5.01%
+Freshness Food x Class,Strawberry (Spoiled),44,1.45%
+Freshness Food x Class,Tomato (Fresh),152,5.01%
+Freshness Food x Class,Tomato (Spoiled),164,5.41%
+Detection Task,YOLO Annotated Images (14 classes),1968,39.36%

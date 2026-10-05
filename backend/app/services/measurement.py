@@ -79,24 +79,17 @@ class PhysicalSizeEstimator:
                 "width_cm": width_cm,
                 "height_cm": height_cm,
                 "pixels_per_cm": round(float(pixels_per_cm), 2),
-                "text": f"{width_cm} × {height_cm} cm"
+                "text": f"{width_cm} × {height_cm} cm",
+                "note": "Calibrated physical dimension measured via ArUco reference marker."
             }
         else:
-            # Standard academic fallback with transparent notice
-            # Standard food camera assumptions: ~7-9cm if normalized bounding box is typical
-            img_h, img_w = image_bgr.shape[:2]
-            ratio_w = box_w_px / float(img_w)
-            ratio_h = box_h_px / float(img_h)
-            approx_w = round(ratio_w * 15.0, 1) # Approximation for 15cm field-of-view
-            approx_h = round(ratio_h * 15.0, 1)
-            
             return {
                 "reference_detected": False,
-                "width_cm": approx_w,
-                "height_cm": approx_h,
+                "width_cm": None,
+                "height_cm": None,
                 "pixels_per_cm": None,
-                "text": f"~{approx_w} × {approx_h} cm (approx)",
-                "note": "Size estimation calibrated via field-of-view approximation — ArUco reference marker not in frame."
+                "text": "Size estimation unavailable",
+                "note": "No ArUco calibration marker detected in camera view. Real-world metric size estimation requires a physical reference marker."
             }
 
 physical_size_estimator = PhysicalSizeEstimator()

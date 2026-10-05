@@ -88,6 +88,23 @@ export interface AnalysisResponse {
     total_calories_kcal: number;
     overall_health_score: number;
     primary_food: string;
+    smart_food_basket?: {
+      total_items_count: number;
+      fresh_count: number;
+      semi_fresh_count: number;
+      spoiled_count: number;
+      total_estimated_weight_g: number;
+      overall_basket_quality_score: number;
+      recommended_consumption_priority: Array<{
+        food: string;
+        freshness: string;
+        estimated_shelf_life: string;
+        sort_days: number;
+      }>;
+      action_recommendations: string[];
+      total_estimated_calories_kcal: number;
+      disclaimer?: string;
+    };
   };
   warnings: string[];
 }
@@ -147,14 +164,36 @@ export async function analyzeWebcamFrame(base64Image: string): Promise<AnalysisR
   }
 }
 
-export async function fetchScanHistory(): Promise<any[]> {
+export async function fetchScanHistory(limit: number = 20): Promise<any[]> {
   try {
-    const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze/history`);
+    const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze/history?limit=${limit}`);
     if (!res.ok) return [];
     const data = await res.json();
     return data.history || [];
   } catch {
     return [];
+  }
+}
+
+export async function fetchScanById(scanId: string): Promise<AnalysisResponse | null> {
+  try {
+    const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze/history/${scanId}`);
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.scan || null;
+  } catch {
+    return null;
+  }
+}
+
+export async function fetchDashboardStats(): Promise<any> {
+  try {
+    const res = await fetch(`${BACKEND_API_URL}/api/v1/analyze/dashboard/stats`);
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.stats || null;
+  } catch {
+    return null;
   }
 }
 
