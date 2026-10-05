@@ -40,6 +40,8 @@ export default function HistoryPage() {
             protein: 12,
             carbs: 28,
             fat: 5,
+            fiber: 3,
+            shelfLife: summary.min_shelf_life_days || 5,
             confidence: 0.92,
             freshnessScore: healthScore,
             healthScore: healthScore,
