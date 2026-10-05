@@ -51,7 +51,7 @@ def evaluate_freshness(
             y_pred.extend(preds.cpu().numpy())
             y_probs.extend(probs.cpu().numpy())
 
-    class_names = ["Fresh", "Rotten"]
+    class_names = ["Fresh", "Spoiled"]
     report = classification_report(y_true, y_pred, target_names=class_names, digits=4)
     cm = confusion_matrix(y_true, y_pred)
 
@@ -82,7 +82,6 @@ def evaluate_freshness(
            ylabel='True Label',
            xlabel='Predicted Label')
 
-    # Annotate cells
     thresh = cm.max() / 2.
     for i in range(cm.shape[0]):
         for j in range(cm.shape[1]):
@@ -98,7 +97,7 @@ def evaluate_freshness(
 if __name__ == "__main__":
     project_dir = Path(__file__).resolve().parent.parent.parent.parent
     m_path = str(project_dir / "backend" / "models" / "freshness" / "best_model.pth")
-    d_path = str(project_dir / "datasets" / "classification")
+    d_path = str(project_dir / "datasets" / "NUTRIVISION-AI-DATASET-5000" / "freshness")
     o_path = str(project_dir / "backend" / "models" / "freshness")
 
     evaluate_freshness(model_path=m_path, dataset_dir=d_path, output_dir=o_path)

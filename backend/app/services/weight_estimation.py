@@ -42,16 +42,23 @@ class WeightEstimationEngine:
             self.model = data["model"]
             self.food_map = data.get("food_map", self.food_map)
 
-    def estimate(self, food_name: str, width_cm: float, height_cm: float) -> Dict[str, Any]:
+    def estimate(self, food_name: str, width_cm: Optional[float] = None, height_cm: Optional[float] = None) -> Dict[str, Any]:
         """
-        Calculates estimated weight in grams.
+        Calculates estimated weight in grams from dimensions or empirical morphological defaults.
         """
         clean_name = food_name.lower().replace(" ", "_")
         food_code = self.food_map.get(clean_name, 0)
 
-        # Extract geometric features
-        w = max(0.5, float(width_cm))
-        h = max(0.5, float(height_cm))
+        # Standard food typical dimensions (cm) if physical marker wasn't present
+        typical_dims = {
+            "apple": (7.5, 8.0), "banana": (3.8, 19.0), "orange": (7.8, 7.8),
+            "strawberry": (3.2, 3.8), "bitter_gourd": (4.5, 16.0), "capsicum": (7.2, 8.5),
+            "cucumber": (4.0, 18.0), "okra": (1.8, 9.0), "potato": (6.5, 9.0), "tomato": (6.8, 6.5)
+        }
+        def_w, def_h = typical_dims.get(clean_name, (7.0, 7.0))
+        
+        w = max(0.5, float(width_cm)) if width_cm is not None else def_w
+        h = max(0.5, float(height_cm)) if height_cm is not None else def_h
         area = np.pi * (w / 2.0) * (h / 2.0)
         a, b = max(w, h) / 2.0, min(w, h) / 2.0
         perimeter = np.pi * (3 * (a + b) - np.sqrt(max(1e-5, (3 * a + b) * (a + 3 * b))))
@@ -72,6 +79,8 @@ class WeightEstimationEngine:
             "estimated_weight_grams": est_weight,
             "unit": "g",
             "dimensions_cm": {"width": w, "height": h},
+            "is_calibrated": width_cm is not None,
+            "label": "Estimated Weight",
             "confidence_metric": "R² calibrated regression"
         }
 

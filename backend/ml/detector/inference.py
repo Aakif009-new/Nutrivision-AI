@@ -76,6 +76,8 @@ class FoodDetectorEngine:
 
     def load_model(self, weights_path: str):
         self.model = YOLO(weights_path)
+        if hasattr(self.model, 'names') and self.model.names:
+            self.classes = [self.model.names[i] for i in sorted(self.model.names.keys())]
 
     def detect(self, image_bgr: np.ndarray) -> List[Dict[str, Any]]:
         """

@@ -128,6 +128,18 @@ def train_freshness_model(
     print(f"History saved to: {hist_path}")
     print("=" * 60)
 
+    # --- TEST SET EVALUATION ---
+    print("\n[Step 3] Evaluating Best Model Checkpoint on Test Set...")
+    try:
+        from ml.freshness.evaluate import evaluate_freshness
+        evaluate_freshness(
+            model_path=str(out_path / "best_model.pth"),
+            dataset_dir=dataset_dir,
+            output_dir=output_dir
+        )
+    except Exception as e:
+        print(f"Evaluation note: {e}")
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train Custom Freshness CNN from Scratch")
     parser.add_argument("--epochs", type=int, default=15, help="Number of training epochs")
@@ -136,7 +148,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     project_dir = Path(__file__).resolve().parent.parent.parent.parent
-    dataset_dir = str(project_dir / "datasets" / "classification")
+    dataset_dir = str(project_dir / "datasets" / "NUTRIVISION-AI-DATASET-5000" / "freshness")
     output_dir = str(project_dir / "backend" / "models" / "freshness")
 
     train_freshness_model(

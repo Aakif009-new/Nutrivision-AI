@@ -157,37 +157,37 @@ def train_super_classifier():
     print("TRAINING MULTI-MODEL SUPER ENSEMBLE (ACADEMIC ACCURACY UPGRADE)")
     print("=" * 60)
 
-    dataset_dir = Path("datasets/classification")
+    dataset_dir = Path("datasets/NUTRIVISION-AI-DATASET-5000/freshness")
     X_train, y_train = [], []
     X_val, y_val = [], []
     X_test, y_test = [], []
 
     for split, (X_list, y_list) in [("train", (X_train, y_train)), ("val", (X_val, y_val)), ("test", (X_test, y_test))]:
         split_dir = dataset_dir / split
-        for cdir in split_dir.iterdir():
-            if not cdir.is_dir():
+        for img_p in split_dir.rglob("*.*"):
+            if img_p.suffix.lower() not in [".jpg", ".jpeg", ".png", ".webp"]:
                 continue
-            cname = cdir.name.lower()
+            
+            fname = img_p.stem.lower().replace("bittergourd", "bitter_gourd")
             matched_cls = None
             for f in FOOD_CLASSES:
-                if cname.startswith(f):
+                if f in fname:
                     matched_cls = f
                     break
+            
             if matched_cls is None:
                 continue
 
             cls_id = CLASS_MAP[matched_cls]
-            for img_p in cdir.glob("*.*"):
-                if img_p.suffix.lower() in [".jpg", ".jpeg", ".png", ".webp"]:
-                    img = cv2.imread(str(img_p))
-                    if img is not None:
-                        if split == "train":
-                            for aug_img in augment_image(img):
-                                X_list.append(extract_advanced_features(aug_img))
-                                y_list.append(cls_id)
-                        else:
-                            X_list.append(extract_advanced_features(img))
-                            y_list.append(cls_id)
+            img = cv2.imread(str(img_p))
+            if img is not None:
+                if split == "train":
+                    for aug_img in augment_image(img):
+                        X_list.append(extract_advanced_features(aug_img))
+                        y_list.append(cls_id)
+                else:
+                    X_list.append(extract_advanced_features(img))
+                    y_list.append(cls_id)
 
     X_train = np.array(X_train)
     y_train = np.array(y_train)

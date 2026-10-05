@@ -38,10 +38,30 @@ class DatabaseManager:
             self.db = None
             print(f"[Database] MongoDB not reachable at {self.mongo_uri}. Utilizing local persistent storage.")
 
+    def generate_scan_id(self) -> str:
+        date_str = datetime.utcnow().strftime("%Y%m%d")
+        # Count existing scans for today
+        count = 1
+        if self.is_connected and self.db is not None:
+            try:
+                count = self.db.analysis_history.count_documents({}) + 1
+            except Exception:
+                pass
+        else:
+            hist_file = self.fallback_dir / "analysis_history.json"
+            if hist_file.exists():
+                try:
+                    with open(hist_file, "r") as f:
+                        data = json.load(f)
+                        count = len(data) + 1
+                except Exception:
+                    pass
+        return f"NVA-{date_str}-{count:04d}"
+
     def save_analysis(self, record: Dict[str, Any]) -> str:
-        timestamp_id = f"scan_{int(datetime.utcnow().timestamp())}"
+        scan_id = record.get("scan_id") or self.generate_scan_id()
         record_with_meta = {
-            "scan_id": timestamp_id,
+            "scan_id": scan_id,
             **record,
             "created_at": datetime.utcnow().isoformat()
         }
@@ -49,9 +69,8 @@ class DatabaseManager:
         if self.is_connected and self.db is not None:
             try:
                 res = self.db.analysis_history.insert_one(record_with_meta)
-                mongo_id = str(res.inserted_id)
-                self.db.analysis_history.update_one({"_id": res.inserted_id}, {"$set": {"scan_id": mongo_id}})
-                return mongo_id
+                self.db.analysis_history.update_one({"_id": res.inserted_id}, {"$set": {"scan_id": scan_id}})
+                return scan_id
             except Exception as e:
                 print(f"[Database] MongoDB insert error: {e}")
 
@@ -69,9 +88,32 @@ class DatabaseManager:
         with open(hist_file, "w") as f:
             json.dump(history, f, indent=2)
 
-        return timestamp_id
+        return scan_id
 
-    def get_recent_scans(self, limit: int = 10) -> List[Dict[str, Any]]:
+    def get_scan_by_id(self, scan_id: str) -> Optional[Dict[str, Any]]:
+        """Retrieve an immutable snapshot by its unique scan_id."""
+        if self.is_connected and self.db is not None:
+            try:
+                doc = self.db.analysis_history.find_one({"scan_id": scan_id})
+                if doc:
+                    doc["_id"] = str(doc["_id"])
+                    return doc
+            except Exception:
+                pass
+
+        hist_file = self.fallback_dir / "analysis_history.json"
+        if hist_file.exists():
+            try:
+                with open(hist_file, "r") as f:
+                    history = json.load(f)
+                    for item in history:
+                        if item.get("scan_id") == scan_id:
+                            return item
+            except Exception:
+                pass
+        return None
+
+    def get_recent_scans(self, limit: int = 20) -> List[Dict[str, Any]]:
         if self.is_connected and self.db is not None:
             try:
                 cursor = self.db.analysis_history.find().sort("created_at", -1).limit(limit)
@@ -92,5 +134,87 @@ class DatabaseManager:
             except Exception:
                 return []
         return []
+
+    def get_dashboard_statistics(self) -> Dict[str, Any]:
+        """Calculates dynamic real statistics across all historical scans."""
+        scans = []
+        if self.is_connected and self.db is not None:
+            try:
+                cursor = self.db.analysis_history.find()
+                scans = list(cursor)
+            except Exception:
+                pass
+        
+        if not scans:
+            hist_file = self.fallback_dir / "analysis_history.json"
+            if hist_file.exists():
+                try:
+                    with open(hist_file, "r") as f:
+                        scans = json.load(f)
+                except Exception:
+                    scans = []
+
+        total_scans = len(scans)
+        total_items_detected = 0
+        fresh_count = 0
+        semi_fresh_count = 0
+        spoiled_count = 0
+        undefined_count = 0
+        health_scores = []
+        food_frequency: Dict[str, int] = {}
+
+        for s in scans:
+            summary = s.get("overall_summary", {})
+            total_items_detected += summary.get("total_objects_detected", 0)
+            score = summary.get("overall_health_score")
+            if score is not None:
+                health_scores.append(score)
+
+            basket = summary.get("smart_food_basket", {})
+            if basket:
+                fresh_count += basket.get("fresh_count", 0)
+                semi_fresh_count += basket.get("semi_fresh_count", 0)
+                spoiled_count += basket.get("spoiled_count", 0)
+            else:
+                # Fallback from detections
+                for d in s.get("detections", []):
+                    if not d.get("is_supported", False):
+                        undefined_count += 1
+                    else:
+                        f_stat = d.get("freshness", "Fresh")
+                        if f_stat == "Fresh":
+                            fresh_count += 1
+                        elif f_stat == "Semi-Fresh":
+                            semi_fresh_count += 1
+                        else:
+                            spoiled_count += 1
+
+            for d in s.get("detections", []):
+                if d.get("is_supported", False):
+                    food_name = d.get("food", "Unknown")
+                    food_frequency[food_name] = food_frequency.get(food_name, 0) + 1
+                else:
+                    undefined_count += 1
+
+        avg_score = round(sum(health_scores) / max(1, len(health_scores)), 1) if health_scores else 0.0
+
+        # Sort commonly detected foods
+        sorted_foods = sorted(
+            [{"name": k, "count": v} for k, v in food_frequency.items()],
+            key=lambda x: x["count"],
+            reverse=True
+        )
+
+        return {
+            "total_scans": total_scans,
+            "total_items_detected": total_items_detected,
+            "fresh_items_count": fresh_count,
+            "semi_fresh_items_count": semi_fresh_count,
+            "spoiled_items_count": spoiled_count,
+            "undefined_objects_count": undefined_count,
+            "average_quality_score": avg_score,
+            "commonly_detected_foods": sorted_foods[:6],
+            "recent_scans": self.get_recent_scans(limit=5)
+        }
 
 db_manager = DatabaseManager()

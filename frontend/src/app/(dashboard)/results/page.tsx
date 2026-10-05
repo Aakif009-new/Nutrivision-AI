@@ -7,6 +7,7 @@ import ImageProcessingVisualizer from '../../../components/ImageProcessingVisual
 import ComputerVisionVisualizer from '../../../components/ComputerVisionVisualizer';
 import FoodCard from '../../../components/FoodCard';
 import UndefinedObjectCard from '../../../components/UndefinedObjectCard';
+import SmartFoodBasketCard from '../../../components/SmartFoodBasketCard';
 import { AnalysisResponse, downloadPdfReport } from '../../../services/backendClient';
 import { getLatestAnalysis } from '../../../services/storage';
 
@@ -166,6 +167,11 @@ export default function ResultsPage() {
           <div className="text-[10px] text-slate-500 mt-1">Verified USDA database match</div>
         </div>
       </div>
+
+      {/* SECTION 0: SMART FOOD BASKET OVERVIEW */}
+      {overall_summary?.smart_food_basket && (
+        <SmartFoodBasketCard basket={overall_summary.smart_food_basket} />
+      )}
 
       {/* SECTION 1: DEDICATED IMAGE PROCESSING VISUALIZER */}
       <ImageProcessingVisualizer
