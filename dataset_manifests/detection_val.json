@@ -1,0 +1,2067 @@
+[
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0001_IMG_20190822_075955_jpg.rf.2027fce2181669bd4899893a1325c3ca.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0001_IMG_20190822_075955_jpg.rf.2027fce2181669bd4899893a1325c3ca.txt",
+    "filename": "det_val_0001_IMG_20190822_075955_jpg.rf.2027fce2181669bd4899893a1325c3ca.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0002_IMG_20190822_075955_jpg.rf.235125c0e2303dccd9522aec093111d5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0002_IMG_20190822_075955_jpg.rf.235125c0e2303dccd9522aec093111d5.txt",
+    "filename": "det_val_0002_IMG_20190822_075955_jpg.rf.235125c0e2303dccd9522aec093111d5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0003_IMG_20190822_075955_jpg.rf.7842667f98a1e93aa1cca1c8119bec81.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0003_IMG_20190822_075955_jpg.rf.7842667f98a1e93aa1cca1c8119bec81.txt",
+    "filename": "det_val_0003_IMG_20190822_075955_jpg.rf.7842667f98a1e93aa1cca1c8119bec81.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0004_IMG_20190822_075955_jpg.rf.9bed6ee23bab3be51ed41f10c37114b7.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0004_IMG_20190822_075955_jpg.rf.9bed6ee23bab3be51ed41f10c37114b7.txt",
+    "filename": "det_val_0004_IMG_20190822_075955_jpg.rf.9bed6ee23bab3be51ed41f10c37114b7.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0005_IMG_20190822_075955_jpg.rf.ae7fb3057fdb2f8d88a2029be15fa973.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0005_IMG_20190822_075955_jpg.rf.ae7fb3057fdb2f8d88a2029be15fa973.txt",
+    "filename": "det_val_0005_IMG_20190822_075955_jpg.rf.ae7fb3057fdb2f8d88a2029be15fa973.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0006_IMG_20190822_075956_jpg.rf.0a80bfd4669fac7482bab8f4ffa7dea0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0006_IMG_20190822_075956_jpg.rf.0a80bfd4669fac7482bab8f4ffa7dea0.txt",
+    "filename": "det_val_0006_IMG_20190822_075956_jpg.rf.0a80bfd4669fac7482bab8f4ffa7dea0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0007_IMG_20190822_075956_jpg.rf.2a2be24ed21655e0d1591c93ead64054.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0007_IMG_20190822_075956_jpg.rf.2a2be24ed21655e0d1591c93ead64054.txt",
+    "filename": "det_val_0007_IMG_20190822_075956_jpg.rf.2a2be24ed21655e0d1591c93ead64054.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0008_IMG_20190822_075956_jpg.rf.99798aa09982d70b06eae91b8cc88652.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0008_IMG_20190822_075956_jpg.rf.99798aa09982d70b06eae91b8cc88652.txt",
+    "filename": "det_val_0008_IMG_20190822_075956_jpg.rf.99798aa09982d70b06eae91b8cc88652.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0009_IMG_20190822_075956_jpg.rf.aaf612723a2210c5df06627de953938b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0009_IMG_20190822_075956_jpg.rf.aaf612723a2210c5df06627de953938b.txt",
+    "filename": "det_val_0009_IMG_20190822_075956_jpg.rf.aaf612723a2210c5df06627de953938b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0010_IMG_20190822_075956_jpg.rf.c2d699ebe90f60f63e9a3039141e1453.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0010_IMG_20190822_075956_jpg.rf.c2d699ebe90f60f63e9a3039141e1453.txt",
+    "filename": "det_val_0010_IMG_20190822_075956_jpg.rf.c2d699ebe90f60f63e9a3039141e1453.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0011_IMG20200728131914_jpg.rf.c0b9a99d5a93640d83716dbe3d4b3430.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0011_IMG20200728131914_jpg.rf.c0b9a99d5a93640d83716dbe3d4b3430.txt",
+    "filename": "det_val_0011_IMG20200728131914_jpg.rf.c0b9a99d5a93640d83716dbe3d4b3430.jpg",
+    "split": "val",
+    "bounding_boxes_count": 5
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0012_IMG20200730132752_jpg.rf.00918e1132405015e45ba8b395341792.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0012_IMG20200730132752_jpg.rf.00918e1132405015e45ba8b395341792.txt",
+    "filename": "det_val_0012_IMG20200730132752_jpg.rf.00918e1132405015e45ba8b395341792.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0013_IMG20200730132752_jpg.rf.2d70c41d73e6bf67963b167d8c66a1e5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0013_IMG20200730132752_jpg.rf.2d70c41d73e6bf67963b167d8c66a1e5.txt",
+    "filename": "det_val_0013_IMG20200730132752_jpg.rf.2d70c41d73e6bf67963b167d8c66a1e5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0014_IMG20200730132752_jpg.rf.2e475669e15022fe767f54565c222530.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0014_IMG20200730132752_jpg.rf.2e475669e15022fe767f54565c222530.txt",
+    "filename": "det_val_0014_IMG20200730132752_jpg.rf.2e475669e15022fe767f54565c222530.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0015_IMG20200730132752_jpg.rf.6d0410f025fc46b94ab2c278f98ea7d6.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0015_IMG20200730132752_jpg.rf.6d0410f025fc46b94ab2c278f98ea7d6.txt",
+    "filename": "det_val_0015_IMG20200730132752_jpg.rf.6d0410f025fc46b94ab2c278f98ea7d6.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0016_IMG20200730132752_jpg.rf.79f7fefe0a6105926c988cb5cdbfaefa.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0016_IMG20200730132752_jpg.rf.79f7fefe0a6105926c988cb5cdbfaefa.txt",
+    "filename": "det_val_0016_IMG20200730132752_jpg.rf.79f7fefe0a6105926c988cb5cdbfaefa.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0017_IMG_7694_JPG.rf.1548dfc759f2528e974553ccc89493b5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0017_IMG_7694_JPG.rf.1548dfc759f2528e974553ccc89493b5.txt",
+    "filename": "det_val_0017_IMG_7694_JPG.rf.1548dfc759f2528e974553ccc89493b5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0018_IMG_7694_JPG.rf.51499713687d506419e3acd13206b4fe.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0018_IMG_7694_JPG.rf.51499713687d506419e3acd13206b4fe.txt",
+    "filename": "det_val_0018_IMG_7694_JPG.rf.51499713687d506419e3acd13206b4fe.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0019_IMG_7694_JPG.rf.7e2177deb261a07f0182843367cd43e4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0019_IMG_7694_JPG.rf.7e2177deb261a07f0182843367cd43e4.txt",
+    "filename": "det_val_0019_IMG_7694_JPG.rf.7e2177deb261a07f0182843367cd43e4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0020_IMG_7694_JPG.rf.88e9ec5d783a55c9b5d96a7982d5e621.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0020_IMG_7694_JPG.rf.88e9ec5d783a55c9b5d96a7982d5e621.txt",
+    "filename": "det_val_0020_IMG_7694_JPG.rf.88e9ec5d783a55c9b5d96a7982d5e621.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0021_IMG_7694_JPG.rf.de4404a7139a8d500a083b754b79f896.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0021_IMG_7694_JPG.rf.de4404a7139a8d500a083b754b79f896.txt",
+    "filename": "det_val_0021_IMG_7694_JPG.rf.de4404a7139a8d500a083b754b79f896.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0022_IMG20200728131326_jpg.rf.38b3f2f8eeb00d7b0ab2584acdf15e44.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0022_IMG20200728131326_jpg.rf.38b3f2f8eeb00d7b0ab2584acdf15e44.txt",
+    "filename": "det_val_0022_IMG20200728131326_jpg.rf.38b3f2f8eeb00d7b0ab2584acdf15e44.jpg",
+    "split": "val",
+    "bounding_boxes_count": 5
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0023_IMG20200728131326_jpg.rf.56d6df7726940f45320a8faefb068109.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0023_IMG20200728131326_jpg.rf.56d6df7726940f45320a8faefb068109.txt",
+    "filename": "det_val_0023_IMG20200728131326_jpg.rf.56d6df7726940f45320a8faefb068109.jpg",
+    "split": "val",
+    "bounding_boxes_count": 5
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0024_IMG20200728131326_jpg.rf.5f5d1430e1c2399c0d22dc2874ee265c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0024_IMG20200728131326_jpg.rf.5f5d1430e1c2399c0d22dc2874ee265c.txt",
+    "filename": "det_val_0024_IMG20200728131326_jpg.rf.5f5d1430e1c2399c0d22dc2874ee265c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 5
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0025_IMG20200728131326_jpg.rf.77cac3ca88c8055f0fdbba076a6186bb.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0025_IMG20200728131326_jpg.rf.77cac3ca88c8055f0fdbba076a6186bb.txt",
+    "filename": "det_val_0025_IMG20200728131326_jpg.rf.77cac3ca88c8055f0fdbba076a6186bb.jpg",
+    "split": "val",
+    "bounding_boxes_count": 5
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0026_IMG20200728131326_jpg.rf.d8f4ea99ddc751fa3847cebb05010da4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0026_IMG20200728131326_jpg.rf.d8f4ea99ddc751fa3847cebb05010da4.txt",
+    "filename": "det_val_0026_IMG20200728131326_jpg.rf.d8f4ea99ddc751fa3847cebb05010da4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 5
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0027_IMG_8153_JPG.rf.7ac8861247d0d877f0e35eca622b6708.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0027_IMG_8153_JPG.rf.7ac8861247d0d877f0e35eca622b6708.txt",
+    "filename": "det_val_0027_IMG_8153_JPG.rf.7ac8861247d0d877f0e35eca622b6708.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0028_IMG_2370_JPG.rf.47170ad9362fc956d41521e5dce09e2f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0028_IMG_2370_JPG.rf.47170ad9362fc956d41521e5dce09e2f.txt",
+    "filename": "det_val_0028_IMG_2370_JPG.rf.47170ad9362fc956d41521e5dce09e2f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0029_IMG_2370_JPG.rf.792298dfaf8a9864227ed0ecde79ac1e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0029_IMG_2370_JPG.rf.792298dfaf8a9864227ed0ecde79ac1e.txt",
+    "filename": "det_val_0029_IMG_2370_JPG.rf.792298dfaf8a9864227ed0ecde79ac1e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0030_IMG_2370_JPG.rf.b9b7ff2a33aa3584cb6b514549e5f463.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0030_IMG_2370_JPG.rf.b9b7ff2a33aa3584cb6b514549e5f463.txt",
+    "filename": "det_val_0030_IMG_2370_JPG.rf.b9b7ff2a33aa3584cb6b514549e5f463.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0031_IMG_2370_JPG.rf.e58522468d650bb1ea756ba524cb3406.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0031_IMG_2370_JPG.rf.e58522468d650bb1ea756ba524cb3406.txt",
+    "filename": "det_val_0031_IMG_2370_JPG.rf.e58522468d650bb1ea756ba524cb3406.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0032_IMG_2370_JPG.rf.ef99176354ba1f56b3b704991be2325b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0032_IMG_2370_JPG.rf.ef99176354ba1f56b3b704991be2325b.txt",
+    "filename": "det_val_0032_IMG_2370_JPG.rf.ef99176354ba1f56b3b704991be2325b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0033_20190820_143555_22920_jpg.rf.2173ce84723d71c741100e32e7c8fcc2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0033_20190820_143555_22920_jpg.rf.2173ce84723d71c741100e32e7c8fcc2.txt",
+    "filename": "det_val_0033_20190820_143555_22920_jpg.rf.2173ce84723d71c741100e32e7c8fcc2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0034_20190820_143555_22920_jpg.rf.2a2ba2ed24ac8d0301616ed17d9cd89a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0034_20190820_143555_22920_jpg.rf.2a2ba2ed24ac8d0301616ed17d9cd89a.txt",
+    "filename": "det_val_0034_20190820_143555_22920_jpg.rf.2a2ba2ed24ac8d0301616ed17d9cd89a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0035_20190820_143555_22920_jpg.rf.971e4b753ae924df7a882497b7d2d55f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0035_20190820_143555_22920_jpg.rf.971e4b753ae924df7a882497b7d2d55f.txt",
+    "filename": "det_val_0035_20190820_143555_22920_jpg.rf.971e4b753ae924df7a882497b7d2d55f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0036_20190820_143555_22920_jpg.rf.a22a94c9eca55a8ccb043c1de2a56d5a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0036_20190820_143555_22920_jpg.rf.a22a94c9eca55a8ccb043c1de2a56d5a.txt",
+    "filename": "det_val_0036_20190820_143555_22920_jpg.rf.a22a94c9eca55a8ccb043c1de2a56d5a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0037_20190820_143555_22920_jpg.rf.ff8480d39c3468dc5a175a6775b82ac0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0037_20190820_143555_22920_jpg.rf.ff8480d39c3468dc5a175a6775b82ac0.txt",
+    "filename": "det_val_0037_20190820_143555_22920_jpg.rf.ff8480d39c3468dc5a175a6775b82ac0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0038_IMG20200728190132_jpg.rf.7b797e6978b7d154760537475be5bf9c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0038_IMG20200728190132_jpg.rf.7b797e6978b7d154760537475be5bf9c.txt",
+    "filename": "det_val_0038_IMG20200728190132_jpg.rf.7b797e6978b7d154760537475be5bf9c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0039_IMG20200728190132_jpg.rf.7e423ce43be78cf4e1f143d3bfeaa9d2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0039_IMG20200728190132_jpg.rf.7e423ce43be78cf4e1f143d3bfeaa9d2.txt",
+    "filename": "det_val_0039_IMG20200728190132_jpg.rf.7e423ce43be78cf4e1f143d3bfeaa9d2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0040_IMG20200728190132_jpg.rf.975733bb60567e71c2516cf1d42d3db3.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0040_IMG20200728190132_jpg.rf.975733bb60567e71c2516cf1d42d3db3.txt",
+    "filename": "det_val_0040_IMG20200728190132_jpg.rf.975733bb60567e71c2516cf1d42d3db3.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0041_IMG20200728190132_jpg.rf.df0b8e1c0626a52acb7ac6ba5fc7ee32.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0041_IMG20200728190132_jpg.rf.df0b8e1c0626a52acb7ac6ba5fc7ee32.txt",
+    "filename": "det_val_0041_IMG20200728190132_jpg.rf.df0b8e1c0626a52acb7ac6ba5fc7ee32.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0042_IMG20200728190132_jpg.rf.fa2100acad05846ebeb985dd07b68cdf.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0042_IMG20200728190132_jpg.rf.fa2100acad05846ebeb985dd07b68cdf.txt",
+    "filename": "det_val_0042_IMG20200728190132_jpg.rf.fa2100acad05846ebeb985dd07b68cdf.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0043_IMG_20190822_083957_jpg.rf.2a01f46b64310ba19e51d7d19d52880b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0043_IMG_20190822_083957_jpg.rf.2a01f46b64310ba19e51d7d19d52880b.txt",
+    "filename": "det_val_0043_IMG_20190822_083957_jpg.rf.2a01f46b64310ba19e51d7d19d52880b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0044_IMG_20190822_083957_jpg.rf.3f7ef43ae32be3a91ce34bf1943a05c5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0044_IMG_20190822_083957_jpg.rf.3f7ef43ae32be3a91ce34bf1943a05c5.txt",
+    "filename": "det_val_0044_IMG_20190822_083957_jpg.rf.3f7ef43ae32be3a91ce34bf1943a05c5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0045_IMG_20190822_083957_jpg.rf.43fe694da9d461f1b931528d01b69913.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0045_IMG_20190822_083957_jpg.rf.43fe694da9d461f1b931528d01b69913.txt",
+    "filename": "det_val_0045_IMG_20190822_083957_jpg.rf.43fe694da9d461f1b931528d01b69913.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0046_IMG_20190822_083957_jpg.rf.64592692ee8aeec8e0e3d1a922e71731.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0046_IMG_20190822_083957_jpg.rf.64592692ee8aeec8e0e3d1a922e71731.txt",
+    "filename": "det_val_0046_IMG_20190822_083957_jpg.rf.64592692ee8aeec8e0e3d1a922e71731.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0047_IMG_20190822_083957_jpg.rf.e1eaaabce180b418d98259d9205ed38f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0047_IMG_20190822_083957_jpg.rf.e1eaaabce180b418d98259d9205ed38f.txt",
+    "filename": "det_val_0047_IMG_20190822_083957_jpg.rf.e1eaaabce180b418d98259d9205ed38f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0048_IMG20200728184906_jpg.rf.5ab7e25bd52847344e7c363fec18719c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0048_IMG20200728184906_jpg.rf.5ab7e25bd52847344e7c363fec18719c.txt",
+    "filename": "det_val_0048_IMG20200728184906_jpg.rf.5ab7e25bd52847344e7c363fec18719c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0049_IMG20200728184906_jpg.rf.5e48c338da0e18ffd0cdddef8e57bd6a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0049_IMG20200728184906_jpg.rf.5e48c338da0e18ffd0cdddef8e57bd6a.txt",
+    "filename": "det_val_0049_IMG20200728184906_jpg.rf.5e48c338da0e18ffd0cdddef8e57bd6a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0050_IMG20200728184906_jpg.rf.99e2928435f9c14c2108f4d33c96889b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0050_IMG20200728184906_jpg.rf.99e2928435f9c14c2108f4d33c96889b.txt",
+    "filename": "det_val_0050_IMG20200728184906_jpg.rf.99e2928435f9c14c2108f4d33c96889b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0051_IMG20200728184906_jpg.rf.9c84892ce3a64109a9ee786dcbb98084.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0051_IMG20200728184906_jpg.rf.9c84892ce3a64109a9ee786dcbb98084.txt",
+    "filename": "det_val_0051_IMG20200728184906_jpg.rf.9c84892ce3a64109a9ee786dcbb98084.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0052_IMG20200728184906_jpg.rf.ebc88579ae1262d381b900fba188ed79.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0052_IMG20200728184906_jpg.rf.ebc88579ae1262d381b900fba188ed79.txt",
+    "filename": "det_val_0052_IMG20200728184906_jpg.rf.ebc88579ae1262d381b900fba188ed79.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0053_IMG20200729173849_jpg.rf.367cb96600755e557201aef62d0ea1e8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0053_IMG20200729173849_jpg.rf.367cb96600755e557201aef62d0ea1e8.txt",
+    "filename": "det_val_0053_IMG20200729173849_jpg.rf.367cb96600755e557201aef62d0ea1e8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0054_IMG20200729173849_jpg.rf.4d1a80c19c0fbd1cbe509b2cfe4e7e8d.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0054_IMG20200729173849_jpg.rf.4d1a80c19c0fbd1cbe509b2cfe4e7e8d.txt",
+    "filename": "det_val_0054_IMG20200729173849_jpg.rf.4d1a80c19c0fbd1cbe509b2cfe4e7e8d.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0055_IMG20200729173849_jpg.rf.7c55069275ff37b34305f8c098ff5a9b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0055_IMG20200729173849_jpg.rf.7c55069275ff37b34305f8c098ff5a9b.txt",
+    "filename": "det_val_0055_IMG20200729173849_jpg.rf.7c55069275ff37b34305f8c098ff5a9b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0056_IMG20200729173849_jpg.rf.de51e321de7e02e5d2719b7419dc7d9b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0056_IMG20200729173849_jpg.rf.de51e321de7e02e5d2719b7419dc7d9b.txt",
+    "filename": "det_val_0056_IMG20200729173849_jpg.rf.de51e321de7e02e5d2719b7419dc7d9b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0057_IMG20200729173849_jpg.rf.ea3906081031eaf77c96645adb4a88b7.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0057_IMG20200729173849_jpg.rf.ea3906081031eaf77c96645adb4a88b7.txt",
+    "filename": "det_val_0057_IMG20200729173849_jpg.rf.ea3906081031eaf77c96645adb4a88b7.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0058_IMG_20190822_084643_jpg.rf.5678f58e8a6b088ac6b6e1f6eb6f159e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0058_IMG_20190822_084643_jpg.rf.5678f58e8a6b088ac6b6e1f6eb6f159e.txt",
+    "filename": "det_val_0058_IMG_20190822_084643_jpg.rf.5678f58e8a6b088ac6b6e1f6eb6f159e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0059_IMG_20190822_084643_jpg.rf.82de49c9adb27bfa26d8e681010770c2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0059_IMG_20190822_084643_jpg.rf.82de49c9adb27bfa26d8e681010770c2.txt",
+    "filename": "det_val_0059_IMG_20190822_084643_jpg.rf.82de49c9adb27bfa26d8e681010770c2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0060_IMG_20190822_084643_jpg.rf.abe6688e86272e06c3f27cb17856bb43.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0060_IMG_20190822_084643_jpg.rf.abe6688e86272e06c3f27cb17856bb43.txt",
+    "filename": "det_val_0060_IMG_20190822_084643_jpg.rf.abe6688e86272e06c3f27cb17856bb43.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0061_IMG_20190822_084643_jpg.rf.dceebcea71faf2ad1e670519aa3c9c5f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0061_IMG_20190822_084643_jpg.rf.dceebcea71faf2ad1e670519aa3c9c5f.txt",
+    "filename": "det_val_0061_IMG_20190822_084643_jpg.rf.dceebcea71faf2ad1e670519aa3c9c5f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0062_IMG_20190822_084643_jpg.rf.e1428b8db4f5db3b22035ff29cd53714.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0062_IMG_20190822_084643_jpg.rf.e1428b8db4f5db3b22035ff29cd53714.txt",
+    "filename": "det_val_0062_IMG_20190822_084643_jpg.rf.e1428b8db4f5db3b22035ff29cd53714.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0063_IMG_20190902_102401_1_jpg.rf.6bb3bccc930a950044f35fcea0403eb8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0063_IMG_20190902_102401_1_jpg.rf.6bb3bccc930a950044f35fcea0403eb8.txt",
+    "filename": "det_val_0063_IMG_20190902_102401_1_jpg.rf.6bb3bccc930a950044f35fcea0403eb8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0064_IMG_20190902_102405_1_jpg.rf.0be1e7db2a734197cd928e45728a660c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0064_IMG_20190902_102405_1_jpg.rf.0be1e7db2a734197cd928e45728a660c.txt",
+    "filename": "det_val_0064_IMG_20190902_102405_1_jpg.rf.0be1e7db2a734197cd928e45728a660c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0065_IMG_20190902_102405_1_jpg.rf.730b2b1620e7c4b513af390619d6f696.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0065_IMG_20190902_102405_1_jpg.rf.730b2b1620e7c4b513af390619d6f696.txt",
+    "filename": "det_val_0065_IMG_20190902_102405_1_jpg.rf.730b2b1620e7c4b513af390619d6f696.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0066_IMG_20190902_102405_1_jpg.rf.c0ca903f7aa3ab030a53b9e20a4bede3.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0066_IMG_20190902_102405_1_jpg.rf.c0ca903f7aa3ab030a53b9e20a4bede3.txt",
+    "filename": "det_val_0066_IMG_20190902_102405_1_jpg.rf.c0ca903f7aa3ab030a53b9e20a4bede3.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0067_IMG_20190902_102405_1_jpg.rf.d1efd7010bf79bd793dd1ad59caaa0e1.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0067_IMG_20190902_102405_1_jpg.rf.d1efd7010bf79bd793dd1ad59caaa0e1.txt",
+    "filename": "det_val_0067_IMG_20190902_102405_1_jpg.rf.d1efd7010bf79bd793dd1ad59caaa0e1.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0068_IMG_20190902_102405_1_jpg.rf.d92d94876232efc667bc53e8fc56d95b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0068_IMG_20190902_102405_1_jpg.rf.d92d94876232efc667bc53e8fc56d95b.txt",
+    "filename": "det_val_0068_IMG_20190902_102405_1_jpg.rf.d92d94876232efc667bc53e8fc56d95b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0069_IMG_1878_JPG.rf.1e0ace787f2ed19d2260298fbdbdcb48.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0069_IMG_1878_JPG.rf.1e0ace787f2ed19d2260298fbdbdcb48.txt",
+    "filename": "det_val_0069_IMG_1878_JPG.rf.1e0ace787f2ed19d2260298fbdbdcb48.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0070_IMG_1878_JPG.rf.35a3f943d2effc6864d4968e1cfd3880.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0070_IMG_1878_JPG.rf.35a3f943d2effc6864d4968e1cfd3880.txt",
+    "filename": "det_val_0070_IMG_1878_JPG.rf.35a3f943d2effc6864d4968e1cfd3880.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0071_IMG_1878_JPG.rf.be722d944862d8c0136bdd2a6a695ef2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0071_IMG_1878_JPG.rf.be722d944862d8c0136bdd2a6a695ef2.txt",
+    "filename": "det_val_0071_IMG_1878_JPG.rf.be722d944862d8c0136bdd2a6a695ef2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0072_IMG_1878_JPG.rf.e1887d1b4e9f6154f4656c1a0dbaa9f9.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0072_IMG_1878_JPG.rf.e1887d1b4e9f6154f4656c1a0dbaa9f9.txt",
+    "filename": "det_val_0072_IMG_1878_JPG.rf.e1887d1b4e9f6154f4656c1a0dbaa9f9.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0073_IMG_1878_JPG.rf.fcc70be6b41ca6f97a0a520f5d844126.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0073_IMG_1878_JPG.rf.fcc70be6b41ca6f97a0a520f5d844126.txt",
+    "filename": "det_val_0073_IMG_1878_JPG.rf.fcc70be6b41ca6f97a0a520f5d844126.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0074_IMG20200728130134_jpg.rf.3081b068cc20018b00a1cad449b8613f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0074_IMG20200728130134_jpg.rf.3081b068cc20018b00a1cad449b8613f.txt",
+    "filename": "det_val_0074_IMG20200728130134_jpg.rf.3081b068cc20018b00a1cad449b8613f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0075_IMG20200728130134_jpg.rf.341dfd8578ec44eebeb9bc8f41b1bf3a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0075_IMG20200728130134_jpg.rf.341dfd8578ec44eebeb9bc8f41b1bf3a.txt",
+    "filename": "det_val_0075_IMG20200728130134_jpg.rf.341dfd8578ec44eebeb9bc8f41b1bf3a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0076_IMG20200728130134_jpg.rf.9715a7e1bd1f83f064d5ea521ca00ab0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0076_IMG20200728130134_jpg.rf.9715a7e1bd1f83f064d5ea521ca00ab0.txt",
+    "filename": "det_val_0076_IMG20200728130134_jpg.rf.9715a7e1bd1f83f064d5ea521ca00ab0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0077_IMG20200728130134_jpg.rf.a6d64306a7428187655e5f02967740ef.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0077_IMG20200728130134_jpg.rf.a6d64306a7428187655e5f02967740ef.txt",
+    "filename": "det_val_0077_IMG20200728130134_jpg.rf.a6d64306a7428187655e5f02967740ef.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0078_IMG20200728130134_jpg.rf.a90a5cf604dfd9c9f7e1603f9ffa77b8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0078_IMG20200728130134_jpg.rf.a90a5cf604dfd9c9f7e1603f9ffa77b8.txt",
+    "filename": "det_val_0078_IMG20200728130134_jpg.rf.a90a5cf604dfd9c9f7e1603f9ffa77b8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0079_20190813_121108_jpg.rf.30e2429198216612da14752380f967d4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0079_20190813_121108_jpg.rf.30e2429198216612da14752380f967d4.txt",
+    "filename": "det_val_0079_20190813_121108_jpg.rf.30e2429198216612da14752380f967d4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0080_20190813_121108_jpg.rf.770e3103f364a4fd11dd4f53214e1098.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0080_20190813_121108_jpg.rf.770e3103f364a4fd11dd4f53214e1098.txt",
+    "filename": "det_val_0080_20190813_121108_jpg.rf.770e3103f364a4fd11dd4f53214e1098.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0081_20190813_121108_jpg.rf.bcbc97e0b6e398ed075f97e57aef633f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0081_20190813_121108_jpg.rf.bcbc97e0b6e398ed075f97e57aef633f.txt",
+    "filename": "det_val_0081_20190813_121108_jpg.rf.bcbc97e0b6e398ed075f97e57aef633f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0082_20190813_121108_jpg.rf.e548333e429a4a9dcc6287e18103cc82.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0082_20190813_121108_jpg.rf.e548333e429a4a9dcc6287e18103cc82.txt",
+    "filename": "det_val_0082_20190813_121108_jpg.rf.e548333e429a4a9dcc6287e18103cc82.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0083_20190813_121108_jpg.rf.f62a5edfc7406f17d030d9c2d1467f3f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0083_20190813_121108_jpg.rf.f62a5edfc7406f17d030d9c2d1467f3f.txt",
+    "filename": "det_val_0083_20190813_121108_jpg.rf.f62a5edfc7406f17d030d9c2d1467f3f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0084_IMG20200728131923_jpg.rf.1523eac4f32dd12bb2b69cc68c9d81b9.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0084_IMG20200728131923_jpg.rf.1523eac4f32dd12bb2b69cc68c9d81b9.txt",
+    "filename": "det_val_0084_IMG20200728131923_jpg.rf.1523eac4f32dd12bb2b69cc68c9d81b9.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0085_IMG20200728131923_jpg.rf.278aa53b19f1bdd45beaad23fdbb892a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0085_IMG20200728131923_jpg.rf.278aa53b19f1bdd45beaad23fdbb892a.txt",
+    "filename": "det_val_0085_IMG20200728131923_jpg.rf.278aa53b19f1bdd45beaad23fdbb892a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0086_IMG20200728131923_jpg.rf.91f2b6aa80ce29db69bda4abfab53274.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0086_IMG20200728131923_jpg.rf.91f2b6aa80ce29db69bda4abfab53274.txt",
+    "filename": "det_val_0086_IMG20200728131923_jpg.rf.91f2b6aa80ce29db69bda4abfab53274.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0087_IMG20200728131923_jpg.rf.c934e2de563431d3f471fbb9b8c655b6.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0087_IMG20200728131923_jpg.rf.c934e2de563431d3f471fbb9b8c655b6.txt",
+    "filename": "det_val_0087_IMG20200728131923_jpg.rf.c934e2de563431d3f471fbb9b8c655b6.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0088_IMG20200728131923_jpg.rf.e8b2cc4a4859661b266903cfe3aafc6c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0088_IMG20200728131923_jpg.rf.e8b2cc4a4859661b266903cfe3aafc6c.txt",
+    "filename": "det_val_0088_IMG20200728131923_jpg.rf.e8b2cc4a4859661b266903cfe3aafc6c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0089_IMG20200728184916_01_jpg.rf.43c97a2f58b8588166384fe45af750e0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0089_IMG20200728184916_01_jpg.rf.43c97a2f58b8588166384fe45af750e0.txt",
+    "filename": "det_val_0089_IMG20200728184916_01_jpg.rf.43c97a2f58b8588166384fe45af750e0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0090_IMG20200728184916_01_jpg.rf.45da0775f90b0f8dfc6f7012ac930489.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0090_IMG20200728184916_01_jpg.rf.45da0775f90b0f8dfc6f7012ac930489.txt",
+    "filename": "det_val_0090_IMG20200728184916_01_jpg.rf.45da0775f90b0f8dfc6f7012ac930489.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0091_IMG20200728184916_01_jpg.rf.46ddb3e8060173d297c9c4fafc4cedd8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0091_IMG20200728184916_01_jpg.rf.46ddb3e8060173d297c9c4fafc4cedd8.txt",
+    "filename": "det_val_0091_IMG20200728184916_01_jpg.rf.46ddb3e8060173d297c9c4fafc4cedd8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0092_IMG20200728184916_01_jpg.rf.a87485b4ca36c09c83475213f4f0e343.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0092_IMG20200728184916_01_jpg.rf.a87485b4ca36c09c83475213f4f0e343.txt",
+    "filename": "det_val_0092_IMG20200728184916_01_jpg.rf.a87485b4ca36c09c83475213f4f0e343.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0093_IMG20200728184916_01_jpg.rf.a96676fee857236000276e41b52695ac.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0093_IMG20200728184916_01_jpg.rf.a96676fee857236000276e41b52695ac.txt",
+    "filename": "det_val_0093_IMG20200728184916_01_jpg.rf.a96676fee857236000276e41b52695ac.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0094_IMG20200728182136_27472_jpg.rf.1dc3dccf74b844b19d2f42267999a1c8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0094_IMG20200728182136_27472_jpg.rf.1dc3dccf74b844b19d2f42267999a1c8.txt",
+    "filename": "det_val_0094_IMG20200728182136_27472_jpg.rf.1dc3dccf74b844b19d2f42267999a1c8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0095_IMG20200728182136_27472_jpg.rf.450d7ddf00ab716987760155419a1b1f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0095_IMG20200728182136_27472_jpg.rf.450d7ddf00ab716987760155419a1b1f.txt",
+    "filename": "det_val_0095_IMG20200728182136_27472_jpg.rf.450d7ddf00ab716987760155419a1b1f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0096_IMG20200728182136_27472_jpg.rf.4524e9e64a122b4613ed111fb37a340b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0096_IMG20200728182136_27472_jpg.rf.4524e9e64a122b4613ed111fb37a340b.txt",
+    "filename": "det_val_0096_IMG20200728182136_27472_jpg.rf.4524e9e64a122b4613ed111fb37a340b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0097_IMG20200728182136_27472_jpg.rf.556b8af63272c7f1ee705e6348114ba0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0097_IMG20200728182136_27472_jpg.rf.556b8af63272c7f1ee705e6348114ba0.txt",
+    "filename": "det_val_0097_IMG20200728182136_27472_jpg.rf.556b8af63272c7f1ee705e6348114ba0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0098_IMG20200728182136_27472_jpg.rf.61183ede77464c159278fbfda1a99566.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0098_IMG20200728182136_27472_jpg.rf.61183ede77464c159278fbfda1a99566.txt",
+    "filename": "det_val_0098_IMG20200728182136_27472_jpg.rf.61183ede77464c159278fbfda1a99566.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0099_IMG_7714_JPG.rf.7fedd46eae89b14424011c49e5ea7ffe.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0099_IMG_7714_JPG.rf.7fedd46eae89b14424011c49e5ea7ffe.txt",
+    "filename": "det_val_0099_IMG_7714_JPG.rf.7fedd46eae89b14424011c49e5ea7ffe.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0100_IMG_7714_JPG.rf.a0ad19cff78669dd9305d8a64f12da4a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0100_IMG_7714_JPG.rf.a0ad19cff78669dd9305d8a64f12da4a.txt",
+    "filename": "det_val_0100_IMG_7714_JPG.rf.a0ad19cff78669dd9305d8a64f12da4a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0101_IMG_7714_JPG.rf.c4617b5baee6a9ff301dfe81bff44dba.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0101_IMG_7714_JPG.rf.c4617b5baee6a9ff301dfe81bff44dba.txt",
+    "filename": "det_val_0101_IMG_7714_JPG.rf.c4617b5baee6a9ff301dfe81bff44dba.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0102_IMG_7714_JPG.rf.d06e9f44921a9267d2fed17261410da5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0102_IMG_7714_JPG.rf.d06e9f44921a9267d2fed17261410da5.txt",
+    "filename": "det_val_0102_IMG_7714_JPG.rf.d06e9f44921a9267d2fed17261410da5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0103_IMG_7714_JPG.rf.f0997e3f00148389afd2770a3e6f9138.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0103_IMG_7714_JPG.rf.f0997e3f00148389afd2770a3e6f9138.txt",
+    "filename": "det_val_0103_IMG_7714_JPG.rf.f0997e3f00148389afd2770a3e6f9138.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0104_IMG20200728131142_jpg.rf.319c1e135a882cddf4a34410f095578b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0104_IMG20200728131142_jpg.rf.319c1e135a882cddf4a34410f095578b.txt",
+    "filename": "det_val_0104_IMG20200728131142_jpg.rf.319c1e135a882cddf4a34410f095578b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0105_IMG20200728131142_jpg.rf.950dc4d31ed6220898d201643efd3a8d.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0105_IMG20200728131142_jpg.rf.950dc4d31ed6220898d201643efd3a8d.txt",
+    "filename": "det_val_0105_IMG20200728131142_jpg.rf.950dc4d31ed6220898d201643efd3a8d.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0106_IMG20200728131142_jpg.rf.e0efe1c28ba3b44e5f0c9450b7b15f06.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0106_IMG20200728131142_jpg.rf.e0efe1c28ba3b44e5f0c9450b7b15f06.txt",
+    "filename": "det_val_0106_IMG20200728131142_jpg.rf.e0efe1c28ba3b44e5f0c9450b7b15f06.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0107_IMG20200728131142_jpg.rf.f8cc7a410c349a468485023313d655a5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0107_IMG20200728131142_jpg.rf.f8cc7a410c349a468485023313d655a5.txt",
+    "filename": "det_val_0107_IMG20200728131142_jpg.rf.f8cc7a410c349a468485023313d655a5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0108_IMG20200728131142_jpg.rf.faecee1df37577e366a3eeb751df583f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0108_IMG20200728131142_jpg.rf.faecee1df37577e366a3eeb751df583f.txt",
+    "filename": "det_val_0108_IMG20200728131142_jpg.rf.faecee1df37577e366a3eeb751df583f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0109_20190809_160308_jpg.rf.2a799787fbdc7b31ff0cd66353d69a43.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0109_20190809_160308_jpg.rf.2a799787fbdc7b31ff0cd66353d69a43.txt",
+    "filename": "det_val_0109_20190809_160308_jpg.rf.2a799787fbdc7b31ff0cd66353d69a43.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0110_20190809_160308_jpg.rf.2b0b7d7875939ea9875199e0b3f46b26.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0110_20190809_160308_jpg.rf.2b0b7d7875939ea9875199e0b3f46b26.txt",
+    "filename": "det_val_0110_20190809_160308_jpg.rf.2b0b7d7875939ea9875199e0b3f46b26.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0111_20190809_160308_jpg.rf.9293327dc3d2e27beefdd3ea56454aa5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0111_20190809_160308_jpg.rf.9293327dc3d2e27beefdd3ea56454aa5.txt",
+    "filename": "det_val_0111_20190809_160308_jpg.rf.9293327dc3d2e27beefdd3ea56454aa5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0112_20190809_160308_jpg.rf.a67767def4ede26a7b098bbe9859fabb.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0112_20190809_160308_jpg.rf.a67767def4ede26a7b098bbe9859fabb.txt",
+    "filename": "det_val_0112_20190809_160308_jpg.rf.a67767def4ede26a7b098bbe9859fabb.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0113_20190809_160308_jpg.rf.e1cdc48a5aa7107f7e3cda62fe19930c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0113_20190809_160308_jpg.rf.e1cdc48a5aa7107f7e3cda62fe19930c.txt",
+    "filename": "det_val_0113_20190809_160308_jpg.rf.e1cdc48a5aa7107f7e3cda62fe19930c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0114_IMG20200728182312_27612_jpg.rf.0234e266cef73c727343fc57ffcd2aca.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0114_IMG20200728182312_27612_jpg.rf.0234e266cef73c727343fc57ffcd2aca.txt",
+    "filename": "det_val_0114_IMG20200728182312_27612_jpg.rf.0234e266cef73c727343fc57ffcd2aca.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0115_IMG20200728182312_27612_jpg.rf.5264d47058c9c74a89a5b74b23122b45.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0115_IMG20200728182312_27612_jpg.rf.5264d47058c9c74a89a5b74b23122b45.txt",
+    "filename": "det_val_0115_IMG20200728182312_27612_jpg.rf.5264d47058c9c74a89a5b74b23122b45.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0116_IMG20200728182312_27612_jpg.rf.808954509ff752c6b11f318276a21e15.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0116_IMG20200728182312_27612_jpg.rf.808954509ff752c6b11f318276a21e15.txt",
+    "filename": "det_val_0116_IMG20200728182312_27612_jpg.rf.808954509ff752c6b11f318276a21e15.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0117_IMG20200728182312_27612_jpg.rf.a8eb6461f866cb5d6666cca16c991159.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0117_IMG20200728182312_27612_jpg.rf.a8eb6461f866cb5d6666cca16c991159.txt",
+    "filename": "det_val_0117_IMG20200728182312_27612_jpg.rf.a8eb6461f866cb5d6666cca16c991159.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0118_IMG20200728182312_27612_jpg.rf.c204b5e8055c9bbcdc9b908cd7a8cd17.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0118_IMG20200728182312_27612_jpg.rf.c204b5e8055c9bbcdc9b908cd7a8cd17.txt",
+    "filename": "det_val_0118_IMG20200728182312_27612_jpg.rf.c204b5e8055c9bbcdc9b908cd7a8cd17.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0119_IMG_20190829_071605_1_jpg.rf.0f6828d815ca0abe0ac324efcd5a3caa.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0119_IMG_20190829_071605_1_jpg.rf.0f6828d815ca0abe0ac324efcd5a3caa.txt",
+    "filename": "det_val_0119_IMG_20190829_071605_1_jpg.rf.0f6828d815ca0abe0ac324efcd5a3caa.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0120_IMG_20190829_071605_1_jpg.rf.21e1a2fffafc1926ae0076836b818360.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0120_IMG_20190829_071605_1_jpg.rf.21e1a2fffafc1926ae0076836b818360.txt",
+    "filename": "det_val_0120_IMG_20190829_071605_1_jpg.rf.21e1a2fffafc1926ae0076836b818360.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0121_IMG_20190829_071605_1_jpg.rf.6b534b155defeca4d85f6ff7ddbd12ae.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0121_IMG_20190829_071605_1_jpg.rf.6b534b155defeca4d85f6ff7ddbd12ae.txt",
+    "filename": "det_val_0121_IMG_20190829_071605_1_jpg.rf.6b534b155defeca4d85f6ff7ddbd12ae.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0122_IMG_20190829_071605_1_jpg.rf.a7feebdd10d97330383789ec0af32f54.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0122_IMG_20190829_071605_1_jpg.rf.a7feebdd10d97330383789ec0af32f54.txt",
+    "filename": "det_val_0122_IMG_20190829_071605_1_jpg.rf.a7feebdd10d97330383789ec0af32f54.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0123_IMG_20190829_071605_1_jpg.rf.ecaf58caf629520e6362b0b09c21f07a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0123_IMG_20190829_071605_1_jpg.rf.ecaf58caf629520e6362b0b09c21f07a.txt",
+    "filename": "det_val_0123_IMG_20190829_071605_1_jpg.rf.ecaf58caf629520e6362b0b09c21f07a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0124_IMG_7008_JPG.rf.910914116ec8e776972fab976bdf1eaa.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0124_IMG_7008_JPG.rf.910914116ec8e776972fab976bdf1eaa.txt",
+    "filename": "det_val_0124_IMG_7008_JPG.rf.910914116ec8e776972fab976bdf1eaa.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0125_IMG_0113_JPG.rf.1ae27c370dc51f25ad1b267f5bf1b086.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0125_IMG_0113_JPG.rf.1ae27c370dc51f25ad1b267f5bf1b086.txt",
+    "filename": "det_val_0125_IMG_0113_JPG.rf.1ae27c370dc51f25ad1b267f5bf1b086.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0126_IMG_0113_JPG.rf.51f0b004d59dfafe9c7815f362efaa8b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0126_IMG_0113_JPG.rf.51f0b004d59dfafe9c7815f362efaa8b.txt",
+    "filename": "det_val_0126_IMG_0113_JPG.rf.51f0b004d59dfafe9c7815f362efaa8b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0127_IMG_0113_JPG.rf.79f275309c9e2ba5d423296cf4b95d17.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0127_IMG_0113_JPG.rf.79f275309c9e2ba5d423296cf4b95d17.txt",
+    "filename": "det_val_0127_IMG_0113_JPG.rf.79f275309c9e2ba5d423296cf4b95d17.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0128_IMG_0113_JPG.rf.abbeb5b7b266aaa72608b1ffc6c48767.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0128_IMG_0113_JPG.rf.abbeb5b7b266aaa72608b1ffc6c48767.txt",
+    "filename": "det_val_0128_IMG_0113_JPG.rf.abbeb5b7b266aaa72608b1ffc6c48767.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0129_IMG_0113_JPG.rf.f9c0909f15fa93b7a00d3e4fc287ddf8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0129_IMG_0113_JPG.rf.f9c0909f15fa93b7a00d3e4fc287ddf8.txt",
+    "filename": "det_val_0129_IMG_0113_JPG.rf.f9c0909f15fa93b7a00d3e4fc287ddf8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0130_IMG_20190829_071842_1_jpg.rf.1606f95321a71a5522c1f18d64a4e284.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0130_IMG_20190829_071842_1_jpg.rf.1606f95321a71a5522c1f18d64a4e284.txt",
+    "filename": "det_val_0130_IMG_20190829_071842_1_jpg.rf.1606f95321a71a5522c1f18d64a4e284.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0131_IMG_20190829_071842_1_jpg.rf.16e2ef15f3e5acf10f827e8414da3617.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0131_IMG_20190829_071842_1_jpg.rf.16e2ef15f3e5acf10f827e8414da3617.txt",
+    "filename": "det_val_0131_IMG_20190829_071842_1_jpg.rf.16e2ef15f3e5acf10f827e8414da3617.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0132_IMG_20190829_071842_1_jpg.rf.883ef8bad198a7f7691e15d0d74f6be7.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0132_IMG_20190829_071842_1_jpg.rf.883ef8bad198a7f7691e15d0d74f6be7.txt",
+    "filename": "det_val_0132_IMG_20190829_071842_1_jpg.rf.883ef8bad198a7f7691e15d0d74f6be7.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0133_IMG_20190829_071842_1_jpg.rf.caae5cafec46fb14fea9d6ff056025b4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0133_IMG_20190829_071842_1_jpg.rf.caae5cafec46fb14fea9d6ff056025b4.txt",
+    "filename": "det_val_0133_IMG_20190829_071842_1_jpg.rf.caae5cafec46fb14fea9d6ff056025b4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0134_IMG_20190829_071842_1_jpg.rf.db6b3dff39178cb8eb6b5d167619801b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0134_IMG_20190829_071842_1_jpg.rf.db6b3dff39178cb8eb6b5d167619801b.txt",
+    "filename": "det_val_0134_IMG_20190829_071842_1_jpg.rf.db6b3dff39178cb8eb6b5d167619801b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0135_IMG_8914_JPG.rf.69870e3c44507745bf8f9a2b724d7a03.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0135_IMG_8914_JPG.rf.69870e3c44507745bf8f9a2b724d7a03.txt",
+    "filename": "det_val_0135_IMG_8914_JPG.rf.69870e3c44507745bf8f9a2b724d7a03.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0136_IMG20200728131925_jpg.rf.468a05773f74467ae8b1a1c2770e936a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0136_IMG20200728131925_jpg.rf.468a05773f74467ae8b1a1c2770e936a.txt",
+    "filename": "det_val_0136_IMG20200728131925_jpg.rf.468a05773f74467ae8b1a1c2770e936a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0137_IMG20200728131925_jpg.rf.544269e3705af8b376c25d5c737fac0e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0137_IMG20200728131925_jpg.rf.544269e3705af8b376c25d5c737fac0e.txt",
+    "filename": "det_val_0137_IMG20200728131925_jpg.rf.544269e3705af8b376c25d5c737fac0e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0138_IMG20200728131925_jpg.rf.909ad50760fb2bac19ba219cfebc471d.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0138_IMG20200728131925_jpg.rf.909ad50760fb2bac19ba219cfebc471d.txt",
+    "filename": "det_val_0138_IMG20200728131925_jpg.rf.909ad50760fb2bac19ba219cfebc471d.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0139_IMG20200728131925_jpg.rf.ddac94f2e89fa29270e356a034e60833.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0139_IMG20200728131925_jpg.rf.ddac94f2e89fa29270e356a034e60833.txt",
+    "filename": "det_val_0139_IMG20200728131925_jpg.rf.ddac94f2e89fa29270e356a034e60833.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0140_IMG20200728131925_jpg.rf.f9a2e3e5a67ac158db8779998ac6db26.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0140_IMG20200728131925_jpg.rf.f9a2e3e5a67ac158db8779998ac6db26.txt",
+    "filename": "det_val_0140_IMG20200728131925_jpg.rf.f9a2e3e5a67ac158db8779998ac6db26.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0141_IMG_20190910_175808_jpg.rf.6539d755e639bfe1ee1eb4db93cdb1ed.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0141_IMG_20190910_175808_jpg.rf.6539d755e639bfe1ee1eb4db93cdb1ed.txt",
+    "filename": "det_val_0141_IMG_20190910_175808_jpg.rf.6539d755e639bfe1ee1eb4db93cdb1ed.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0142_IMG_20190910_175808_jpg.rf.7c663bf0cd96cdd430b4ba781d798f18.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0142_IMG_20190910_175808_jpg.rf.7c663bf0cd96cdd430b4ba781d798f18.txt",
+    "filename": "det_val_0142_IMG_20190910_175808_jpg.rf.7c663bf0cd96cdd430b4ba781d798f18.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0143_IMG_20190910_175808_jpg.rf.9b3f43ada6443c0a26b3031abf7033c1.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0143_IMG_20190910_175808_jpg.rf.9b3f43ada6443c0a26b3031abf7033c1.txt",
+    "filename": "det_val_0143_IMG_20190910_175808_jpg.rf.9b3f43ada6443c0a26b3031abf7033c1.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0144_IMG_20190910_175808_jpg.rf.f5fe20975a33859560bc49635707e8db.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0144_IMG_20190910_175808_jpg.rf.f5fe20975a33859560bc49635707e8db.txt",
+    "filename": "det_val_0144_IMG_20190910_175808_jpg.rf.f5fe20975a33859560bc49635707e8db.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0145_IMG_20190910_175808_jpg.rf.f8983fe0bab7e6395769242820807a8b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0145_IMG_20190910_175808_jpg.rf.f8983fe0bab7e6395769242820807a8b.txt",
+    "filename": "det_val_0145_IMG_20190910_175808_jpg.rf.f8983fe0bab7e6395769242820807a8b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0146_IMG20200729172607_01_jpg.rf.0cab9666867eccfd6391c2aba648cad7.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0146_IMG20200729172607_01_jpg.rf.0cab9666867eccfd6391c2aba648cad7.txt",
+    "filename": "det_val_0146_IMG20200729172607_01_jpg.rf.0cab9666867eccfd6391c2aba648cad7.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0147_IMG20200729172607_01_jpg.rf.861f3ddf8398acc6240c663d0aba3a40.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0147_IMG20200729172607_01_jpg.rf.861f3ddf8398acc6240c663d0aba3a40.txt",
+    "filename": "det_val_0147_IMG20200729172607_01_jpg.rf.861f3ddf8398acc6240c663d0aba3a40.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0148_IMG20200729172607_01_jpg.rf.9f2e7f3af627465592ab315922950538.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0148_IMG20200729172607_01_jpg.rf.9f2e7f3af627465592ab315922950538.txt",
+    "filename": "det_val_0148_IMG20200729172607_01_jpg.rf.9f2e7f3af627465592ab315922950538.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0149_IMG20200729172607_01_jpg.rf.ace65f9645f1d5419c6bb0e2dab8016f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0149_IMG20200729172607_01_jpg.rf.ace65f9645f1d5419c6bb0e2dab8016f.txt",
+    "filename": "det_val_0149_IMG20200729172607_01_jpg.rf.ace65f9645f1d5419c6bb0e2dab8016f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0150_IMG20200729172607_01_jpg.rf.d63497210292fc9e58067c1adcedaef7.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0150_IMG20200729172607_01_jpg.rf.d63497210292fc9e58067c1adcedaef7.txt",
+    "filename": "det_val_0150_IMG20200729172607_01_jpg.rf.d63497210292fc9e58067c1adcedaef7.jpg",
+    "split": "val",
+    "bounding_boxes_count": 3
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0151_IMG_20190902_103001_jpg.rf.3913ddaa0c513cc495ea44048947ac84.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0151_IMG_20190902_103001_jpg.rf.3913ddaa0c513cc495ea44048947ac84.txt",
+    "filename": "det_val_0151_IMG_20190902_103001_jpg.rf.3913ddaa0c513cc495ea44048947ac84.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0152_IMG_20190902_103001_jpg.rf.54b1c5b9a98d052e91e550c68005d99f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0152_IMG_20190902_103001_jpg.rf.54b1c5b9a98d052e91e550c68005d99f.txt",
+    "filename": "det_val_0152_IMG_20190902_103001_jpg.rf.54b1c5b9a98d052e91e550c68005d99f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0153_IMG_20190902_103001_jpg.rf.dac25dca0e336841cb93f9fae537f4b6.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0153_IMG_20190902_103001_jpg.rf.dac25dca0e336841cb93f9fae537f4b6.txt",
+    "filename": "det_val_0153_IMG_20190902_103001_jpg.rf.dac25dca0e336841cb93f9fae537f4b6.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0154_IMG_20190902_103001_jpg.rf.e893726ad0a19c5ca580f398042a507c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0154_IMG_20190902_103001_jpg.rf.e893726ad0a19c5ca580f398042a507c.txt",
+    "filename": "det_val_0154_IMG_20190902_103001_jpg.rf.e893726ad0a19c5ca580f398042a507c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0155_IMG_20190902_103001_jpg.rf.ff535ecff2ce7023033a2dde81397699.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0155_IMG_20190902_103001_jpg.rf.ff535ecff2ce7023033a2dde81397699.txt",
+    "filename": "det_val_0155_IMG_20190902_103001_jpg.rf.ff535ecff2ce7023033a2dde81397699.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0156_IMG_8186_JPG.rf.9a14eabe0ff9db5a2ae06e00b05c4aab.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0156_IMG_8186_JPG.rf.9a14eabe0ff9db5a2ae06e00b05c4aab.txt",
+    "filename": "det_val_0156_IMG_8186_JPG.rf.9a14eabe0ff9db5a2ae06e00b05c4aab.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0157_IMG_2361_JPG.rf.4751aebb17822c984fc36b6ac9f50f59.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0157_IMG_2361_JPG.rf.4751aebb17822c984fc36b6ac9f50f59.txt",
+    "filename": "det_val_0157_IMG_2361_JPG.rf.4751aebb17822c984fc36b6ac9f50f59.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0158_IMG_2361_JPG.rf.b12ffddbc774f60ecfec08edea7ebe34.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0158_IMG_2361_JPG.rf.b12ffddbc774f60ecfec08edea7ebe34.txt",
+    "filename": "det_val_0158_IMG_2361_JPG.rf.b12ffddbc774f60ecfec08edea7ebe34.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0159_IMG_2361_JPG.rf.c175931413a5b2a5c0dda57c234815c2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0159_IMG_2361_JPG.rf.c175931413a5b2a5c0dda57c234815c2.txt",
+    "filename": "det_val_0159_IMG_2361_JPG.rf.c175931413a5b2a5c0dda57c234815c2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0160_IMG_2361_JPG.rf.cb95dabf534b69283dd53050bd58cb19.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0160_IMG_2361_JPG.rf.cb95dabf534b69283dd53050bd58cb19.txt",
+    "filename": "det_val_0160_IMG_2361_JPG.rf.cb95dabf534b69283dd53050bd58cb19.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0161_IMG_2361_JPG.rf.cbd410ebcbede51534d4bf862d52967b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0161_IMG_2361_JPG.rf.cbd410ebcbede51534d4bf862d52967b.txt",
+    "filename": "det_val_0161_IMG_2361_JPG.rf.cbd410ebcbede51534d4bf862d52967b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0162_IMG20200730132321_jpg.rf.36eb75256b1ec36b5b94ae0b7f838e9c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0162_IMG20200730132321_jpg.rf.36eb75256b1ec36b5b94ae0b7f838e9c.txt",
+    "filename": "det_val_0162_IMG20200730132321_jpg.rf.36eb75256b1ec36b5b94ae0b7f838e9c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0163_IMG20200730132321_jpg.rf.57ec77b9c6f06c958e06c33f419feb46.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0163_IMG20200730132321_jpg.rf.57ec77b9c6f06c958e06c33f419feb46.txt",
+    "filename": "det_val_0163_IMG20200730132321_jpg.rf.57ec77b9c6f06c958e06c33f419feb46.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0164_IMG20200730132321_jpg.rf.5f65dcd357dfc7f92a1f74ca8577c85f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0164_IMG20200730132321_jpg.rf.5f65dcd357dfc7f92a1f74ca8577c85f.txt",
+    "filename": "det_val_0164_IMG20200730132321_jpg.rf.5f65dcd357dfc7f92a1f74ca8577c85f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0165_IMG20200730132321_jpg.rf.6a30f8d414939091843708e75e8c610e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0165_IMG20200730132321_jpg.rf.6a30f8d414939091843708e75e8c610e.txt",
+    "filename": "det_val_0165_IMG20200730132321_jpg.rf.6a30f8d414939091843708e75e8c610e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0166_IMG20200730132321_jpg.rf.f898ceb37e2e76f2ef60a594e61c939e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0166_IMG20200730132321_jpg.rf.f898ceb37e2e76f2ef60a594e61c939e.txt",
+    "filename": "det_val_0166_IMG20200730132321_jpg.rf.f898ceb37e2e76f2ef60a594e61c939e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0167_20190820_143707_22985_jpg.rf.4404832944821447c9a07939450dfdcc.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0167_20190820_143707_22985_jpg.rf.4404832944821447c9a07939450dfdcc.txt",
+    "filename": "det_val_0167_20190820_143707_22985_jpg.rf.4404832944821447c9a07939450dfdcc.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0168_20190820_143707_22985_jpg.rf.5572504439817f01e8cdd47ac851e57e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0168_20190820_143707_22985_jpg.rf.5572504439817f01e8cdd47ac851e57e.txt",
+    "filename": "det_val_0168_20190820_143707_22985_jpg.rf.5572504439817f01e8cdd47ac851e57e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0169_20190820_143707_22985_jpg.rf.75743d783f0b3ec5137ae1420e74ee0e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0169_20190820_143707_22985_jpg.rf.75743d783f0b3ec5137ae1420e74ee0e.txt",
+    "filename": "det_val_0169_20190820_143707_22985_jpg.rf.75743d783f0b3ec5137ae1420e74ee0e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0170_20190820_143707_22985_jpg.rf.a8fcca1693e0fe2a4ef406709759dd14.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0170_20190820_143707_22985_jpg.rf.a8fcca1693e0fe2a4ef406709759dd14.txt",
+    "filename": "det_val_0170_20190820_143707_22985_jpg.rf.a8fcca1693e0fe2a4ef406709759dd14.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0171_20190820_143707_22985_jpg.rf.f7bf3d6a139344210373756b605bd3b8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0171_20190820_143707_22985_jpg.rf.f7bf3d6a139344210373756b605bd3b8.txt",
+    "filename": "det_val_0171_20190820_143707_22985_jpg.rf.f7bf3d6a139344210373756b605bd3b8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0172_IMG_20190902_103003_jpg.rf.af00accf455889bd592d2a1a66d4f3a4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0172_IMG_20190902_103003_jpg.rf.af00accf455889bd592d2a1a66d4f3a4.txt",
+    "filename": "det_val_0172_IMG_20190902_103003_jpg.rf.af00accf455889bd592d2a1a66d4f3a4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0173_IMG_20190822_080226_jpg.rf.1df06edabf12f2fced2ee366e93471eb.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0173_IMG_20190822_080226_jpg.rf.1df06edabf12f2fced2ee366e93471eb.txt",
+    "filename": "det_val_0173_IMG_20190822_080226_jpg.rf.1df06edabf12f2fced2ee366e93471eb.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0174_IMG_20190822_080226_jpg.rf.364ba5820e6acdd759fde0ef817c9808.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0174_IMG_20190822_080226_jpg.rf.364ba5820e6acdd759fde0ef817c9808.txt",
+    "filename": "det_val_0174_IMG_20190822_080226_jpg.rf.364ba5820e6acdd759fde0ef817c9808.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0175_IMG_20190822_080226_jpg.rf.42271ff3f3e9c1295a8cb3e0983be9ae.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0175_IMG_20190822_080226_jpg.rf.42271ff3f3e9c1295a8cb3e0983be9ae.txt",
+    "filename": "det_val_0175_IMG_20190822_080226_jpg.rf.42271ff3f3e9c1295a8cb3e0983be9ae.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0176_IMG_20190822_080226_jpg.rf.57a88f0f3d336490993b272080ad7bd0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0176_IMG_20190822_080226_jpg.rf.57a88f0f3d336490993b272080ad7bd0.txt",
+    "filename": "det_val_0176_IMG_20190822_080226_jpg.rf.57a88f0f3d336490993b272080ad7bd0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0177_IMG_20190822_080226_jpg.rf.fe2e71cf56ae33b4181ee6873551872c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0177_IMG_20190822_080226_jpg.rf.fe2e71cf56ae33b4181ee6873551872c.txt",
+    "filename": "det_val_0177_IMG_20190822_080226_jpg.rf.fe2e71cf56ae33b4181ee6873551872c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0178_20190813_121119_jpg.rf.58006df61a3f9e093c9e5a1a66c1810b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0178_20190813_121119_jpg.rf.58006df61a3f9e093c9e5a1a66c1810b.txt",
+    "filename": "det_val_0178_20190813_121119_jpg.rf.58006df61a3f9e093c9e5a1a66c1810b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0179_20190813_121119_jpg.rf.5d50361696cc3abb3ea0c36a51af1303.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0179_20190813_121119_jpg.rf.5d50361696cc3abb3ea0c36a51af1303.txt",
+    "filename": "det_val_0179_20190813_121119_jpg.rf.5d50361696cc3abb3ea0c36a51af1303.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0180_20190813_121119_jpg.rf.de17d74031bad20c900abe4d35f1005b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0180_20190813_121119_jpg.rf.de17d74031bad20c900abe4d35f1005b.txt",
+    "filename": "det_val_0180_20190813_121119_jpg.rf.de17d74031bad20c900abe4d35f1005b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0181_20190813_121119_jpg.rf.ebfa2266c7dfa21dbd35a0064522b285.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0181_20190813_121119_jpg.rf.ebfa2266c7dfa21dbd35a0064522b285.txt",
+    "filename": "det_val_0181_20190813_121119_jpg.rf.ebfa2266c7dfa21dbd35a0064522b285.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0182_20190813_121119_jpg.rf.f02d01a7682728ceeef6478db3f54290.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0182_20190813_121119_jpg.rf.f02d01a7682728ceeef6478db3f54290.txt",
+    "filename": "det_val_0182_20190813_121119_jpg.rf.f02d01a7682728ceeef6478db3f54290.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0183_IMG_20190822_084343_jpg.rf.06ac0b3436ffcdfc47995a7c34b3d977.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0183_IMG_20190822_084343_jpg.rf.06ac0b3436ffcdfc47995a7c34b3d977.txt",
+    "filename": "det_val_0183_IMG_20190822_084343_jpg.rf.06ac0b3436ffcdfc47995a7c34b3d977.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0184_IMG_20190822_084343_jpg.rf.21495e443ecbc51273afc26f886d55c3.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0184_IMG_20190822_084343_jpg.rf.21495e443ecbc51273afc26f886d55c3.txt",
+    "filename": "det_val_0184_IMG_20190822_084343_jpg.rf.21495e443ecbc51273afc26f886d55c3.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0185_IMG_20190822_084343_jpg.rf.63be2e22ea4acb123c23691d374abefa.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0185_IMG_20190822_084343_jpg.rf.63be2e22ea4acb123c23691d374abefa.txt",
+    "filename": "det_val_0185_IMG_20190822_084343_jpg.rf.63be2e22ea4acb123c23691d374abefa.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0186_IMG_20190822_084343_jpg.rf.96936ded6516809ee1d2c1a8d6fc5c40.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0186_IMG_20190822_084343_jpg.rf.96936ded6516809ee1d2c1a8d6fc5c40.txt",
+    "filename": "det_val_0186_IMG_20190822_084343_jpg.rf.96936ded6516809ee1d2c1a8d6fc5c40.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0187_IMG_20190822_084343_jpg.rf.d855294a25f27f344e5feb36d7be5c88.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0187_IMG_20190822_084343_jpg.rf.d855294a25f27f344e5feb36d7be5c88.txt",
+    "filename": "det_val_0187_IMG_20190822_084343_jpg.rf.d855294a25f27f344e5feb36d7be5c88.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0188_IMG_20190829_071551_jpg.rf.00e749fdcd0d202f20777133fcc4549c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0188_IMG_20190829_071551_jpg.rf.00e749fdcd0d202f20777133fcc4549c.txt",
+    "filename": "det_val_0188_IMG_20190829_071551_jpg.rf.00e749fdcd0d202f20777133fcc4549c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0189_IMG_20190829_071551_jpg.rf.1fa8f82cdb41be0cd4600885da9bdcb6.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0189_IMG_20190829_071551_jpg.rf.1fa8f82cdb41be0cd4600885da9bdcb6.txt",
+    "filename": "det_val_0189_IMG_20190829_071551_jpg.rf.1fa8f82cdb41be0cd4600885da9bdcb6.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0190_IMG_20190829_071551_jpg.rf.2515e0e0094eeb5ff20946ebb922a474.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0190_IMG_20190829_071551_jpg.rf.2515e0e0094eeb5ff20946ebb922a474.txt",
+    "filename": "det_val_0190_IMG_20190829_071551_jpg.rf.2515e0e0094eeb5ff20946ebb922a474.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0191_IMG_20190829_071551_jpg.rf.c69eedfcbbfb8d36bc1f2cd498297dd6.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0191_IMG_20190829_071551_jpg.rf.c69eedfcbbfb8d36bc1f2cd498297dd6.txt",
+    "filename": "det_val_0191_IMG_20190829_071551_jpg.rf.c69eedfcbbfb8d36bc1f2cd498297dd6.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0192_IMG_20190829_071551_jpg.rf.ffaca972b34f04fe802f036c4b38eab6.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0192_IMG_20190829_071551_jpg.rf.ffaca972b34f04fe802f036c4b38eab6.txt",
+    "filename": "det_val_0192_IMG_20190829_071551_jpg.rf.ffaca972b34f04fe802f036c4b38eab6.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0193_IMG_7690_JPG.rf.29ec75c779d4216a2090f55311d2e031.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0193_IMG_7690_JPG.rf.29ec75c779d4216a2090f55311d2e031.txt",
+    "filename": "det_val_0193_IMG_7690_JPG.rf.29ec75c779d4216a2090f55311d2e031.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0194_IMG_7690_JPG.rf.445f9ff48f64fef926df2c3f71b943b4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0194_IMG_7690_JPG.rf.445f9ff48f64fef926df2c3f71b943b4.txt",
+    "filename": "det_val_0194_IMG_7690_JPG.rf.445f9ff48f64fef926df2c3f71b943b4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0195_IMG_7690_JPG.rf.520f0d102c4af0bf9668335cc5f9f321.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0195_IMG_7690_JPG.rf.520f0d102c4af0bf9668335cc5f9f321.txt",
+    "filename": "det_val_0195_IMG_7690_JPG.rf.520f0d102c4af0bf9668335cc5f9f321.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0196_IMG_7690_JPG.rf.66621a8f5dff68a6138226aa6845ef2f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0196_IMG_7690_JPG.rf.66621a8f5dff68a6138226aa6845ef2f.txt",
+    "filename": "det_val_0196_IMG_7690_JPG.rf.66621a8f5dff68a6138226aa6845ef2f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0197_IMG_7690_JPG.rf.e299eb23df8a2c0dcd0ac0878e60f75b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0197_IMG_7690_JPG.rf.e299eb23df8a2c0dcd0ac0878e60f75b.txt",
+    "filename": "det_val_0197_IMG_7690_JPG.rf.e299eb23df8a2c0dcd0ac0878e60f75b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0198_IMG20200728131922_jpg.rf.454c37cc1503975e9d1bcc1b47f80486.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0198_IMG20200728131922_jpg.rf.454c37cc1503975e9d1bcc1b47f80486.txt",
+    "filename": "det_val_0198_IMG20200728131922_jpg.rf.454c37cc1503975e9d1bcc1b47f80486.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0199_IMG20200728131922_jpg.rf.765baf58632cb2b64882374d97ff491e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0199_IMG20200728131922_jpg.rf.765baf58632cb2b64882374d97ff491e.txt",
+    "filename": "det_val_0199_IMG20200728131922_jpg.rf.765baf58632cb2b64882374d97ff491e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0200_IMG20200728131922_jpg.rf.8b7c4998a90606ad8a580a7a8dbced37.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0200_IMG20200728131922_jpg.rf.8b7c4998a90606ad8a580a7a8dbced37.txt",
+    "filename": "det_val_0200_IMG20200728131922_jpg.rf.8b7c4998a90606ad8a580a7a8dbced37.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0201_IMG20200728131922_jpg.rf.a598c2d935deeaab9b38b6f1e571dffc.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0201_IMG20200728131922_jpg.rf.a598c2d935deeaab9b38b6f1e571dffc.txt",
+    "filename": "det_val_0201_IMG20200728131922_jpg.rf.a598c2d935deeaab9b38b6f1e571dffc.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0202_IMG20200728131922_jpg.rf.b0d62a24a19c1d565ba762f4757f028f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0202_IMG20200728131922_jpg.rf.b0d62a24a19c1d565ba762f4757f028f.txt",
+    "filename": "det_val_0202_IMG20200728131922_jpg.rf.b0d62a24a19c1d565ba762f4757f028f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 6
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0203_IMG_20190822_084716_jpg.rf.15bfe41a6cf94bd8c39a718b1e1e97cc.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0203_IMG_20190822_084716_jpg.rf.15bfe41a6cf94bd8c39a718b1e1e97cc.txt",
+    "filename": "det_val_0203_IMG_20190822_084716_jpg.rf.15bfe41a6cf94bd8c39a718b1e1e97cc.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0204_IMG_20190822_084716_jpg.rf.628297eae28ee9ac915b2dc3de0d482a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0204_IMG_20190822_084716_jpg.rf.628297eae28ee9ac915b2dc3de0d482a.txt",
+    "filename": "det_val_0204_IMG_20190822_084716_jpg.rf.628297eae28ee9ac915b2dc3de0d482a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0205_IMG_20190822_084716_jpg.rf.7b744d7e2a3b3d469520b08f61db71f1.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0205_IMG_20190822_084716_jpg.rf.7b744d7e2a3b3d469520b08f61db71f1.txt",
+    "filename": "det_val_0205_IMG_20190822_084716_jpg.rf.7b744d7e2a3b3d469520b08f61db71f1.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0206_IMG_20190822_084716_jpg.rf.b16f53a2a83fff96779a1104ed35e1e7.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0206_IMG_20190822_084716_jpg.rf.b16f53a2a83fff96779a1104ed35e1e7.txt",
+    "filename": "det_val_0206_IMG_20190822_084716_jpg.rf.b16f53a2a83fff96779a1104ed35e1e7.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0207_IMG_20190822_084716_jpg.rf.f180036c2ce373bbde6efacc8970bafb.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0207_IMG_20190822_084716_jpg.rf.f180036c2ce373bbde6efacc8970bafb.txt",
+    "filename": "det_val_0207_IMG_20190822_084716_jpg.rf.f180036c2ce373bbde6efacc8970bafb.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0208_IMG20200728130128_jpg.rf.593abf12c41374b8421eaa6c6152352e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0208_IMG20200728130128_jpg.rf.593abf12c41374b8421eaa6c6152352e.txt",
+    "filename": "det_val_0208_IMG20200728130128_jpg.rf.593abf12c41374b8421eaa6c6152352e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0209_IMG20200728182322_01_27632_jpg.rf.179fd39903cbc56e79a79bc07a57b94a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0209_IMG20200728182322_01_27632_jpg.rf.179fd39903cbc56e79a79bc07a57b94a.txt",
+    "filename": "det_val_0209_IMG20200728182322_01_27632_jpg.rf.179fd39903cbc56e79a79bc07a57b94a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0210_IMG20200728182322_01_27632_jpg.rf.2ff699449a90b32d17ad24bfc22a419e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0210_IMG20200728182322_01_27632_jpg.rf.2ff699449a90b32d17ad24bfc22a419e.txt",
+    "filename": "det_val_0210_IMG20200728182322_01_27632_jpg.rf.2ff699449a90b32d17ad24bfc22a419e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0211_IMG20200728182322_01_27632_jpg.rf.71715758c607c90dbb20bb6c5de67a1d.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0211_IMG20200728182322_01_27632_jpg.rf.71715758c607c90dbb20bb6c5de67a1d.txt",
+    "filename": "det_val_0211_IMG20200728182322_01_27632_jpg.rf.71715758c607c90dbb20bb6c5de67a1d.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0212_IMG20200728182322_01_27632_jpg.rf.96a95e857dfeb8349aa591f0cd9b3341.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0212_IMG20200728182322_01_27632_jpg.rf.96a95e857dfeb8349aa591f0cd9b3341.txt",
+    "filename": "det_val_0212_IMG20200728182322_01_27632_jpg.rf.96a95e857dfeb8349aa591f0cd9b3341.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0213_IMG20200728182322_01_27632_jpg.rf.e313f0cfc64c142e82fe01e65c8902c2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0213_IMG20200728182322_01_27632_jpg.rf.e313f0cfc64c142e82fe01e65c8902c2.txt",
+    "filename": "det_val_0213_IMG20200728182322_01_27632_jpg.rf.e313f0cfc64c142e82fe01e65c8902c2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0214_IMG20200728182326_27637_jpg.rf.fa8105276b1f028fa2a24686c3a25e17.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0214_IMG20200728182326_27637_jpg.rf.fa8105276b1f028fa2a24686c3a25e17.txt",
+    "filename": "det_val_0214_IMG20200728182326_27637_jpg.rf.fa8105276b1f028fa2a24686c3a25e17.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0215_20190820_143705_22981_jpg.rf.266c3493dc7e26ec1e6968f576303cb2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0215_20190820_143705_22981_jpg.rf.266c3493dc7e26ec1e6968f576303cb2.txt",
+    "filename": "det_val_0215_20190820_143705_22981_jpg.rf.266c3493dc7e26ec1e6968f576303cb2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0216_20190820_143705_22981_jpg.rf.7f1e9b9698d75549b54e0b3792e35be8.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0216_20190820_143705_22981_jpg.rf.7f1e9b9698d75549b54e0b3792e35be8.txt",
+    "filename": "det_val_0216_20190820_143705_22981_jpg.rf.7f1e9b9698d75549b54e0b3792e35be8.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0217_20190820_143705_22981_jpg.rf.9c293c80fe671a310be9c076177f33e1.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0217_20190820_143705_22981_jpg.rf.9c293c80fe671a310be9c076177f33e1.txt",
+    "filename": "det_val_0217_20190820_143705_22981_jpg.rf.9c293c80fe671a310be9c076177f33e1.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0218_20190820_143705_22981_jpg.rf.bf0ac793496113fc2fad3f6579a0de7a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0218_20190820_143705_22981_jpg.rf.bf0ac793496113fc2fad3f6579a0de7a.txt",
+    "filename": "det_val_0218_20190820_143705_22981_jpg.rf.bf0ac793496113fc2fad3f6579a0de7a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0219_20190820_143705_22981_jpg.rf.c1680d0cb8b199e722820d5519c08241.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0219_20190820_143705_22981_jpg.rf.c1680d0cb8b199e722820d5519c08241.txt",
+    "filename": "det_val_0219_20190820_143705_22981_jpg.rf.c1680d0cb8b199e722820d5519c08241.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0220_IMG20200728182322_27629_jpg.rf.2b5f0f433c5a0318698b6dfce7b9303a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0220_IMG20200728182322_27629_jpg.rf.2b5f0f433c5a0318698b6dfce7b9303a.txt",
+    "filename": "det_val_0220_IMG20200728182322_27629_jpg.rf.2b5f0f433c5a0318698b6dfce7b9303a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0221_IMG20200728182322_27629_jpg.rf.61e2925d0ef1d14d933f1d834f42d673.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0221_IMG20200728182322_27629_jpg.rf.61e2925d0ef1d14d933f1d834f42d673.txt",
+    "filename": "det_val_0221_IMG20200728182322_27629_jpg.rf.61e2925d0ef1d14d933f1d834f42d673.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0222_IMG20200728182322_27629_jpg.rf.82166d7682ad6828c473e398a684b2e4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0222_IMG20200728182322_27629_jpg.rf.82166d7682ad6828c473e398a684b2e4.txt",
+    "filename": "det_val_0222_IMG20200728182322_27629_jpg.rf.82166d7682ad6828c473e398a684b2e4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0223_IMG20200728182322_27629_jpg.rf.e598dc2042e2fa26f68884787dc22ecb.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0223_IMG20200728182322_27629_jpg.rf.e598dc2042e2fa26f68884787dc22ecb.txt",
+    "filename": "det_val_0223_IMG20200728182322_27629_jpg.rf.e598dc2042e2fa26f68884787dc22ecb.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0224_IMG20200728182322_27629_jpg.rf.f95d84619268b7a7f88bdcf6c9520bc0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0224_IMG20200728182322_27629_jpg.rf.f95d84619268b7a7f88bdcf6c9520bc0.txt",
+    "filename": "det_val_0224_IMG20200728182322_27629_jpg.rf.f95d84619268b7a7f88bdcf6c9520bc0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0225_IMG_20190822_080734_jpg.rf.04d9d3e96bee2d9c101f6352f8468300.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0225_IMG_20190822_080734_jpg.rf.04d9d3e96bee2d9c101f6352f8468300.txt",
+    "filename": "det_val_0225_IMG_20190822_080734_jpg.rf.04d9d3e96bee2d9c101f6352f8468300.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0226_IMG_20190822_080734_jpg.rf.4389f259f761237d5be7e89ad78f74a5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0226_IMG_20190822_080734_jpg.rf.4389f259f761237d5be7e89ad78f74a5.txt",
+    "filename": "det_val_0226_IMG_20190822_080734_jpg.rf.4389f259f761237d5be7e89ad78f74a5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0227_IMG_20190822_080734_jpg.rf.573121201ea3987cb8b223699e0e537f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0227_IMG_20190822_080734_jpg.rf.573121201ea3987cb8b223699e0e537f.txt",
+    "filename": "det_val_0227_IMG_20190822_080734_jpg.rf.573121201ea3987cb8b223699e0e537f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0228_IMG_20190822_080734_jpg.rf.d0721123bc1fb1a59a5c94b75412c13f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0228_IMG_20190822_080734_jpg.rf.d0721123bc1fb1a59a5c94b75412c13f.txt",
+    "filename": "det_val_0228_IMG_20190822_080734_jpg.rf.d0721123bc1fb1a59a5c94b75412c13f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0229_IMG_20190822_080734_jpg.rf.f767340075b9052af857e753f286d4ce.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0229_IMG_20190822_080734_jpg.rf.f767340075b9052af857e753f286d4ce.txt",
+    "filename": "det_val_0229_IMG_20190822_080734_jpg.rf.f767340075b9052af857e753f286d4ce.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0230_IMG20200728190059_jpg.rf.05fbc598da0e6566d98db4b6eff70fe4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0230_IMG20200728190059_jpg.rf.05fbc598da0e6566d98db4b6eff70fe4.txt",
+    "filename": "det_val_0230_IMG20200728190059_jpg.rf.05fbc598da0e6566d98db4b6eff70fe4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0231_IMG20200728190059_jpg.rf.3795b6810134dccd8dc194e8baed943b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0231_IMG20200728190059_jpg.rf.3795b6810134dccd8dc194e8baed943b.txt",
+    "filename": "det_val_0231_IMG20200728190059_jpg.rf.3795b6810134dccd8dc194e8baed943b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0232_IMG20200728190059_jpg.rf.7847843293a1f8c485153161aad4bd36.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0232_IMG20200728190059_jpg.rf.7847843293a1f8c485153161aad4bd36.txt",
+    "filename": "det_val_0232_IMG20200728190059_jpg.rf.7847843293a1f8c485153161aad4bd36.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0233_IMG20200728190059_jpg.rf.9be0c1bbd37a0b73838f54ef99e11b0e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0233_IMG20200728190059_jpg.rf.9be0c1bbd37a0b73838f54ef99e11b0e.txt",
+    "filename": "det_val_0233_IMG20200728190059_jpg.rf.9be0c1bbd37a0b73838f54ef99e11b0e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0234_IMG20200728190059_jpg.rf.d58ee74648e7171a655d43784e18470d.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0234_IMG20200728190059_jpg.rf.d58ee74648e7171a655d43784e18470d.txt",
+    "filename": "det_val_0234_IMG20200728190059_jpg.rf.d58ee74648e7171a655d43784e18470d.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0235_IMG_6942_JPG.rf.220a045e7f4c3769d2ea5704fc59d293.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0235_IMG_6942_JPG.rf.220a045e7f4c3769d2ea5704fc59d293.txt",
+    "filename": "det_val_0235_IMG_6942_JPG.rf.220a045e7f4c3769d2ea5704fc59d293.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0236_IMG_6942_JPG.rf.2ad9b5bccfcf9851908d38bf418c718e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0236_IMG_6942_JPG.rf.2ad9b5bccfcf9851908d38bf418c718e.txt",
+    "filename": "det_val_0236_IMG_6942_JPG.rf.2ad9b5bccfcf9851908d38bf418c718e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0237_IMG_6942_JPG.rf.506e9bda3bcdc8058fb2e827b94633c0.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0237_IMG_6942_JPG.rf.506e9bda3bcdc8058fb2e827b94633c0.txt",
+    "filename": "det_val_0237_IMG_6942_JPG.rf.506e9bda3bcdc8058fb2e827b94633c0.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0238_IMG_6942_JPG.rf.a2cf776d97836d89601d5b88eb584fcc.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0238_IMG_6942_JPG.rf.a2cf776d97836d89601d5b88eb584fcc.txt",
+    "filename": "det_val_0238_IMG_6942_JPG.rf.a2cf776d97836d89601d5b88eb584fcc.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0239_IMG_6942_JPG.rf.fe275c6315894dfe76a09864ae2d5f47.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0239_IMG_6942_JPG.rf.fe275c6315894dfe76a09864ae2d5f47.txt",
+    "filename": "det_val_0239_IMG_6942_JPG.rf.fe275c6315894dfe76a09864ae2d5f47.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0240_IMG_2519_JPG.rf.fcd43f777ce9c4da4ad0afc9f17ae56f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0240_IMG_2519_JPG.rf.fcd43f777ce9c4da4ad0afc9f17ae56f.txt",
+    "filename": "det_val_0240_IMG_2519_JPG.rf.fcd43f777ce9c4da4ad0afc9f17ae56f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0241_20190813_130307_jpg.rf.01f4882c41841c35fdc22e48387bcde6.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0241_20190813_130307_jpg.rf.01f4882c41841c35fdc22e48387bcde6.txt",
+    "filename": "det_val_0241_20190813_130307_jpg.rf.01f4882c41841c35fdc22e48387bcde6.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0242_20190813_130307_jpg.rf.0828c4fac62af14c6d204e1e59febd8b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0242_20190813_130307_jpg.rf.0828c4fac62af14c6d204e1e59febd8b.txt",
+    "filename": "det_val_0242_20190813_130307_jpg.rf.0828c4fac62af14c6d204e1e59febd8b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0243_20190813_130307_jpg.rf.0f368e77095ebcbd471fc4abacda7f70.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0243_20190813_130307_jpg.rf.0f368e77095ebcbd471fc4abacda7f70.txt",
+    "filename": "det_val_0243_20190813_130307_jpg.rf.0f368e77095ebcbd471fc4abacda7f70.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0244_20190813_130307_jpg.rf.1e4a4cc789599923a6dec214dd18ece5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0244_20190813_130307_jpg.rf.1e4a4cc789599923a6dec214dd18ece5.txt",
+    "filename": "det_val_0244_20190813_130307_jpg.rf.1e4a4cc789599923a6dec214dd18ece5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0245_20190813_130307_jpg.rf.d8fd8fd3e6e2d28d2c7caf711fac2c12.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0245_20190813_130307_jpg.rf.d8fd8fd3e6e2d28d2c7caf711fac2c12.txt",
+    "filename": "det_val_0245_20190813_130307_jpg.rf.d8fd8fd3e6e2d28d2c7caf711fac2c12.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0246_IMG_7698_JPG.rf.d8619abac00c80109db55809e4c36d3d.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0246_IMG_7698_JPG.rf.d8619abac00c80109db55809e4c36d3d.txt",
+    "filename": "det_val_0246_IMG_7698_JPG.rf.d8619abac00c80109db55809e4c36d3d.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0247_IMG_20190923_183554_1_jpg.rf.054f9d6474853fb6a0c7078ac3429251.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0247_IMG_20190923_183554_1_jpg.rf.054f9d6474853fb6a0c7078ac3429251.txt",
+    "filename": "det_val_0247_IMG_20190923_183554_1_jpg.rf.054f9d6474853fb6a0c7078ac3429251.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0248_IMG_20190923_183554_1_jpg.rf.31e0c0da2b9203bf5b4edd0127d321ca.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0248_IMG_20190923_183554_1_jpg.rf.31e0c0da2b9203bf5b4edd0127d321ca.txt",
+    "filename": "det_val_0248_IMG_20190923_183554_1_jpg.rf.31e0c0da2b9203bf5b4edd0127d321ca.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0249_IMG_20190923_183554_1_jpg.rf.403b2c27e7932720157c62ba78d4dd24.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0249_IMG_20190923_183554_1_jpg.rf.403b2c27e7932720157c62ba78d4dd24.txt",
+    "filename": "det_val_0249_IMG_20190923_183554_1_jpg.rf.403b2c27e7932720157c62ba78d4dd24.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0250_IMG_20190923_183554_1_jpg.rf.50bfba83dca7f19b68d72c23c6e0dd49.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0250_IMG_20190923_183554_1_jpg.rf.50bfba83dca7f19b68d72c23c6e0dd49.txt",
+    "filename": "det_val_0250_IMG_20190923_183554_1_jpg.rf.50bfba83dca7f19b68d72c23c6e0dd49.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0251_IMG_20190923_183554_1_jpg.rf.77667a2db4f86611e245fe306d6e0fd3.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0251_IMG_20190923_183554_1_jpg.rf.77667a2db4f86611e245fe306d6e0fd3.txt",
+    "filename": "det_val_0251_IMG_20190923_183554_1_jpg.rf.77667a2db4f86611e245fe306d6e0fd3.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0252_IMG20200728180306_jpg.rf.3aa461ef5717279a7d03c7dad582662a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0252_IMG20200728180306_jpg.rf.3aa461ef5717279a7d03c7dad582662a.txt",
+    "filename": "det_val_0252_IMG20200728180306_jpg.rf.3aa461ef5717279a7d03c7dad582662a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0253_IMG20200728180306_jpg.rf.91c32ef2f05295528416c7d3901cbbce.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0253_IMG20200728180306_jpg.rf.91c32ef2f05295528416c7d3901cbbce.txt",
+    "filename": "det_val_0253_IMG20200728180306_jpg.rf.91c32ef2f05295528416c7d3901cbbce.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0254_IMG20200728180306_jpg.rf.925aad3dcc9fe3b4ac7eb39801f39bdd.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0254_IMG20200728180306_jpg.rf.925aad3dcc9fe3b4ac7eb39801f39bdd.txt",
+    "filename": "det_val_0254_IMG20200728180306_jpg.rf.925aad3dcc9fe3b4ac7eb39801f39bdd.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0255_IMG20200728180306_jpg.rf.e3926c79f3d0c95c8b71f148a839d3e1.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0255_IMG20200728180306_jpg.rf.e3926c79f3d0c95c8b71f148a839d3e1.txt",
+    "filename": "det_val_0255_IMG20200728180306_jpg.rf.e3926c79f3d0c95c8b71f148a839d3e1.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0256_IMG20200728180306_jpg.rf.fac28cb94d957c97014924bef14b20fe.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0256_IMG20200728180306_jpg.rf.fac28cb94d957c97014924bef14b20fe.txt",
+    "filename": "det_val_0256_IMG20200728180306_jpg.rf.fac28cb94d957c97014924bef14b20fe.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0257_IMG_20190902_102958_jpg.rf.1a12a45e2aba3158d138d6eb50f8aeb3.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0257_IMG_20190902_102958_jpg.rf.1a12a45e2aba3158d138d6eb50f8aeb3.txt",
+    "filename": "det_val_0257_IMG_20190902_102958_jpg.rf.1a12a45e2aba3158d138d6eb50f8aeb3.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0258_IMG_20190902_102958_jpg.rf.1dd1898d727fd14f0ce33a7425863671.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0258_IMG_20190902_102958_jpg.rf.1dd1898d727fd14f0ce33a7425863671.txt",
+    "filename": "det_val_0258_IMG_20190902_102958_jpg.rf.1dd1898d727fd14f0ce33a7425863671.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0259_IMG_20190902_102958_jpg.rf.33e2e24e93763ec0a698389a6aadc257.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0259_IMG_20190902_102958_jpg.rf.33e2e24e93763ec0a698389a6aadc257.txt",
+    "filename": "det_val_0259_IMG_20190902_102958_jpg.rf.33e2e24e93763ec0a698389a6aadc257.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0260_IMG_20190902_102958_jpg.rf.8d7e0e35746b0452f8975fc3e26c8ad5.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0260_IMG_20190902_102958_jpg.rf.8d7e0e35746b0452f8975fc3e26c8ad5.txt",
+    "filename": "det_val_0260_IMG_20190902_102958_jpg.rf.8d7e0e35746b0452f8975fc3e26c8ad5.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0261_IMG_20190902_102958_jpg.rf.c9c249a45f7b0ecd307654f2b5d3760f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0261_IMG_20190902_102958_jpg.rf.c9c249a45f7b0ecd307654f2b5d3760f.txt",
+    "filename": "det_val_0261_IMG_20190902_102958_jpg.rf.c9c249a45f7b0ecd307654f2b5d3760f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0262_IMG20200728131141_jpg.rf.579040c0e26c9f9825023cb2cb5b60ae.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0262_IMG20200728131141_jpg.rf.579040c0e26c9f9825023cb2cb5b60ae.txt",
+    "filename": "det_val_0262_IMG20200728131141_jpg.rf.579040c0e26c9f9825023cb2cb5b60ae.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0263_IMG20200728131141_jpg.rf.5dd9a1805ba865e9c16c598a7434953e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0263_IMG20200728131141_jpg.rf.5dd9a1805ba865e9c16c598a7434953e.txt",
+    "filename": "det_val_0263_IMG20200728131141_jpg.rf.5dd9a1805ba865e9c16c598a7434953e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0264_IMG20200728131141_jpg.rf.709ea1dd81ee12d8c1b5443ecec4a12e.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0264_IMG20200728131141_jpg.rf.709ea1dd81ee12d8c1b5443ecec4a12e.txt",
+    "filename": "det_val_0264_IMG20200728131141_jpg.rf.709ea1dd81ee12d8c1b5443ecec4a12e.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0265_IMG20200728131141_jpg.rf.7562955dbd1ba2fa1765ab86fd848ed9.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0265_IMG20200728131141_jpg.rf.7562955dbd1ba2fa1765ab86fd848ed9.txt",
+    "filename": "det_val_0265_IMG20200728131141_jpg.rf.7562955dbd1ba2fa1765ab86fd848ed9.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0266_IMG20200728131141_jpg.rf.a10a90ad1e59a81b2a56819bd64099cc.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0266_IMG20200728131141_jpg.rf.a10a90ad1e59a81b2a56819bd64099cc.txt",
+    "filename": "det_val_0266_IMG20200728131141_jpg.rf.a10a90ad1e59a81b2a56819bd64099cc.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0267_IMG_20190822_084654_1_jpg.rf.dd04365d16d84117edb9132355a672db.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0267_IMG_20190822_084654_1_jpg.rf.dd04365d16d84117edb9132355a672db.txt",
+    "filename": "det_val_0267_IMG_20190822_084654_1_jpg.rf.dd04365d16d84117edb9132355a672db.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0268_20190809_160245_jpg.rf.353a4eef009088960e30d100f48b2e2b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0268_20190809_160245_jpg.rf.353a4eef009088960e30d100f48b2e2b.txt",
+    "filename": "det_val_0268_20190809_160245_jpg.rf.353a4eef009088960e30d100f48b2e2b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0269_20190809_160245_jpg.rf.46b1fa0da821d3a6a04af162f87215cd.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0269_20190809_160245_jpg.rf.46b1fa0da821d3a6a04af162f87215cd.txt",
+    "filename": "det_val_0269_20190809_160245_jpg.rf.46b1fa0da821d3a6a04af162f87215cd.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0270_20190809_160245_jpg.rf.8db1de137da0a02f550226993e956f78.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0270_20190809_160245_jpg.rf.8db1de137da0a02f550226993e956f78.txt",
+    "filename": "det_val_0270_20190809_160245_jpg.rf.8db1de137da0a02f550226993e956f78.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0271_20190809_160245_jpg.rf.98c048a17493f917b739b3506a21d58d.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0271_20190809_160245_jpg.rf.98c048a17493f917b739b3506a21d58d.txt",
+    "filename": "det_val_0271_20190809_160245_jpg.rf.98c048a17493f917b739b3506a21d58d.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0272_20190809_160245_jpg.rf.a8f2e6173563d003629024da56165340.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0272_20190809_160245_jpg.rf.a8f2e6173563d003629024da56165340.txt",
+    "filename": "det_val_0272_20190809_160245_jpg.rf.a8f2e6173563d003629024da56165340.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0273_20190813_121116_jpg.rf.0d4610b22657e51cc732fbe980d679ac.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0273_20190813_121116_jpg.rf.0d4610b22657e51cc732fbe980d679ac.txt",
+    "filename": "det_val_0273_20190813_121116_jpg.rf.0d4610b22657e51cc732fbe980d679ac.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0274_20190813_121116_jpg.rf.20880ff32542478cad41e2a1f0525fa2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0274_20190813_121116_jpg.rf.20880ff32542478cad41e2a1f0525fa2.txt",
+    "filename": "det_val_0274_20190813_121116_jpg.rf.20880ff32542478cad41e2a1f0525fa2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0275_20190813_121116_jpg.rf.3ca204ad6f9496cbcf48a3c5ea8ef812.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0275_20190813_121116_jpg.rf.3ca204ad6f9496cbcf48a3c5ea8ef812.txt",
+    "filename": "det_val_0275_20190813_121116_jpg.rf.3ca204ad6f9496cbcf48a3c5ea8ef812.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0276_20190813_121116_jpg.rf.56c8fbcda21087f99c51422bec5be595.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0276_20190813_121116_jpg.rf.56c8fbcda21087f99c51422bec5be595.txt",
+    "filename": "det_val_0276_20190813_121116_jpg.rf.56c8fbcda21087f99c51422bec5be595.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0277_20190813_121116_jpg.rf.70098bb51d5d3271ead02ce264e4817b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0277_20190813_121116_jpg.rf.70098bb51d5d3271ead02ce264e4817b.txt",
+    "filename": "det_val_0277_20190813_121116_jpg.rf.70098bb51d5d3271ead02ce264e4817b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0278_IMG_20190829_071942_1_jpg.rf.04b3497f730c542f9c8df89071a6cfda.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0278_IMG_20190829_071942_1_jpg.rf.04b3497f730c542f9c8df89071a6cfda.txt",
+    "filename": "det_val_0278_IMG_20190829_071942_1_jpg.rf.04b3497f730c542f9c8df89071a6cfda.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0279_IMG_20190829_071942_1_jpg.rf.2e14f23d93b297b218587fd0e9ebfd0f.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0279_IMG_20190829_071942_1_jpg.rf.2e14f23d93b297b218587fd0e9ebfd0f.txt",
+    "filename": "det_val_0279_IMG_20190829_071942_1_jpg.rf.2e14f23d93b297b218587fd0e9ebfd0f.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0280_IMG_20190829_071942_1_jpg.rf.b5407bbecbb652912c8ce066f6a83619.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0280_IMG_20190829_071942_1_jpg.rf.b5407bbecbb652912c8ce066f6a83619.txt",
+    "filename": "det_val_0280_IMG_20190829_071942_1_jpg.rf.b5407bbecbb652912c8ce066f6a83619.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0281_IMG_20190829_071942_1_jpg.rf.e0913e91934b00a7b90616e489897dd2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0281_IMG_20190829_071942_1_jpg.rf.e0913e91934b00a7b90616e489897dd2.txt",
+    "filename": "det_val_0281_IMG_20190829_071942_1_jpg.rf.e0913e91934b00a7b90616e489897dd2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0282_IMG_20190829_071942_1_jpg.rf.e0c55b01e3d89ab05465ac7f7478e97b.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0282_IMG_20190829_071942_1_jpg.rf.e0c55b01e3d89ab05465ac7f7478e97b.txt",
+    "filename": "det_val_0282_IMG_20190829_071942_1_jpg.rf.e0c55b01e3d89ab05465ac7f7478e97b.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0283_20190820_143733_jpg.rf.028f1b139b53258893c388f7beba2ee4.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0283_20190820_143733_jpg.rf.028f1b139b53258893c388f7beba2ee4.txt",
+    "filename": "det_val_0283_20190820_143733_jpg.rf.028f1b139b53258893c388f7beba2ee4.jpg",
+    "split": "val",
+    "bounding_boxes_count": 0
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0284_20190820_143733_jpg.rf.4b71d7e677228b8d8980e81f99aac02a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0284_20190820_143733_jpg.rf.4b71d7e677228b8d8980e81f99aac02a.txt",
+    "filename": "det_val_0284_20190820_143733_jpg.rf.4b71d7e677228b8d8980e81f99aac02a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 0
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0285_20190820_143733_jpg.rf.9efc28ef5ea71e5e25590877ee040d54.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0285_20190820_143733_jpg.rf.9efc28ef5ea71e5e25590877ee040d54.txt",
+    "filename": "det_val_0285_20190820_143733_jpg.rf.9efc28ef5ea71e5e25590877ee040d54.jpg",
+    "split": "val",
+    "bounding_boxes_count": 0
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0286_20190820_143733_jpg.rf.bd768a8709ddc823df91e793032a7bfc.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0286_20190820_143733_jpg.rf.bd768a8709ddc823df91e793032a7bfc.txt",
+    "filename": "det_val_0286_20190820_143733_jpg.rf.bd768a8709ddc823df91e793032a7bfc.jpg",
+    "split": "val",
+    "bounding_boxes_count": 0
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0287_20190820_143733_jpg.rf.f0308d8ae71d17812d3353451fbe719a.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0287_20190820_143733_jpg.rf.f0308d8ae71d17812d3353451fbe719a.txt",
+    "filename": "det_val_0287_20190820_143733_jpg.rf.f0308d8ae71d17812d3353451fbe719a.jpg",
+    "split": "val",
+    "bounding_boxes_count": 0
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0288_IMG_20190820_085618_jpg.rf.36624e414652f1cb3bdd0264d18227dd.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0288_IMG_20190820_085618_jpg.rf.36624e414652f1cb3bdd0264d18227dd.txt",
+    "filename": "det_val_0288_IMG_20190820_085618_jpg.rf.36624e414652f1cb3bdd0264d18227dd.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0289_IMG_20190820_085618_jpg.rf.626f22bdb9501a9e53c97ee2fe636583.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0289_IMG_20190820_085618_jpg.rf.626f22bdb9501a9e53c97ee2fe636583.txt",
+    "filename": "det_val_0289_IMG_20190820_085618_jpg.rf.626f22bdb9501a9e53c97ee2fe636583.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0290_IMG_20190820_085618_jpg.rf.68a18a44db8968a1bd7f14b7c1e55687.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0290_IMG_20190820_085618_jpg.rf.68a18a44db8968a1bd7f14b7c1e55687.txt",
+    "filename": "det_val_0290_IMG_20190820_085618_jpg.rf.68a18a44db8968a1bd7f14b7c1e55687.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0291_IMG_20190820_085618_jpg.rf.7582fb0209695f48f30927eedf37a884.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0291_IMG_20190820_085618_jpg.rf.7582fb0209695f48f30927eedf37a884.txt",
+    "filename": "det_val_0291_IMG_20190820_085618_jpg.rf.7582fb0209695f48f30927eedf37a884.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0292_IMG_20190820_085618_jpg.rf.a18047fae80f628080b65a0e88571feb.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0292_IMG_20190820_085618_jpg.rf.a18047fae80f628080b65a0e88571feb.txt",
+    "filename": "det_val_0292_IMG_20190820_085618_jpg.rf.a18047fae80f628080b65a0e88571feb.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0293_IMG20200728181111_jpg.rf.f5c4157aea1809919810c02e6d47846c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0293_IMG20200728181111_jpg.rf.f5c4157aea1809919810c02e6d47846c.txt",
+    "filename": "det_val_0293_IMG20200728181111_jpg.rf.f5c4157aea1809919810c02e6d47846c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 2
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0294_IMG20200728182316_01_jpg.rf.bf37cc9f8a98613177e48e16ee4680a2.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0294_IMG20200728182316_01_jpg.rf.bf37cc9f8a98613177e48e16ee4680a2.txt",
+    "filename": "det_val_0294_IMG20200728182316_01_jpg.rf.bf37cc9f8a98613177e48e16ee4680a2.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  },
+  {
+    "image_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/images/val/det_val_0295_IMG20200728182322_01_27634_jpg.rf.a6de199f9a2af41791d4a5e6ccdf0e5c.jpg",
+    "label_rel_path": "datasets/NUTRIVISION-AI-DATASET-5000/detection/labels/val/det_val_0295_IMG20200728182322_01_27634_jpg.rf.a6de199f9a2af41791d4a5e6ccdf0e5c.txt",
+    "filename": "det_val_0295_IMG20200728182322_01_27634_jpg.rf.a6de199f9a2af41791d4a5e6ccdf0e5c.jpg",
+    "split": "val",
+    "bounding_boxes_count": 1
+  }
+]

@@ -1,0 +1,46 @@
+# NutriVision AI — Unified Multi-Task Model Configuration
+# Enables dynamic model swapping between MobileNetV3, EfficientNet-B0, ResNet50, ViT, and YOLO
+# without rewriting backend services or application contracts.
+
+tasks:
+  produce_classification:
+    enabled: true
+    active_model: "mobilenet_v3_small"
+    checkpoint_path: "backend/models/food_classifier/best_food_classifier.pth"
+    num_classes: 10
+    confidence_threshold: 0.30
+    fallback_strategy: "strict_rejection"
+    classes:
+      - "apple"
+      - "banana"
+      - "bitter_gourd"
+      - "capsicum"
+      - "cucumber"
+      - "okra"
+      - "orange"
+      - "potato"
+      - "strawberry"
+      - "tomato"
+
+  freshness_classification:
+    enabled: true
+    active_model: "mobilenet_v3_small"
+    checkpoint_path: "backend/models/freshness/best_model.pth"
+    num_classes: 2
+    confidence_threshold: 0.50
+    classes:
+      - "Fresh"
+      - "Spoiled"
+
+  object_detection:
+    enabled: true
+    framework: "ultralytics_yolo"
+    checkpoint_path: "backend/models/detector/scratch_run/weights/best.pt"
+    confidence_threshold: 0.20
+    iou_threshold: 0.40
+    classes_yaml: "datasets/NUTRIVISION-AI-DATASET-5000/detection/data.yaml"
+
+runtime:
+  device: "auto" # "auto", "cuda", or "cpu"
+  mixed_precision: true
+  num_threads: 8

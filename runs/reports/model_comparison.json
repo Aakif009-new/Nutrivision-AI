@@ -1,0 +1,50 @@
+[
+  {
+    "task": "freshness",
+    "model_name": "mobilenet_v3_small",
+    "checkpoint_path": "models\\best\\freshness_mobilenet_v3_small.pth",
+    "test_samples": 476,
+    "test_accuracy": 92.44,
+    "precision_macro": 0.9247,
+    "recall_macro": 0.9245,
+    "f1_macro": 0.9244,
+    "precision_weighted": 0.9249,
+    "recall_weighted": 0.9244,
+    "f1_weighted": 0.9244,
+    "avg_latency_ms": 4.33,
+    "params_millions": 1.52,
+    "checkpoint_size_mb": 5.93
+  },
+  {
+    "task": "freshness",
+    "model_name": "efficientnet_b0",
+    "checkpoint_path": "models\\best\\freshness_efficientnet_b0.pth",
+    "test_samples": 476,
+    "test_accuracy": 85.08,
+    "precision_macro": 0.8511,
+    "recall_macro": 0.851,
+    "f1_macro": 0.8508,
+    "precision_weighted": 0.8512,
+    "recall_weighted": 0.8508,
+    "f1_weighted": 0.8508,
+    "avg_latency_ms": 28.42,
+    "params_millions": 4.01,
+    "checkpoint_size_mb": 15.58
+  },
+  {
+    "task": "produce",
+    "model_name": "mobilenet_v3_small",
+    "checkpoint_path": "models\\best\\produce_mobilenet_v3_small.pth",
+    "test_samples": 476,
+    "test_accuracy": 96.01,
+    "precision_macro": 0.9626,
+    "recall_macro": 0.9613,
+    "f1_macro": 0.9599,
+    "precision_weighted": 0.9624,
+    "recall_weighted": 0.9601,
+    "f1_weighted": 0.9591,
+    "avg_latency_ms": 3.86,
+    "params_millions": 1.53,
+    "checkpoint_size_mb": 5.96
+  }
+]

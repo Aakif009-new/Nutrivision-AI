@@ -55,5 +55,9 @@ backend/.env
 *.njsproj
 *.sln
 *.sw?
-
-.txt
+# Model checkpoints & large run artifacts
+runs/classification/
+runs/detection/
+*.pth
+*.pt
+*.onnx

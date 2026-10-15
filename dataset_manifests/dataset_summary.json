@@ -1,0 +1,41 @@
+{
+  "dataset_name": "NUTRIVISION-AI-DATASET-5000",
+  "total_images": 5000,
+  "tasks": {
+    "freshness_classification": {
+      "train": 2114,
+      "val": 442,
+      "test": 476,
+      "total": 3032,
+      "classes": {
+        "Fresh": 1518,
+        "Spoiled": 1514
+      }
+    },
+    "produce_classification": {
+      "train": 2114,
+      "val": 442,
+      "test": 476,
+      "total": 3032,
+      "classes": {
+        "apple": 314,
+        "banana": 314,
+        "bitter_gourd": 315,
+        "capsicum": 315,
+        "cucumber": 315,
+        "okra": 315,
+        "orange": 316,
+        "potato": 316,
+        "strawberry": 196,
+        "tomato": 316
+      }
+    },
+    "object_detection": {
+      "train": 1377,
+      "val": 295,
+      "test": 296,
+      "total": 1968,
+      "classes": 14
+    }
+  }
+}
