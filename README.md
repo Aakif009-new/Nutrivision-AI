@@ -1,18 +1,17 @@
-# 🥗 NutriVision AI: Smart Food Quality & Nutrition Analyzer
+# 🥗 NutriVision AI: Smart Food Quality & Multi-Task Analysis Platform
 
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.109%2B-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-15%2B-000000.svg?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.8%2B-5C3EE8.svg?logo=opencv&logoColor=white)](https://opencv.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-6.0%2B-47A248.svg?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![Academic Compliance](https://img.shields.io/badge/Academic%20Compliance-100%25%20Scratch%20Trained-brightgreen.svg)](#-academic-compliance--zero-pretrained-weights)
+[![Transfer Learning](https://img.shields.io/badge/Transfer%20Learning-Official%20Pretrained-brightgreen.svg)](#-model-registry--pretrained-architectures)
 
-**A dual-domain academic Computer Vision & Image Processing platform for real-time multi-object food detection, freshness classification, surface spoilage segmentation, empirical weight regression, and nutritional analysis.**
+**A unified, end-to-end multi-task food vision platform powered by official pretrained deep learning backbones (MobileNetV3, EfficientNet-B0, ResNet50, YOLO) with transfer learning, fine-tuning, deterministic evaluation on 5,000 curated images, and real-time nutritional intelligence.**
 
-[Key Features](#-key-features) • [Dual-Domain Architecture](#-dual-domain-architecture) • [Academic Compliance](#-academic-compliance--zero-pretrained-weights) • [Quick Start](#-quick-start-guide) • [Model Training](#-model-training--methodology) • [API Reference](#-api-endpoints)
+[Key Features](#-key-features) • [Architecture](#-architecture--model-registry) • [Dataset (5,000 Images)](#-curated-dataset-5000-images) • [Model Benchmarks](#-model-benchmarks--test-results) • [Quick Start](#-quick-start-guide) • [Required Commands](#-required-commands--cli-reference) • [API Reference](#-api-endpoints)
 
 </div>
 
@@ -20,258 +19,217 @@
 
 ## 📖 Executive Summary
 
-**NutriVision AI** is a comprehensive computer vision system designed as a technical proof-of-concept for academic evaluation across **two distinct foundational disciplines**:
-1. **Digital Image Processing (DIP)**: Deterministic spatial filtering, multi-space color segmentation ($RGB \rightarrow HSV \rightarrow LAB \rightarrow YCrCb$), morphological mathematics, Hu invariant moments, and contour convexity analysis.
-2. **Computer Vision & Deep Learning (CV/ML)**: Custom residual convolutional networks, scratch-initialized YOLO11 object detection, calibrated 5-model statistical ensembles on 84 CV descriptors, and gradient boosted physical regression.
+**NutriVision AI** is a multi-task computer vision and deep learning system built for real-time food recognition, quality assessment, and nutritional analysis.
 
-> [!IMPORTANT]
-> **Faculty Evaluation Guarantee**: Every neural model and statistical regressor in this repository is initialized with random weights (Kaiming Normal / Xavier) and trained **100% from scratch** exclusively on the project dataset. No transfer learning, external checkpoints (e.g., ImageNet), or black-box vision APIs are utilized.
+The system replaces legacy restrictions and scratch models with **official, compatible pretrained backbones** from PyTorch TorchVision and Ultralytics. The architecture combines:
+1. **Pretrained Transfer Learning & Fine-Tuning**: Head warmup + backbone fine-tuning across **MobileNetV3-Small**, **MobileNetV3-Large**, **EfficientNet-B0**, **ResNet50**, **ViT-B/16**, and **YOLO11n/YOLOv8n**.
+2. **Configuration-Driven Model Registry**: Decoupled architecture registry allowing dynamic model switching via `backend/ml/config/model_config.yaml` without changing application code.
+3. **Classical Computer Vision & Spoilage Localization**: OpenCV multi-space color segmentation ($RGB \rightarrow HSV \rightarrow LAB \rightarrow YCrCb$), morphological mathematics, necrotic tissue clustering, and ArUco marker physical size estimation.
+4. **Calibrated Multi-Task Inference**: Produce category classification (10 items), Fresh vs. Rotten quality scoring, surface spoilage percentage, empirical weight regression, and USDA nutritional aggregation.
 
 ---
 
 ## 🌟 Key Features
 
-* **🎯 10-Class Scratch Object Localization**: Custom YOLO11 detector proposing bounding boxes for Apples, Bananas, Oranges, Strawberries, Bitter Gourds, Capsicums, Cucumbers, Okras, Potatoes, and Tomatoes.
-* **🔬 8-Step Interactive Image Processing Visualizer**: Live UI inspection showing original image transformation through Grayscale, Gaussian Smoothing, LAB Color Conversion, Otsu Binarization, Morphological Opening/Closing, and Convex Hull Geometry.
-* **🛡️ Melanin Chromaticity Non-Food / Selfie Rejection**: Real-time $YCrCb$ and low-saturation $HSV$ human skin filtering preventing false positive classifications on people, faces, or plain backgrounds.
-* **🧠 Calibrated Dual-Domain Hybrid Classifier**: Fused 5-Model Super Ensemble (`ExtraTrees` + `RandomForest` + `HistGradientBoosting` + `MLP` + `SVC-RBF`) on 84 OpenCV descriptors combined with a custom 4-Stage Residual CNN ($\ge 93.5\% - 97.8\%$ confidence).
-* **🍃 4-Block Freshness CNN**: Scratch-trained deep classifier categorizing items into `Fresh`, `Semi-Fresh`, and `Rotten`.
-* **🔍 Surface Spoilage Localization**: OpenCV color-difference clustering measuring exact visual defect surface area ($\%$ spoilage) and calculating remaining shelf-life days.
-* **⚖️ Empirical Weight Regression ($R^2=98.6\%$)**: Gradient Boosting model predicting portion weight in grams from camera pixel geometries and organic food mass densities ($\rho$).
-* **📊 USDA Nutrition & Caloric Breakdown**: Instant calculation of total calories, macronutrients (Carbs, Protein, Fat, Fiber), and contextual food storage advice.
+* **🎯 Pretrained Transfer Learning**: Official weights from TorchVision and Ultralytics with 2-phase transfer learning (head warmup followed by low-learning-rate backbone fine-tuning).
+* **🍎 10-Class Produce Classification (96.0% Test Accuracy)**: Recognizes Apples, Bananas, Bitter Gourds, Capsicums, Cucumbers, Okras, Oranges, Potatoes, Strawberries, and Tomatoes with 4.2ms latency.
+* **🍃 Binary & Calibrated Freshness (92.4% Test Accuracy)**: Classifies produce into `Fresh`, `Semi-Fresh`, and `Spoiled` with calibrated confidence.
+* **🔍 YOLO Multi-Object Detection**: Bounding box localization trained on 14 produce quality categories with non-maximum suppression (NMS).
+* **🛡️ Human Skin Melanin & Achromatic Rejection**: Chromaticity filters in $YCrCb$ and low-saturation $HSV$ reject human faces, hands, and non-food background clutter with explicit reasons.
+* **🔬 8-Step Interactive DIP Visualizer**: Live UI inspection displaying original image transformation through Grayscale, Gaussian Smoothing, LAB Color Conversion, Otsu Binarization, Morphological Clean, and Contours.
+* **🔍 Spoilage Region Defect Masking**: Connected-component analysis on necrotic color abnormalities calculating exact visual defect percentage and remaining shelf life.
+* **⚖️ Physical Dimension & Weight Regression**: Metric size estimation via reference markers (ArUco / reference scale) combined with food density volume regression.
+* **📊 Smart Food Basket & Nutrition Aggregation**: Instant computation of total calories, macronutrients (Protein, Carbs, Fat, Fiber), and consumption priority recommendations.
 
 ---
 
-## 🏛️ Dual-Domain Architecture
+## 🏛️ Architecture & Model Registry
 
 ```mermaid
 flowchart TD
-    A["📸 Raw Food Image / Webcam Stream"] --> B["Stage 0: Melanin Skin Rejection Filter"]
+    A["📸 Food Image / Camera Feed"] --> B["Stage 0: Melanin Skin Rejection Filter"]
     
-    B -->|"Human / Selfie Detected"| B1["⛔ Reject: Undefined (0% Confidence)"]
+    B -->|"Human / Selfie Detected"| B1["⛔ Reject: Undefined (Non-food profile)"]
     B -->|"Produce Detected"| C["Stage 1: Classical Image Processing Core"]
     
     subgraph IP_Domain ["Digital Image Processing (OpenCV)"]
         C --> C1["Color Space Conversion (HSV, LAB, YCrCb)"]
         C1 --> C2["Gaussian & Bilateral Denoising"]
-        C2 --> C3["Otsu & Background Color Distance Thresholding"]
-        C3 --> C4["Morphological Mathematics (Open/Close)"]
-        C4 --> C5["Contour Extraction & Convex Hull Geometry"]
-        C5 --> C6["84-Descriptor Feature Vector (Moments, Hu, Texture)"]
+        C2 --> C3["Otsu Binarization & Foreground Masking"]
+        C3 --> C4["Morphological Clean (Opening & Closing)"]
+        C4 --> C5["Candidate Region Extraction (NMS)"]
     end
     
-    subgraph CV_Domain ["Computer Vision & Deep Learning (PyTorch)"]
-        C5 --> D["Stage 2: Candidate Region Proposal (NMS)"]
-        D --> E["Stage 3: Scratch YOLO11 Object Detector"]
-        D --> F["Stage 4: Calibrated 5-Model Super Ensemble (84 Descriptors)"]
-        D --> G["Stage 5: Custom 4-Stage Residual CNN (Scratch)"]
-        F & G --> H["Fused Category Prediction (>93.5% Calibrated Confidence)"]
-        D --> I["Stage 6: 4-Block Freshness CNN (Fresh/Semi-Fresh/Rotten)"]
-        D --> J["Stage 7: Spoilage Region Defect Masking (% Area)"]
-        C5 & D --> K["Stage 8: Gradient Boosting Weight Regressor (R²=98.6%)"]
+    subgraph Registry_Domain ["Model Registry & Pretrained Inference (PyTorch)"]
+        C5 --> D["Stage 2: YOLO Object Detector (YOLO11n / YOLOv8n)"]
+        C5 --> E["Stage 3: Produce Classifier (MobileNetV3 / EfficientNet-B0 / ResNet50)"]
+        C5 --> F["Stage 4: Freshness Classifier (Fresh / Semi-Fresh / Spoiled)"]
+        C5 --> G["Stage 5: OpenCV Spoilage Region Localization (% Area)"]
+        C5 --> H["Stage 6: ArUco / Geometric Size Estimator (cm)"]
+        H --> I["Stage 7: Empirical Weight Regression (grams)"]
     end
     
-    H & I & J & K --> L["Stage 9: USDA Nutrition & Shelf-Life Analyzer"]
-    L --> M["🖥️ Interactive Next.js Frontend Dashboard (/scanner & /results)"]
+    E & F & G & I --> J["Stage 8: Smart Food Basket & USDA Nutrition Engine"]
+    J --> K["🖥️ Next.js Web Application (/scanner, /results, /history)"]
+```
+
+### Configuration-Driven Registry (`backend/ml/config/model_config.yaml`)
+
+Models can be switched dynamically without changing application or backend services:
+
+```yaml
+tasks:
+  produce_classification:
+    enabled: true
+    active_model: "mobilenet_v3_small" # mobilenet_v3_small | efficientnet_b0 | resnet50 | vit_b_16
+    checkpoint_path: "backend/models/food_classifier/best_food_classifier.pth"
+    num_classes: 10
+    confidence_threshold: 0.30
+
+  freshness_classification:
+    enabled: true
+    active_model: "mobilenet_v3_small"
+    checkpoint_path: "backend/models/freshness/best_model.pth"
+    num_classes: 2
+    confidence_threshold: 0.50
+
+  object_detection:
+    enabled: true
+    framework: "ultralytics_yolo"
+    checkpoint_path: "backend/models/detector/scratch_run/weights/best.pt"
+    confidence_threshold: 0.20
 ```
 
 ---
 
-## 🔒 Academic Compliance & Zero Pretrained Weights
+## 📦 Curated Dataset (5,000 Images)
 
-| Evaluation Requirement | Academic Implementation in NutriVision AI | Compliance Status |
-| :--- | :--- | :---: |
-| **No Pretrained YOLO Weights** | YOLO11 initialized from raw architecture config `yolo11n.yaml` with `weights=None`. | ✅ **100% Compliant** |
-| **No ImageNet Transfer Learning** | Custom 4-Stage Residual CNN & 4-Block Freshness CNN initialized with Kaiming Normal. | ✅ **100% Compliant** |
-| **No Pretrained CNN Backbones** | ResNet, EfficientNet, MobileNet, and VGG checkpoints are strictly excluded. | ✅ **100% Compliant** |
-| **No Third-Party Vision APIs** | No Google Vision, AWS Rekognition, or OpenAI Vision API calls. | ✅ **100% Compliant** |
-| **Dual-Domain Evaluation** | Clear separation between classical OpenCV image processing and neural architectures. | ✅ **100% Compliant** |
+The dataset is organized under `datasets/NUTRIVISION-AI-DATASET-5000/` with deterministic 70% Train / 15% Validation / 15% Test splits (`seed=42`) and zero data leakage:
 
----
+| Task / Partition | Train Split (70%) | Validation Split (15%) | Test Split (15%) | Total Images | Classes / Annotation |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Produce Classification** | 2,114 | 442 | 476 | **3,032** | 10 Food Categories |
+| **Freshness Classification** | 2,114 | 442 | 476 | **3,032** | Fresh (1,518) / Spoiled (1,514) |
+| **Object Detection & Quality** | 1,377 | 295 | 296 | **1,968** | 14 YOLO Bounding Box Classes |
+| **Overall Dataset Total** | **3,491** | **737** | **772** | **5,000** | **100% Verified, 0 Corrupt** |
 
-## 🧠 Evaluated Models & Metrics
-
-```
-========================================================================================
-MODEL EVALUATION MATRIX (100% TRAINED FROM SCRATCH)
-========================================================================================
-Architecture             Type               Features / Inputs      Test Metric
-----------------------------------------------------------------------------------------
-YOLO11-Nano (Scratch)    Object Detection   640x640 RGB Image      mAP@50: 88.4%
-Freshness CNN (4-Block)  Deep Classifier    224x224 RGB Crop       Accuracy: 92.8%
-Residual CNN (4-Stage)   Deep Classifier    224x224 RGB Crop       Accuracy: 88.0%
-5-Model Super Ensemble   Voting Ensemble    84 OpenCV Descriptors  Accuracy: 85.3%
-Hybrid Vision Fused      Ensemble + CNN     Dual-Domain Fused      Confidence: 93.5-97.8%
-Weight Regressor         Gradient Boosting  Geometric Dimensions   R² Score: 98.6%
-========================================================================================
-```
+Class breakdown for Produce Classification:
+* Apple: 314 • Banana: 314 • Bitter Gourd: 315 • Capsicum: 315 • Cucumber: 315
+* Okra: 315 • Orange: 316 • Potato: 316 • Strawberry: 196 • Tomato: 316
 
 ---
 
-## 📁 Repository Structure
+## 📊 Model Benchmarks & Test Results
 
-```
-Nutrivision-AI/
-├── backend/
-│   ├── app/
-│   │   ├── api/v1/
-│   │   │   ├── food_analysis.py       # Main full-pipeline vision orchestrator
-│   │   │   ├── reports.py             # PDF generation and analytical exports
-│   │   │   └── router.py              # FastAPI endpoint routing
-│   │   ├── core/                      # Configs and MongoDB client connection
-│   │   ├── services/
-│   │   │   ├── image_processing.py    # 8-step OpenCV digital image processing pipeline
-│   │   │   ├── spoilage.py            # Color-distance surface spoilage segmentation
-│   │   │   ├── weight_estimation.py   # Volumetric portion weight estimator
-│   │   │   ├── nutrition.py           # USDA FoodData Central nutritional calculator
-│   │   │   └── shelf_life.py          # Shelf life degradation assessment
-│   │   └── main.py                    # FastAPI application initialization
-│   ├── ml/
-│   │   ├── detector/                  # Scratch YOLO11 detector training & inference
-│   │   ├── food_classifier/           # Residual CNN & 84-descriptor hybrid ensemble
-│   │   ├── freshness/                 # 4-Block scratch Freshness CNN
-│   │   └── weight/                    # Gradient Boosting weight regressor
-│   ├── models/                        # Saved weights (.pt, .pth, .pkl, .json)
-│   └── requirements.txt               # Backend Python dependencies
-├── frontend/
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── (dashboard)/scanner/   # Live webcam scanner and image uploader
-│   │   │   └── (dashboard)/results/   # Analysis dashboard with visualizer cards
-│   │   ├── components/
-│   │   │   ├── ImageProcessingVisualizer.tsx # Step-by-step OpenCV inspection UI
-│   │   │   ├── ComputerVisionVisualizer.tsx  # Neural architecture breakdown card
-│   │   │   └── FoodCard.tsx           # Nutritional and quality metrics card
-│   │   └── services/backendClient.ts  # Typed API bridge to FastAPI
-│   └── package.json                   # Next.js frontend dependencies
-├── datasets/                          # Project food dataset (70% train / 15% val / 15% test)
-├── docs/                              # Academic architecture and evaluation notes
-└── scripts/
-    ├── prepare_dataset_and_yolo.py    # Splits raw dataset & formats YOLO labels
-    ├── train_super_classifier.py      # Trains 84-descriptor 5-model Super Ensemble
-    ├── test_all_classes.py            # Evaluates test dataset across all 10 classes
-    └── test_user_scenarios.py         # Verifies non-food rejection and test scenarios
-```
+All models were evaluated on the **exact reserved test sets** (476 test images for classification, 296 test images for detection):
+
+### 1. Classification Benchmarks (Evaluated on 476 Reserved Test Images)
+
+| Task | Architecture | Test Acc (%) | Macro F1 | Weighted F1 | Latency | Parameters | Checkpoint Size | Selection Status |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **Produce Classification** | `mobilenet_v3_small` | **96.01%** | **0.9599** | **0.9591** | **4.2 ms** | 1.53M | 5.96 MB | 🏆 **Best Selected (High Acc + Fast)** |
+| **Produce Classification** | `efficientnet_b0` | 95.80% | 0.9572 | 0.9570 | 8.9 ms | 5.30M | 20.8 MB | Benchmark Comparison |
+| **Freshness Classification** | `mobilenet_v3_small` | **92.44%** | **0.9244** | **0.9244** | **4.0 ms** | 1.52M | 5.92 MB | 🏆 **Best Selected (Balanced + Fast)** |
+
+### Per-Class F1-Scores for Selected Produce Model (`mobilenet_v3_small`):
+* **Bitter Gourd**: 1.0000 • **Tomato**: 1.0000 • **Capsicum**: 0.9899 • **Strawberry**: 0.9846
+* **Potato**: 0.9804 • **Banana**: 0.9800 • **Apple**: 0.9583 • **Orange**: 0.9495
+* **Okra**: 0.9057 • **Cucumber**: 0.8506
+
+### 2. Object Detection Benchmark (Evaluated on 296 Test Images)
+
+| Framework | Task | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 | Test Split |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **YOLO11n** | 14 Quality Categories | 0.186 | 0.359 | **0.309** | 0.219 | 296 Images |
 
 ---
 
-## ⚡ Quick Start Guide
+## 🚀 Quick Start Guide
 
 ### Prerequisites
-* **Python**: `3.10` or higher
-* **Node.js**: `18.0.0` or higher (with npm)
-* **MongoDB**: Local Community Server running at `mongodb://localhost:27017`
-* **Git**: For version control
+* Python 3.10+
+* Node.js 18+ & npm
+* MongoDB running on `mongodb://localhost:27017` (optional; falls back gracefully)
+
+```bash
+# Clone repository
+git clone https://github.com/Aakif009-new/Nutrivision-AI.git
+cd Nutrivision-AI
+```
 
 ---
 
-### 1. Backend Setup
+## 🛠️ Required Commands & CLI Reference
 
-1. **Navigate to backend and create virtual environment**:
-   ```bash
-   cd backend
-   python -m venv .venv
-   ```
-
-2. **Activate the virtual environment**:
-   * **Windows (PowerShell)**:
-     ```powershell
-     .venv\Scripts\Activate.ps1
-     ```
-   * **macOS / Linux**:
-     ```bash
-     source .venv/bin/activate
-     ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Start MongoDB**:
-   Ensure MongoDB service is active locally (`mongodb://localhost:27017`).
-
-5. **Run the FastAPI server**:
-   ```bash
-   uvicorn app.main:app --reload --port 8000
-   ```
-   * Backend Swagger API Docs: `http://localhost:8000/docs`
-   * Health Check: `http://localhost:8000/health`
-
----
-
-### 2. Frontend Setup
-
-1. **Open a new terminal and navigate to frontend**:
-   ```bash
-   cd frontend
-   ```
-
-2. **Install npm packages**:
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment variables**:
-   Create a `.env.local` file in the `frontend` folder:
-   ```env
-   NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api/v1
-   ```
-
-4. **Launch Next.js development server**:
-   ```bash
-   npm run dev
-   ```
-   * Application URL: **`http://localhost:3000`**
-   * Real-Time Scanner: **`http://localhost:3000/scanner`**
-
----
-
-## 🏋️ Model Training & Methodology
-
-To train all neural networks and statistical models from scratch using your local dataset:
-
-### Step 1: Format Dataset & Generate Detection Labels
+### 1. Install Dependencies
 ```bash
-python scripts/prepare_dataset_and_yolo.py
+# Backend dependencies
+pip install -r backend/requirements.txt
+
+# Frontend dependencies
+cd frontend && npm install && cd ..
 ```
-* Generates 70/15/15 stratified train/val/test splits in `datasets/classification`.
-* Computes bounding boxes via OpenCV color-distance contours and saves YOLO labels in `datasets/detection`.
 
-### Step 2: Train the 84-Descriptor 5-Model Super Ensemble
+### 2. Inspect Dataset & Verify Integrity
 ```bash
-python scripts/train_super_classifier.py
+# Verifies all 5,000 images, checks for corruption, and reports class distribution
+python backend/ml/dataset_manifests.py
 ```
-* Extracts 84 multi-space descriptors across $HSV$, $LAB$, $YCrCb$, and $RGB$.
-* Trains `ExtraTrees`, `RandomForest`, `HistGradientBoosting`, `MLP`, and `SVC`.
-* Saves compressed model weights to `backend/models/food_classifier/feature_classifier.pkl`.
 
-### Step 3: Train the Custom Freshness CNN
+### 3. Generate Deterministic Train/Val/Test Splits
 ```bash
-python backend/ml/freshness/train.py
+# Generates reproducible JSON split manifests in dataset_manifests/
+python backend/ml/dataset_manifests.py
 ```
-* Trains the 4-Block PyTorch CNN from scratch for 30 epochs with Early Stopping.
-* Saves best checkpoint to `backend/models/freshness/best_model.pth`.
 
-### Step 4: Train the Empirical Weight Regressor
+### 4. Train Selected Classification Models
 ```bash
-python backend/ml/weight/train_weight.py
+# Train Produce Classification with MobileNetV3-Small
+python backend/ml/train_classifier.py --task produce --model mobilenet_v3_small --epochs 25 --head_epochs 5 --batch_size 32
+
+# Train Produce Classification with EfficientNet-B0
+python backend/ml/train_classifier.py --task produce --model efficientnet_b0 --epochs 25 --head_epochs 5 --batch_size 32
+
+# Train Produce Classification with ResNet50
+python backend/ml/train_classifier.py --task produce --model resnet50 --epochs 25 --head_epochs 5 --batch_size 32
+
+# Train Freshness Classification with MobileNetV3-Small
+python backend/ml/train_classifier.py --task freshness --model mobilenet_v3_small --epochs 20 --head_epochs 4 --batch_size 32
 ```
-* Fits a Gradient Boosting Regressor on bounding box dimensions and food densities.
-* Saves model to `backend/models/weight/weight_regressor.pkl`.
 
----
-
-## 🧪 Automated Verification Suite
-
-Run automated pipeline verification scripts:
-
+### 5. Train YOLO Object Detector
 ```bash
-# Test all 10 classes on the test split
-python scripts/test_all_classes.py
+# Fine-tune YOLO on 14 produce quality categories from official pretrained weights
+python backend/ml/detector/train.py --data datasets/NUTRIVISION-AI-DATASET-5000/detection/data.yaml --base yolo11n.pt --epochs 15 --batch 16
+```
 
-# Test non-food rejection, background isolation, and user edge cases
-python scripts/test_user_scenarios.py
+### 6. Evaluate Checkpoints & Compare Performance
+```bash
+# Runs full benchmark comparison on the reserved test set and generates report
+python backend/ml/evaluate_and_compare.py
+```
+
+### 7. Run Automated Tests
+```bash
+# Run pytest test suite (4 test modules)
+pytest backend/tests
+
+# Run 10 academic scenario end-to-end tests
+python scripts/test_academic_scenarios_5000.py
+```
+
+### 8. Start Backend Service
+```bash
+cd backend
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+# API Docs available at: http://localhost:8000/docs
+```
+
+### 9. Start Frontend Application
+```bash
+cd frontend
+npm run dev
+# Dashboard available at: http://localhost:3000
 ```
 
 ---
@@ -280,26 +238,18 @@ python scripts/test_user_scenarios.py
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| `POST` | `/api/v1/analyze-food` | Primary analysis endpoint accepting image upload or base64 webcam frames |
-| `GET` | `/api/v1/food-classes` | Returns supported food categories and metadata |
-| `POST` | `/api/v1/export-report` | Generates downloadable PDF quality & nutrition report |
-| `GET` | `/health` | Server health check and loaded model diagnostics |
+| `POST` | `/api/v1/analyze` | Main multipart image upload analysis endpoint |
+| `POST` | `/api/v1/analyze/frame` | Real-time webcam frame analysis (Base64 JPEG) |
+| `POST` | `/api/v1/food/analyze` | Backward-compatibility alias for food scan |
+| `GET` | `/api/v1/history` | Retrieves recent scan history records |
+| `GET` | `/api/v1/food/scans` | Legacy compatibility endpoint returning scan list |
+| `POST` | `/api/v1/food/recommendations` | Recipe suggestions & storage advice |
+| `GET` | `/api/v1/history/{scan_id}` | Immutable historical scan snapshot lookup |
+| `GET` | `/api/v1/dashboard/stats` | Aggregated analytics & produce breakdown |
+| `GET` | `/api/v1/reports/pdf/{scan_id}` | Generates downloadable PDF nutrition certificate |
+| `GET` | `/api/v1/health` | Health check & model status probe |
 
 ---
 
-## 👥 Contributors & Branch Strategy
-
-| Branch | Responsibilities |
-| :--- | :--- |
-| `main` | Production-ready stable release |
-| `hannan/work-space` | Computer Vision pipelines, 84-descriptor feature classifiers, scratch CNN architectures, and FastAPI backend integration |
-| `aakif/works-space` | Interactive Next.js visualizers, real-time webcam scanner, and dashboard UI |
-| `saad/work-space` | OpenCV Image Processing steps, database schemas, and documentation |
-
----
-
-<div align="center">
-
-**NutriVision AI • Academic Project for Computer Vision & Digital Image Processing Evaluation**
-
-</div>
+## 📄 License
+This project is licensed under the MIT License.

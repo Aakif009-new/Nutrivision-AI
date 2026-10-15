@@ -1,13 +1,17 @@
 import cv2
 import numpy as np
 import pickle
-import torch
 from pathlib import Path
 from typing import Dict, Any, Optional
 from PIL import Image
-import torchvision.transforms as T
 
-from ml.food_classifier.model import FoodClassifierCNN
+try:
+    import torch
+    import torchvision.transforms as T
+    from ml.food_classifier.model import FoodClassifierCNN
+    TORCH_AVAILABLE = True
+except Exception as e:
+    TORCH_AVAILABLE = False
 
 FOOD_CLASSES = [
     "apple",
@@ -185,10 +189,11 @@ class HybridFoodClassifier:
                 except Exception as e:
                     print(f"[HybridFoodClassifier] Error loading feature ensemble: {e}")
 
-        # Load CNN Model
+        # Load Pretrained Vision Model via Model Registry
         cnn_paths = [
             backend_dir / "models" / "food_classifier" / "best_food_classifier.pth",
             project_root / "backend" / "models" / "food_classifier" / "best_food_classifier.pth",
+            project_root / "models" / "best" / "produce_mobilenet_v3_small.pth",
             Path("backend/models/food_classifier/best_food_classifier.pth"),
             Path("models/food_classifier/best_food_classifier.pth")
         ]
@@ -196,14 +201,21 @@ class HybridFoodClassifier:
             if p.exists():
                 try:
                     with torch.no_grad():
+                        from ml.registry import load_checkpoint
+                        self.cnn_model, meta = load_checkpoint(p, device=self.device)
+                        self.cnn_model.eval()
+                    print(f"[HybridFoodClassifier] Loaded pretrained produce model from: {p}")
+                    break
+                except Exception as e:
+                    try:
                         checkpoint = torch.load(p, map_location=self.device)
                         self.cnn_model = FoodClassifierCNN(num_classes=10).to(self.device)
                         self.cnn_model.load_state_dict(checkpoint["model_state_dict"])
                         self.cnn_model.eval()
-                    print(f"[HybridFoodClassifier] Loaded custom Residual CNN from: {p}")
-                    break
-                except Exception as e:
-                    print(f"[HybridFoodClassifier] Error loading CNN: {e}")
+                        print(f"[HybridFoodClassifier] Loaded legacy CNN from: {p}")
+                        break
+                    except Exception as e2:
+                        print(f"[HybridFoodClassifier] Error loading produce model: {e} / {e2}")
 
     def classify_crop(self, crop_bgr: np.ndarray) -> Dict[str, Any]:
         self._ensure_loaded()
@@ -269,9 +281,14 @@ class HybridFoodClassifier:
             except Exception as e:
                 pass
 
-        # 5. Multi-Domain ML Fusion: 85% Feature Super Ensemble + 15% Deep Scratch CNN
-        fused_probs = (0.85 * feat_probs) + (0.15 * cnn_probs)
-        fused_probs = fused_probs / np.sum(fused_probs)
+        # 5. Multi-Domain ML Fusion: Prioritize Pretrained Deep Vision (75%) + Feature Regularizer (25%)
+        if self.cnn_model is not None and self.feature_model is not None:
+            fused_probs = (0.25 * feat_probs) + (0.75 * cnn_probs)
+        elif self.cnn_model is not None:
+            fused_probs = cnn_probs
+        else:
+            fused_probs = feat_probs
+        fused_probs = fused_probs / max(1e-8, float(np.sum(fused_probs)))
         
         sorted_indices = np.argsort(fused_probs)[::-1]
         top1_idx = int(sorted_indices[0])

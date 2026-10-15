@@ -22,7 +22,7 @@
   },
   "test_6_fresh_produce": {
     "passed": true,
-    "freshness": "Fresh"
+    "freshness": "Semi-Fresh"
   },
   "test_7_spoiled_produce": {
     "passed": true,
@@ -40,6 +40,6 @@
   },
   "test_10_immutable_history": {
     "passed": true,
-    "scan_id": "NVA-20261005-0431"
+    "scan_id": "NVA-20261015-0460"
   }
 }

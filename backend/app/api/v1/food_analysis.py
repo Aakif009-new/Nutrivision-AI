@@ -20,6 +20,7 @@ from ml.detector.inference import FoodDetectorEngine
 from ml.food_classifier.hybrid_classifier import hybrid_food_classifier
 
 router = APIRouter(prefix="/analyze", tags=["Food Analysis"])
+legacy_router = APIRouter(tags=["Food Analysis Compatibility"])
 
 # Initialize ML engines (auto-discovers scratch trained weights)
 freshness_engine = FreshnessInferenceEngine()
@@ -312,6 +313,7 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
                 "food": "Undefined",
                 "is_supported": False,
                 "confidence": det_conf,
+                "freshness_status": "undefined",
                 "reason": food_res.get("reason", "Object features do not match any supported food category."),
                 "bbox": [x1, y1, x2, y2]
             })
@@ -355,6 +357,7 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
             "confidence": det_conf,
             "bbox": [x1, y1, x2, y2],
             "freshness": freshness_label,
+            "freshness_status": freshness_label.lower(),
             "freshness_confidence": freshness_conf,
             "freshness_probabilities": freshness_res.get("probabilities", {}),
             "spoilage": {
@@ -418,6 +421,7 @@ def run_full_pipeline(img_bgr: np.ndarray) -> Dict[str, Any]:
         "cv_analysis_overlay": encode_img_to_base64(cv_overlay),
         "detections": analyzed_detections,
         "overall_summary": overall_summary,
+        "total_calories": round(total_calories, 1),
         "warnings": warnings
     }
 
@@ -446,6 +450,51 @@ async def get_scan_history(limit: int = 20):
     scans = db_manager.get_recent_scans(limit=limit)
     return {"status": "success", "history": scans}
 
+@router.get("/scans")
+async def get_scans_list(limit: int = 20):
+    """Legacy compatibility endpoint returning raw scan list."""
+    scans = db_manager.get_recent_scans(limit=limit)
+    return scans
+
+class RecommendationRequest(BaseModel):
+    detected_items: List[str]
+    freshness_statuses: Optional[List[str]] = None
+
+@router.post("/recommendations")
+async def get_recommendations(payload: RecommendationRequest):
+    """Provides recipe suggestions and freshness advice based on detected items."""
+    items = [it.lower().strip() for it in payload.detected_items]
+    recipes = []
+    advice = []
+
+    if any("apple" in i for i in items):
+        recipes.append("Crisp Apple Orchard Salad with Walnuts")
+        recipes.append("Warm Cinnamon Baked Apples")
+    if any("banana" in i for i in items):
+        recipes.append("Banana & Almond Butter Smoothie Bowl")
+        recipes.append("Fluffy Banana Oat Pancakes")
+    if any("orange" in i for i in items):
+        recipes.append("Fresh Citrus & Spinach Detox Salad")
+    if any("tomato" in i for i in items) or any("cucumber" in i for i in items):
+        recipes.append("Mediterranean Chopped Tomato & Cucumber Salad")
+    if any("potato" in i for i in items):
+        recipes.append("Rosemary Garlic Roasted Potato Medley")
+    if not recipes:
+        recipes.append("NutriVision Rainbow Garden Salad")
+        recipes.append("Wholesome Sautéed Vegetable Bowl")
+
+    if payload.freshness_statuses and any("spoil" in s.lower() or "rotten" in s.lower() for s in payload.freshness_statuses):
+        advice.append("Isolate spoiled items immediately to prevent ethylene gas from accelerating spoilage in adjacent produce.")
+    else:
+        advice.append("Keep fruits and vegetables in dry, well-ventilated storage.")
+        advice.append("Consume higher-water-content items first for optimal nutrition.")
+
+    return {
+        "recipe_suggestions": recipes,
+        "freshness_advice": advice,
+        "nutritional_insight": f"Detected {len(items)} food item(s) rich in natural vitamins, micronutrients, and dietary fiber."
+    }
+
 @router.get("/history/{scan_id}")
 async def get_scan_by_id(scan_id: str):
     """Retrieve an immutable historical scan snapshot by scan_id without re-running model."""
@@ -453,6 +502,12 @@ async def get_scan_by_id(scan_id: str):
     if not scan:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Scan record {scan_id} not found.")
     return {"status": "success", "scan": scan}
+
+# Also register on legacy_router for compatibility with tests and older clients
+legacy_router.add_api_route("/analyze", analyze_food_image, methods=["POST"])
+legacy_router.add_api_route("/scans", get_scans_list, methods=["GET"])
+legacy_router.add_api_route("/recommendations", get_recommendations, methods=["POST"])
+
 
 @router.get("/dashboard/stats")
 async def get_dashboard_stats():
