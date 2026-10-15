@@ -26,11 +26,11 @@ export default function ComputerVisionVisualizer({ overlayImage, detections, ove
             <h3 className="text-base font-bold text-slate-800 flex items-center gap-2">
               Computer Vision & AI Analysis
               <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">
-                Custom YOLO11 + Scratch CNN
+                Pretrained YOLO11n + MobileNetV3
               </span>
             </h3>
             <p className="text-xs text-slate-500 mt-0.5">
-              Multi-object bounding boxes, scratch freshness CNN classification, and weight regression
+              Multi-object bounding boxes, transfer-learning produce & freshness classification, and weight regression
             </p>
           </div>
         </div>
@@ -69,20 +69,20 @@ export default function ComputerVisionVisualizer({ overlayImage, detections, ove
               <div className="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl space-y-1.5 text-xs">
                 <div className="flex justify-between font-bold text-slate-800">
                   <span>1. Object Detector</span>
-                  <span className="text-blue-600">YOLO11 (Scratch)</span>
+                  <span className="text-blue-600">Pretrained YOLO11n</span>
                 </div>
                 <p className="text-[11px] text-slate-500 leading-relaxed">
-                  Trained from scratch without pretrained weights on 10 food classes.
+                  Fine-tuned from official Ultralytics weights on 12 canonical produce quality classes.
                 </p>
               </div>
 
               <div className="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl space-y-1.5 text-xs">
                 <div className="flex justify-between font-bold text-slate-800">
                   <span>2. Freshness Classifier</span>
-                  <span className="text-emerald-600">4-Block CNN (Scratch)</span>
+                  <span className="text-emerald-600">MobileNetV3-Small (92.44%)</span>
                 </div>
                 <p className="text-[11px] text-slate-500 leading-relaxed">
-                  Custom PyTorch convolutional network trained on 1,000 project images.
+                  Transfer-learning produce freshness classifier trained on 3,032 balanced food images.
                 </p>
               </div>
 

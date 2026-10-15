@@ -1,0 +1,7 @@
+path: C:/Users/Mohamed Hannan/Documents/PROJECTS/Nutrivision-AI/datasets/NUTRIVISION-AI-DATASET-5000/detection
+train: images/train
+val: images/val
+test: images/test
+
+nc: 14
+names: ['Bad_Apple 0-1 day', 'Bad_Banana-0 day', 'Bad_Guava 0 day', 'Bad_Lime-0-1-day', 'Bad_Orange-0-1 day', 'Bad_Pomegranate-0-1-day', 'Good_Apple 10-21 days', 'Good_Banana-2-3 days', 'Good_Guava 5-7 days', 'Good_Lime-10-21 days', 'Good_Lime-10-21-days', 'Good_Orange-15-21 days', 'Good_Pomegranate 50-60-days', 'Good_Pomegranate-50-60-days']
