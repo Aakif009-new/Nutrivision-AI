@@ -9,7 +9,7 @@ import yaml
 class FoodDetectorEngine:
     """
     Academic Multi-Object Food Detection & Unknown Object Rejection Engine.
-    Powered by Custom YOLO11 trained from scratch without pretrained weights.
+    Powered by YOLO11n fine-tuned with official pretrained weights (transfer learning).
     Enforces strict confidence thresholding to reject non-food / unknown objects as 'Undefined'.
     """
 
@@ -60,16 +60,24 @@ class FoodDetectorEngine:
 
         candidate_paths = [
             Path(self.weights_path) if self.weights_path else None,
-            backend_dir / "models" / "detector" / "scratch_run" / "weights" / "best.pt",
-            project_root / "backend" / "models" / "detector" / "scratch_run" / "weights" / "best.pt",
+            backend_dir / "models" / "detector" / "improved_run" / "weights" / "best.pt",
+            project_root / "backend" / "models" / "detector" / "improved_run" / "weights" / "best.pt",
+            backend_dir / "models" / "detector" / "pretrained_run" / "weights" / "best.pt",
+            project_root / "backend" / "models" / "detector" / "pretrained_run" / "weights" / "best.pt",
             backend_dir / "models" / "detector" / "best.pt",
+            project_root / "backend" / "models" / "detector" / "best.pt",
+            backend_dir / "models" / "detector" / "scratch_run" / "weights" / "best.pt",
+            backend_dir / "models" / "detector" / "backup_baseline" / "baseline_best.pt",
         ]
 
         for p in candidate_paths:
             if p and p.exists():
-                self.load_model(str(p))
-                print(f"[FoodDetector] Successfully loaded custom YOLO11 detector from: {p}")
-                break
+                try:
+                    self.load_model(str(p))
+                    print(f"[FoodDetector] Successfully loaded YOLO11n detector from: {p}")
+                    break
+                except Exception as e:
+                    print(f"[FoodDetector] Warning: could not load {p}: {e}")
 
         if self.model is None:
             print("[FoodDetector] Warning: Trained weights not found. Strict Undefined rejection active.")

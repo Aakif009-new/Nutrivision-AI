@@ -4,9 +4,9 @@
 
 | Task | Architecture | Test Acc (%) | Macro F1 | Weighted F1 | Latency (ms) | Params (M) | Size (MB) | Status |
 |------|-------------|--------------|----------|-------------|--------------|------------|-----------|--------|
-| Freshness | `mobilenet_v3_small` | **92.44%** | 0.9244 | 0.9244 | 4.33 | 1.52M | 5.93 MB | Verified Pretrained |
-| Freshness | `efficientnet_b0` | **85.08%** | 0.8508 | 0.8508 | 28.42 | 4.01M | 15.58 MB | Verified Pretrained |
-| Produce | `mobilenet_v3_small` | **96.01%** | 0.9599 | 0.9591 | 3.86 | 1.53M | 5.96 MB | Verified Pretrained |
+| Freshness | `mobilenet_v3_small` | **92.44%** | 0.9244 | 0.9244 | 3.84 | 1.52M | 5.93 MB | Verified Pretrained |
+| Freshness | `efficientnet_b0` | **85.08%** | 0.8508 | 0.8508 | 21.51 | 4.01M | 15.58 MB | Verified Pretrained |
+| Produce | `mobilenet_v3_small` | **96.01%** | 0.9599 | 0.9591 | 3.50 | 1.53M | 5.96 MB | Verified Pretrained |
 
 ## 2. Object Detection & Localization (YOLO Benchmark)
 
@@ -20,4 +20,4 @@
 - **Freshness Classification**: `mobilenet_v3_small` selected for robust binary and calibrated multi-state freshness discrimination.
 - **Object Detection**: `YOLO11n` for real-time bounding box localization on 14 produce quality categories.
 
-*Report generated at: 2026-10-16 00:19:34*
+*Report generated at: 2026-10-16 01:14:36*

@@ -11,7 +11,7 @@
     "precision_weighted": 0.9249,
     "recall_weighted": 0.9244,
     "f1_weighted": 0.9244,
-    "avg_latency_ms": 4.33,
+    "avg_latency_ms": 3.84,
     "params_millions": 1.52,
     "checkpoint_size_mb": 5.93
   },
@@ -27,7 +27,7 @@
     "precision_weighted": 0.8512,
     "recall_weighted": 0.8508,
     "f1_weighted": 0.8508,
-    "avg_latency_ms": 28.42,
+    "avg_latency_ms": 21.51,
     "params_millions": 4.01,
     "checkpoint_size_mb": 15.58
   },
@@ -43,7 +43,7 @@
     "precision_weighted": 0.9624,
     "recall_weighted": 0.9601,
     "f1_weighted": 0.9591,
-    "avg_latency_ms": 3.86,
+    "avg_latency_ms": 3.5,
     "params_millions": 1.53,
     "checkpoint_size_mb": 5.96
   }

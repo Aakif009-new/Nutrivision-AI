@@ -58,6 +58,9 @@ backend/.env
 # Model checkpoints & large run artifacts
 runs/classification/
 runs/detection/
+runs/detect/
+*.cache
 *.pth
 *.pt
-*.onnx
+*.onnx
+**/detection_processed/images/

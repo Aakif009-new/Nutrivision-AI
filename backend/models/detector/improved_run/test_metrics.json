@@ -1,0 +1,35 @@
+{
+  "base_checkpoint": "yolo11n.pt",
+  "precision": 0.5290355464624353,
+  "recall": 0.4659485899875439,
+  "map50": 0.5260103194282454,
+  "map50_95": 0.37361303356175524,
+  "per_class_map50": [
+    0.08330208888694954,
+    0.6120158941650923,
+    0.32127517831072944,
+    0.343131948287864,
+    0.007189304907302038,
+    0.7309436274509803,
+    0.2885896733228658,
+    0.4928749695747127,
+    0.4823161217571455,
+    0.557561519011228,
+    0.1348532100380318,
+    0.42930286702816167
+  ],
+  "class_names": [
+    "Bad_Apple 0-1 day",
+    "Bad_Banana-0 day",
+    "Bad_Guava 0 day",
+    "Bad_Lime-0-1-day",
+    "Bad_Orange-0-1 day",
+    "Bad_Pomegranate-0-1-day",
+    "Good_Apple 10-21 days",
+    "Good_Banana-2-3 days",
+    "Good_Guava 5-7 days",
+    "Good_Lime 10-21 days",
+    "Good_Orange 15-21 days",
+    "Good_Pomegranate 50-60 days"
+  ]
+}
